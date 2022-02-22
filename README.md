@@ -4,7 +4,7 @@
 </p>
 <h1 align="center"> API3 </h1> 
 
-![Badge](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-green)
+![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow)
 
 ## Tabela de Conteúdos
 
