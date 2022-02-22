@@ -60,7 +60,7 @@ A definir
  
 | Data | Evento |
 | -------| --------- |
-| 16/08 a 22/08 | Project kick-off. |
+| 16/03 a 22/03 | Project kick-off. |
 | 30/08 a 19/09 | [Sprint 1](#). |
 | 20/09 a 10/10 | [Sprint 2](#). |
 | 18/10 a 07/11 | [Sprint 3](#). |
