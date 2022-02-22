@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://github.com/DolphinDatabase/API2/blob/44eff4f337f16fd8875ec42114bb89e23d7793bf/Imagens/golfinho.png" height="300" width="300" />
 </p>
-<h1 align="center"> SGBD Health </h1> 
+<h1 align="center"> API2 </h1> 
 
 ![Badge](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-green)
 
