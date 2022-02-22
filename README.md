@@ -70,7 +70,7 @@ A definir
 
 ## Dev Team 
 
-Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3.wiki.git). 
+Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team). 
 
 ## Licença  
 
