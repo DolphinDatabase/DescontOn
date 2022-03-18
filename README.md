@@ -1,8 +1,8 @@
 
 <p align="center">
-  <img src="https://github.com/DolphinDatabase/API2/blob/44eff4f337f16fd8875ec42114bb89e23d7793bf/Imagens/golfinho.png" height="300" width="300" />
+  <img src="https://github.com/DolphinDatabase/API3/blob/1c2e009d90f184e55ec07266473b89be8ac4c441/Imagens/DescontOn.png" height="90" width="380" />
 </p>
-<h1 align="center"> API3 </h1> 
+<h1 align="center"> DescontOn </h1> 
 
 ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow)
 
