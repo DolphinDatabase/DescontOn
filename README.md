@@ -4,7 +4,7 @@
 </p>
 <!--<h1 align="center"> DescontOn </h1>-->
 
-![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow)
+![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-pink)
 
 ## Tabela de Conteúdos
 
