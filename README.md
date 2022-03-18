@@ -66,7 +66,7 @@ A definir
  
 | Data | Evento |
 | -------| --------- |
-|     16/03     | Project kick-off. |
+| 16/03 às 19h  | Project kick-off. |
 | 25/03 a 15/04 | [Sprint 1](#). |
 | 20/09 a 10/10 | [Sprint 2](#). |
 | 18/10 a 07/11 | [Sprint 3](#). |
