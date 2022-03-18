@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/DolphinDatabase/API3/blob/1c2e009d90f184e55ec07266473b89be8ac4c441/Imagens/DescontOn.png" height="90" width="380" />
+  <img src="" height="90" width="380" />
 </p>
 <!--<h1 align="center"> DescontOn </h1>-->
 
