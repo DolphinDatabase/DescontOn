@@ -47,14 +47,15 @@ A definir
 ## Tecnologias
 ![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
 <img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/><br/>
+<img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
+<img width="37px" height="20px" src="https://media.discordapp.net/attachments/804760499723567115/954512113743839242/Frame_2_1.png"/><br/>
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
 <img width="55" height="20" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
 <img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
-<img width="37px" height="20px" src="https://media.discordapp.net/attachments/804760499723567115/954512113743839242/Frame_2_1.png"/>
-
+<img width="50" height="20" src="https://media.discordapp.net/attachments/804760499723567115/954547468396269598/Frame_3.png"/>
+<img width="55" height="20" src="https://media.discordapp.net/attachments/804760499723567115/954551619729621042/Frame_4.png"/>
 
 <img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
 
