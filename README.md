@@ -22,7 +22,7 @@
 
 ## Descrição
 
-A definir
+Ferramenta para criar promoções de Ecommerce, onde as mecanicas de promoçoes são feitas de forma flexivel e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens sao adicionados ao carrinho. 
 
 ## Pré-requisitos e como executar a aplicação
   
