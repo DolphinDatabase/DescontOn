@@ -69,7 +69,7 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 | -------| --------- |
 | 16/03 às 19h  | Project kick-off. |
 | 25/03 a 14/04 | [Sprint 1](#). |
-| 25/09 a 15/05 | [Sprint 2](#). |
+| 25/04 a 15/05 | [Sprint 2](#). |
 | 16/05 a 05/06 | [Sprint 3](#). |
 | 29/11 a 05/12 | Apresentação Final. |
 | 15/06 às 19h | Feira de Soluções. |
