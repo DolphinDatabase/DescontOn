@@ -56,7 +56,8 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 <img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
 <img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
 <img width="50" height="20" src="https://media.discordapp.net/attachments/804760499723567115/954547468396269598/Frame_3.png"/>
-<img width="55" height="20" src="https://media.discordapp.net/attachments/804760499723567115/955286923398750218/Frame_4.png"/>
+<img width="55" height="20" src="https://media.discordapp.net/attachments/804760499723567115/955287438295707699/Frame_4.png"/>
+<img width="65" height="20" src="https://media.discordapp.net/attachments/804760499723567115/955293720830423080/Frame_5.png"/>
 
 <img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
 
@@ -72,7 +73,6 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 | 25/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/tree/Sprint-1). |
 | 25/04 a 15/05 | [Sprint 2](#). |
 | 16/05 a 05/06 | [Sprint 3](#). |
-| 29/11 a 05/12 | Apresentação Final. |
 | 15/06 às 19h | Feira de Soluções. |
 
 ## Dev Team 
