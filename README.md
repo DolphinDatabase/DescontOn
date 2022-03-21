@@ -2,77 +2,46 @@
 <p align="center">
   <img src="https://github.com/DolphinDatabase/DescontOn/blob/350392e4b80418ea3a3ceb71282722aba4487edd/Imagens/StoryCard2.png" height="600" width="700" />
 </p>
+<h1 align="center"> Story Card  </h1>  
+
 <!--<h1 align="center"> DescontOn </h1>-->
 
-![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-pink)
+> ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-pink)
 
 ## Tabela de Conteúdos
 
  * [Descrição](#descrição)
- * [Pré-requisitos e como executar a aplicação](#Pré-requisitos-e-como-executar-a-aplicação)
- * [Backlog Product](#backlog-product) 
- * [Backlog em Story cards](#backlog-em-story-cards)   
- * [Escopo de Recursos](#escopo-de-recursos)
- * [Roadmap]
- * [Tecnologias](#Tecnologias)
- * [Cronograma do API](#cronograma-do-api)
- * [Dev Team](#dev-team)
- * [Licença](#Licença)
+ * [User Story](#user-story)
+ * [Funcionalidades Desenvolvidas](#funcionalidades-desenvolvidas) 
+ * [Ilustração das Funcionalidades](#ilustração-das-funcionalidades)   
+ * [Benefícios](#benefícios)
+ * [Gráfico de Burndown](gráfico-de-burndown)
+
 
 
 ## Descrição
 
 A definir
 
-## Pré-requisitos e como executar a aplicação
+## User Story
   
- #### **Pré-requisitos** 
+ #### **Story 1 - Cadastro de Produtos** 
   
-  1. Instalação do **JDK** ou no mínimo **JRE versão 1.8** acesse [aqui](https://www.oracle.com/java/technologies/downloads/).
-  2. Download da aplicação acesse [aqui](#).
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Assistente de cadastro de um E-commerce. | Cadastrar produtos no servidor/banco de dados. | Seja possível identificar o produto e suas especificações como nome, categoria e valor. |
 
- #### **Como executar** 
-  
-  1. Documentação do passo a passo do tutorial [aqui](#).
-  2. Para o vídeo do tutorial clique [aqui](#).
+  #### **Story 2 - Carrinho de Compras**
 
-## Product Backlog 
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível lisar os itens escolhidos para conferir e ajusar a quatidade, subtotal e os descontos que refletirão no valor final. |
 
-## Backlog em Story cards
+## Funcionalidades desenvolvidas 
 
-## Escopo de Recursos
+## Ilustração das funcionalidades
 
-## Roadmap
-
-## Tecnologias
-![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
-<img width="45" height="20" src="https://media.discordapp.net/attachments/804760499723567115/954512113743839242/Frame_2_1.png"/>
-<img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
-<img width="55" height="20" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-<img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
-
-
-<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
-
-## Ilustração
- 
- Para acessar o vídeo de demonstração da aplicação em uso, clique [aqui](#).
- 
-## Cronograma do API
- 
-| Data | Evento |
-| -------| --------- |
-| 16/03 às 19h  | Project kick-off. |
-| 25/03 a 15/04 | [Sprint 1](#). |
-| 20/09 a 10/10 | [Sprint 2](#). |
-| 18/10 a 07/11 | [Sprint 3](#). |
-| 08/11 a 28/11 | [Sprint 4](#). |
-| 29/11 a 05/12 | Apresentação Final. |
-| 16/12 às 19h | Feira de Soluções. |
+## Gráfico de Burndown
 
 ## Dev Team 
 
