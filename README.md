@@ -81,6 +81,14 @@ Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Develop
 
 ## Autora
 
+<p align="left">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/a5bf9ea10099ab809be6ed68694101a4306c7514/Imagens/BeatrizMedeiros.jpg" alt="Sublime's custom image?w=100"height="100" width="100" />
+</p> 
+<p align="left">
+ 
+  ![Linkedin Badge](https://img.shields.io/badge/-Beatriz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/beatriz-medeiros-a98396202//)
+  [![Gmail Badge](https://img.shields.io/badge/-biamedeirosassim@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:biamedeirosassim@gmail.com)](mailto:biamedeirosassim@gmail.com)
+
 ## Licença  
 
 Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).
