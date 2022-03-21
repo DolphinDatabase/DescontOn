@@ -48,7 +48,7 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 ## Tecnologias
 ![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
 <img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
-<img width="37px" height="20px" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Jira.png"/>
+<a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank"> <img width="37px" height="20px" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Jira.png"/>
 <img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/><br/>
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
