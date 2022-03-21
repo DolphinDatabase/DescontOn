@@ -59,9 +59,8 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 <img width="55" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Oracle.png"/>
 <img width="65" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/OpenIconic.png"/><br/>
 <img width="55" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Maven.png"/>
-<img width="45" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/SQL.png"/>
-<img width="65" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Thymeleaf.png"/>
-
+<img width="50" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/569e41698aa141d86bd246c79ab2964547c76274/Imagens/Icons/SQL.png"/>
+<img width="65" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Thymeleaf.png"/><br/>
 <img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
 
 ## Ilustração
