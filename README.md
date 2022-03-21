@@ -41,12 +41,6 @@ A definir
 
 ## Ilustração das funcionalidades
 
+## Benefícios
+
 ## Gráfico de Burndown
-
-## Dev Team 
-
-Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team). 
-
-## Licença  
-
-Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).
