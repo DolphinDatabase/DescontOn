@@ -56,7 +56,7 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 <img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
 <img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
 <img width="50" height="20" src="https://media.discordapp.net/attachments/804760499723567115/954547468396269598/Frame_3.png"/>
-<img width="55" height="20" src="https://media.discordapp.net/attachments/804760499723567115/954551619729621042/Frame_4.png"/>
+<img width="55" height="20" src="https://media.discordapp.net/attachments/804760499723567115/955286923398750218/Frame_4.png"/>
 
 <img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
 
