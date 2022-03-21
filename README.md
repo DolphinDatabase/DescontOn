@@ -9,15 +9,16 @@
 ## Tabela de Conteúdos
 
  * [Descrição](#descrição)
- * [Pré-requisitos e como executar a aplicação](#Pré-requisitos-e-como-executar-a-aplicação)
+ * [Pré-requisitos e como executar a aplicação](#pré-requisitos-e-como-executar-a-aplicação)
  * [Backlog Product](#backlog-product) 
  * [Backlog em Story cards](#backlog-em-story-cards)   
  * [Escopo de Recursos](#escopo-de-recursos)
- * [Roadmap]
- * [Tecnologias](#Tecnologias)
+ * [Roadmap](#roadmap)
+ * [Tecnologias](#tecnologias)
  * [Cronograma do API](#cronograma-do-api)
  * [Dev Team](#dev-team)
- * [Licença](#Licença)
+ * [Autora](#autora)
+ * [Licença](#licença)
 
 
 ## Descrição
@@ -36,7 +37,7 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
   1. Documentação do passo a passo do tutorial [aqui](#).
   2. Para o vídeo do tutorial clique [aqui](#).
 
-## Product Backlog 
+## Backlog Product 
 
 ## Backlog em Story cards
 
@@ -77,6 +78,8 @@ Ferramenta para criar promoções de Ecommerce, onde as mecânicas de promoçõe
 ## Dev Team 
 
 Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team). 
+
+## Autora
 
 ## Licença  
 
