@@ -21,7 +21,7 @@
 
 ## Descrição
 
-A definir
+Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ banco de dados e também como são adicionados no carrinho de compras, para conferência e ajuste das quantidades e valores.
 
 ## User Story
   
@@ -35,7 +35,7 @@ A definir
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível lisar os itens escolhidos para conferir e ajusar a quatidade, subtotal e os descontos que refletirão no valor final. |
+| Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
 
 ## Funcionalidades desenvolvidas 
 
