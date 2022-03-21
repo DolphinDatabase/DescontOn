@@ -86,7 +86,7 @@ Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Develop
 </p> 
 <p align="left">
  
-  ![Linkedin Badge](https://img.shields.io/badge/-Beatriz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/beatriz-medeiros-a98396202//)
+ [![Linkedin Badge](https://img.shields.io/badge/-Beatriz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/beatriz-medeiros-a98396202/)](https://www.linkedin.com/in/beatriz-medeiros-a98396202/)
   [![Gmail Badge](https://img.shields.io/badge/-biamedeirosassim@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:biamedeirosassim@gmail.com)](mailto:biamedeirosassim@gmail.com)
 
 ## Licença  
