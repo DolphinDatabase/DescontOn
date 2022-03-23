@@ -4,7 +4,6 @@
 </p>
 <p align="center"> Ferramenta flexível para criações de promoções em E-commerce. </p>
 
-![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)
 
 ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-pink)
 
@@ -75,7 +74,9 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 ![Badge](https://img.shields.io/badge/SQL-blue?style=flat-square&logo=sql)
 ![Badge](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)
 ![Badge](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)<br/>
-<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
+
+![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)
+<!--<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>-->
 
 ## Ilustração
  
