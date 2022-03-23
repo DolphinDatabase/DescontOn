@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://github.com/DolphinDatabase/DescontOn/blob/ae0723a5cdc64e651feb224440760adb710a2965/Imagens/DescontOn.png" height="90" width="380" />
 </p>
-<p align="center"> Ferramenta flexível para criações de promoções em E-commerce </p>
+<p align="center"> Ferramenta flexível para criações de promoções em E-commerce. </p>
 
 ![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)
 
