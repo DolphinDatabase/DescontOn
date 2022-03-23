@@ -79,6 +79,10 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 ## Ilustração
  
  Para acessar o vídeo de demonstração da aplicação em uso, clique [aqui](#).
+ <p align="center">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/77799b686b550953158f53f9e3088283afa17141/Imagens/API.gif">
+</p>
+
  
 ## Cronograma do API
  
