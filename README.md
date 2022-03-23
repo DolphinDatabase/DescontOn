@@ -4,7 +4,7 @@
   <img src="https://github.com/DolphinDatabase/DescontOn/blob/29c778672ea5ac5fc20a4a3a71ca707019fbe360/Imagens/StoryCards.png" height="400" width="430" />
 </p>
 
-> ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-pink)
+> ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-blue)
 
 
 <!--<h1 align="center"> DescontOn </h1>-->
