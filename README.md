@@ -61,19 +61,20 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 ## Tecnologias
 ![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
 <img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
-<a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank"> <img width="37px" height="20px" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Jira.png"/></a>
+<a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank">![Badge](https://img.shields.io/badge/Jira-blue?style=flat-square&logo=jira) </a>
 <img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/><br/>
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
 <img width="55" height="20" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
 <img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
-<img width="50" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Figma.png"/>
-<img width="55" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Oracle.png"/>
-<img width="65" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/OpenIconic.png"/><br/>
-<img width="55" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Maven.png"/>
-<img width="50" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/569e41698aa141d86bd246c79ab2964547c76274/Imagens/Icons/SQL.png"/>
-<img width="65" height="20" src="https://github.com/DolphinDatabase/DescontOn/blob/12151966abe215b11bc8809554b1547a41c50eec/Imagens/Icons/Thymeleaf.png"/><br/>
+![Badge](https://img.shields.io/badge/Figma-lightgray?style=flat-square&logo=figma)
+![Badge](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)
+![Badge](https://img.shields.io/badge/Boxicons-brown?style=flat-square&logo=hackthebox)<br/>
+![Badge](https://img.shields.io/badge/Maven-orange?style=flat-square&logo=apachemaven)
+![Badge](https://img.shields.io/badge/SQL-blue?style=flat-square&logo=sql)
+![Badge](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)
+![Badge](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)<br/>
 <img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>
 
 ## Ilustração
