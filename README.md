@@ -2,9 +2,12 @@
 <p align="center">
   <img src="https://github.com/DolphinDatabase/DescontOn/blob/ae0723a5cdc64e651feb224440760adb710a2965/Imagens/DescontOn.png" height="90" width="380" />
 </p>
-<!--<h1 align="center"> DescontOn </h1>-->
+<p align="center"> Ferramenta flexível para criações de promoções em E-commerce </p>
+
+![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)
 
 ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-pink)
+
 
 ## Tabela de Conteúdos
 
@@ -36,6 +39,16 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
   1. Documentação do passo a passo do tutorial [aqui](#).
   2. Para o vídeo do tutorial clique [aqui](#).
+
+## Features
+
+- [x] Cadastro de Produtos
+- [x] Listar Produtos
+- [x] Adicionar Produtos na Sacola
+- [x] Alterar a Quantidade de Produtos na Sacola
+- [x] Remover Produtos da Sacola
+- [x] Finalizar Compra
+- [ ] Cadastro de Promoções 
 
 ## Backlog Product 
 
