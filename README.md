@@ -1,7 +1,7 @@
 <h1 align="center"> Story Card  </h1>  
 
 <p align="center">
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/29c778672ea5ac5fc20a4a3a71ca707019fbe360/Imagens/StoryCards.png" height="400" width="430" />
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/bbbdf61e975bcee0978780e93efe419f9fdc3b71/Imagens/StoryCards.png" height="400" width="420" />
 </p>
 
 > ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow)
