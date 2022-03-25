@@ -36,8 +36,10 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 
  #### **Como executar** 
   
-  1. Documentação do passo a passo do tutorial [aqui](#).
-  2. Para o vídeo do tutorial clique [aqui](#).
+```bash
+# Clone este repositório
+$ git clone https://github.com/DolphinDatabase/DescontOn
+```
 
 ## Features
 
@@ -113,3 +115,4 @@ Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Develop
 ## Licença  
 
 Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).
+
