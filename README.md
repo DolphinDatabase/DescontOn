@@ -95,6 +95,7 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 | 15/06 às 19h | Feira de Soluções. |
 
 ## Team 
+<a href="https://github.com/beamedeiros" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" target="_blank"></a>
 
 Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team). 
 
