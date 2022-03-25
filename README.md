@@ -17,8 +17,7 @@
  * [Roadmap](#roadmap)
  * [Tecnologias](#tecnologias)
  * [Cronograma do API](#cronograma-do-api)
- * [Dev Team](#dev-team)
- * [Autora](#autora)
+ * [Team](#team)
  * [Licença](#licença)
 
 
@@ -90,24 +89,14 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 | Data | Evento |
 | -------| --------- |
 | 16/03 às 19h  | Project kick-off. |
-| 25/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/tree/Sprint-1). |
+| 24/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/tree/Sprint-1). |
 | 25/04 a 15/05 | [Sprint 2](#). |
 | 16/05 a 05/06 | [Sprint 3](#). |
 | 15/06 às 19h | Feira de Soluções. |
 
-## Dev Team 
+## Team 
 
 Para acessar, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team). 
-
-## Autora
-
-<p align="left">
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/a5bf9ea10099ab809be6ed68694101a4306c7514/Imagens/BeatrizMedeiros.jpg" alt="Sublime's custom image?w=100"height="100" width="100" />
-</p> 
-<p align="left">
- 
- [![Linkedin Badge](https://img.shields.io/badge/-Beatriz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/beatriz-medeiros-a98396202/)](https://www.linkedin.com/in/beatriz-medeiros-a98396202/)
-  [![Gmail Badge](https://img.shields.io/badge/-biamedeirosassim@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:biamedeirosassim@gmail.com)](mailto:biamedeirosassim@gmail.com)
 
 ## Licença  
 
