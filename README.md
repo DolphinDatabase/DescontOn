@@ -29,9 +29,7 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 ## Pré-requisitos e como executar a aplicação
   
  #### **Pré-requisitos** 
-  
-  1. Instalação do **JDK** ou no mínimo **JRE versão 1.8** acesse [aqui](https://www.oracle.com/java/technologies/downloads/).
-  2. Download da aplicação acesse [aqui](#).
+
 
  #### **Como executar** 
   
