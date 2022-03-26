@@ -96,15 +96,18 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 
 ## Team 
 
-<a href="https://github.com/beamedeiros" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" target="_blank"></a>
-<a href="https://github.com/LEANDROMASSAFERA" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/LeandroMassafera.png" target="_blank"></a>
-<a href="https://github.com/gui-akinyele" target="_blank"><img height="65" width="65"  src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" target="_blank"></a>
-<a href="https://github.com/stephani-ss" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/StephaniSoares.png" target="_blank"></a><br/>
-<a href="https://github.com/Borgarelli" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/KauaBorgarelli.png" target="_blank"></a>
-<a href="https://github.com/Jose0588" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/b6926b10f7e45d67139f2420d6490ba39ebc2b08/Imagens/Team/JoseMaria.png" target="_blank"></a>
-<a href="https://github.com/camilaffpacheco" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/CamilaPacheco.png" target="_blank"></a>
-<a href="https://github.com/NeyDiniz" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/NeylksonDiniz.png" target="_blank"></a>
-<a href="https://github.com/pdrMottaS" target="_blank"><img height="65" width="65" src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/PedroMotta.png" target="_blank"></a>
+
+
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/LeandroMassafera.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/StephaniSoares.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/KauaBorgarelli.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/b6926b10f7e45d67139f2420d6490ba39ebc2b08/Imagens/Team/JoseMaria.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/CamilaPacheco.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/NeylksonDiniz.png" height="65" width="65" align="right" target="_blank" ></a>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/PedroMotta.png" height="65" width="65" align="right" target="_blank" ></a>
+
 
 Para mais informações, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team). 
 
