@@ -1,0 +1,28 @@
+Create Table produto (
+	Pro_Id Number (6) Not null,
+	Pro_nome Varchar (30),
+	Pro_categoria varchar (252),
+	Pro_valor Number (8,2),
+	CONSTRAINT pk_Pro Primary key (Pro_Id)
+);
+
+
+Create table compra (
+	Com_Id number (6) not null,
+	Com_Data_Compra date default Sysdate,
+	Com_Valor_Total number (8,2),
+	constraint PK_Com primary key (Com_Id)
+);
+
+
+Create table itens_compra (
+	Ite_Id number (6) not null,
+	Compra_Com_Id number (6),
+   	Produto_Pro_Id number (6),
+	Ite_Quantidade number (6),
+	Ite_Valor_Unitario number (8,2),
+	Ite_Valor_Total number (8,2),
+	constraint pk_Ite_Id primary key (Ite_Id),
+	constraint fk_Ite_Compra foreign key (Compra_Com_Id) references compra (Com_Id),
+    	constraint fk_Pro_Id foreign key (Produto_Pro_Id) references produto (Pro_Id)
+);
