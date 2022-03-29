@@ -11,8 +11,8 @@
 
  * [Descrição](#descrição)
  * [Pré-requisitos e como executar a aplicação](#pré-requisitos-e-como-executar-a-aplicação)
- * [Backlog Product](#backlog-product) 
- * [Backlog em Story cards](#backlog-em-story-cards)   
+ * [Backlog do Produto](#backlog-do-produto) 
+ * [Backlog em Story Cards](#backlog-em-story-cards)   
  * [Escopo de Recursos](#escopo-de-recursos)
  * [Roadmap](#roadmap)
  * [Tecnologias](#tecnologias)
@@ -47,9 +47,9 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 - [x] Finalizar Compra
 - [ ] Cadastro de Promoções 
 
-## Backlog Product 
+## Backlog do Produto
 
-## Backlog em Story cards
+## Backlog em Story Cards
 
 ## Escopo de Recursos
 
