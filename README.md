@@ -49,6 +49,17 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 
 ## Backlog do Produto
 
+- [x] (EPIC) SPRINT 1 - Base da ferrramenta
+- [x] Cadastro de Produtos
+- [x] Sacola de Compras
+- [ ] (EPIC) SPRINT 2 - Cadastro de Promoções
+- [ ] Tipo de Desconto: Progressivo
+- [ ] Tipo de Desconto: Brinde
+- [ ] Tipo de Desconto: Menor Valor
+- [ ] (EPIC) SPRINT 3 - Recomendar Produtos
+- [ ] Categoria
+- [ ] Data de Compra
+
 ## Backlog em Story Cards
 
 ## Escopo de Recursos
