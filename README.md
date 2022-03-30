@@ -49,14 +49,14 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 
 ## Backlog do Produto
 
-- [x] (**EPIC)** SPRINT 1 - Base da ferrramenta
+- [x] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 1** : Base da ferrramenta
 - [x] Cadastro de Produtos
 - [x] Sacola de Compras
-- [ ] (**EPIC)** SPRINT 2 - Cadastro de Promoções
+- [ ] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 2** : Cadastro de Promoções
 - [ ] Tipo de Desconto: Progressivo
 - [ ] Tipo de Desconto: Brinde
 - [ ] Tipo de Desconto: Menor Valor
-- [ ] (**EPIC)** SPRINT 3 - Recomendar Produtos
+- [ ] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 3** : Recomendar Produtos
 - [ ] Categoria
 - [ ] Mais Vendidos
 
