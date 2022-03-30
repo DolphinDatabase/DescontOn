@@ -45,6 +45,7 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 - [x] Alterar a Quantidade de Produtos na Sacola
 - [x] Remover Produtos da Sacola
 - [x] Finalizar Compra
+- [ ] Seleção do Tipo de Promoção
 - [ ] Cadastro de Promoções 
 
 ## Backlog do Produto
