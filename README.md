@@ -68,24 +68,35 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 ## Roadmap
 
 ## Tecnologias
-![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
-<img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
+
+#### **Organização e Comunicação**
 <a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank">![Badge](https://img.shields.io/badge/Jira-blue?style=flat-square&logo=jira) </a>
+<img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
 <img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+![Badge](https://img.shields.io/badge/Figma-lightgray?style=flat-square&logo=figma)
+
+#### **Linguagens**
+![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
 <img width="55" height="20" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
-<img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
-![Badge](https://img.shields.io/badge/Figma-lightgray?style=flat-square&logo=figma)
-![Badge](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)
-![Badge](https://img.shields.io/badge/Boxicons-brown?style=flat-square&logo=hackthebox)<br/>
-![Badge](https://img.shields.io/badge/Maven-orange?style=flat-square&logo=apachemaven)
 ![Badge](https://img.shields.io/badge/SQL-blue?style=flat-square&logo=sql)
-![Badge](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)
-![Badge](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)<br/>
+![Badge](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)
 
-![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)
+#### **Framework**
+![Badge](https://img.shields.io/badge/Boxicons-brown?style=flat-square&logo=hackthebox)
+![Badge](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/><br/>
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+
+
+#### **Bibliotecas**
+<img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
+
+#### **SGBD**
+![Badge](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)
+
+
+
 <!--<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>-->
 
 ## Ilustração
@@ -117,12 +128,12 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 <a href="https://github.com/Jose0588" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/b6926b10f7e45d67139f2420d6490ba39ebc2b08/Imagens/Team/JoseMaria.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/camilaffpacheco" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/CamilaPacheco.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/NeyDiniz" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/NeylksonDiniz.png" height="65" width="65" align="left" target="_blank" ></a>
-<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/PedroMotta.png" height="65" width="65" align="left" target="_blank" ></a>
-<br></br>
+<a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/PedroMotta.png" height="65" width="65" align="left" target="_blank" ></a> <br/>
 <br></br>
 Para mais informações, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team).
+<br></br>
 
 ## Licença  
 
-Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).
-
+Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).<br/>
+<a href="https://github.com/dolphindatabase" target="_blank" align="center">![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)</a>
