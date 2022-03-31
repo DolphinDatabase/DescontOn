@@ -41,6 +41,7 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 
 - [x] Cadastro de Produtos
 - [x] Listar Produtos
+- [x] Remover Produtos Cadastrados
 - [x] Adicionar Produtos na Sacola
 - [x] Alterar a Quantidade de Produtos na Sacola
 - [x] Remover Produtos da Sacola
