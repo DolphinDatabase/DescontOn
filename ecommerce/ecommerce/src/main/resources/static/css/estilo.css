@@ -234,7 +234,8 @@ a {
     }
 
     .show {
-        width: calc(var(--nav-width) + 156px)
+        width: calc(var(--nav-width) + 156px);
+     
     }
 
     .body-pd {
@@ -295,6 +296,13 @@ a {
 	color:white;
 	border: none;
 	
+	
+}
+
+.bx.bxs-x-circle{
+	color: white;
+	border: none;
+  	outline: none;
 }
 
 }
