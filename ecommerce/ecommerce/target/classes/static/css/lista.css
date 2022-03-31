@@ -255,7 +255,7 @@ a {
 	background-color:#FF7299;
  	
 }
-.btn.btn-primary.btn-md{
+.btn.btn-primary.btn-md, .btn.btn-confirmar{
 	background-color:#EA3D6B;
 	border: none;
   	outline: none;
