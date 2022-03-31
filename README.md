@@ -1,7 +1,7 @@
 <h1 align="center"> Story Card  </h1>  
 
 <p align="center">
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/bbbdf61e975bcee0978780e93efe419f9fdc3b71/Imagens/StoryCards.png" height="400" width="420" />
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/9763dfbbea0d2fbb7c021c066b858674c4e6f128/Imagens/STORIES%20SPRINT%201.png" height="850" width="950" />
 </p>
 
 ![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow?style=flat-square&logo=)
@@ -32,13 +32,44 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Cadastrar produtos no servidor/banco de dados. | Seja possível identificar o produto e suas especificações como nome, categoria e valor. |
+| Assistente de cadastro de um E-commerce. | Visualizar os produtos que foram cadastrados em uma lista. | Seja possível conferir as informações do produto e adicioná-los na sacola. |
 
-  #### **Story 2 - Carrinho de Compras**
+ #### **Story 2 - Listagem de Produtos**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Assistente de cadastro de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
+
+  #### **Story 3 - Carrinho de Compras**
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
+
+ #### **Story 4 - Alterar a Quatidade de Produtos na Sacola**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Usuário de um E-commerce. | Alterar a quantidade de produtos na sacola. | Seja possível comprar mais itens sem precisar retornar a lista de produtos. |
+
+ #### **Story 5 - Finalizar uma Compra**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Usuário de um E-commerce. | Finalizar uma compra. | Seja possível efetuar seu fechamento. |
+
+#### **Story 6 - Remover um Item da Sacola**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Usuário de um E-commerce. | Remover um item da sacola. | Exista a possibilidade de exclusão, caso não deseje mais comprar determinado produto. |
+
+#### **Story 7 - Remover um Produto Cadastrado**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Assistente de cadastro de um E-commerce. | Remover um item cadastrado. | exista a possibilidade de exclusão, caso as informações do produto estejam erradas ou não  seja mais vendido. |
+
 
 ## Funcionalidades desenvolvidas 
 
