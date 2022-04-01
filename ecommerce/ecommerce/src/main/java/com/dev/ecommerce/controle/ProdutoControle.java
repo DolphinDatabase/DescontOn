@@ -34,6 +34,13 @@ public class ProdutoControle {
 		return mv;
 	}
 	
+
+	@GetMapping("/administrativo/produtos/editar/{id}")
+	public ModelAndView editar(@PathVariable("id") Long id) {
+		Optional<Produto> produto = produtoRepositorio.findById(id);
+		return cadastrar(produto.get());
+	}
+	
 	@GetMapping("/administrativo/produtos/remover/{id}")
 	public ModelAndView remover(@PathVariable("id") Long id) {
 		Optional<Produto> produto = produtoRepositorio.findById(id);

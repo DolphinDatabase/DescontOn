@@ -13,6 +13,7 @@
 	<!-- Custom styles for this template -->
 	<link href="/css/lista.css" rel="stylesheet" />
 	
+	
 </head>
 	
 	<body id="body-pd">
@@ -48,6 +49,8 @@
 							<th>Categoria</th>
 						    <th>Valor de Venda</th>
 						    <th></th>
+						    <th></th>
+						    <th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -61,6 +64,11 @@
 							<td colspan="2"><a class="btn btn-info btn-sm" th:href="@{/adicionarSacola/{id}(id=${produto.proId})}"
 								role="button"> <span class="bx bxs-shopping-bag" title="Adicionar na Sacola"
 									aria-hidden="true"></span>
+									
+							<td colspan="2"><a class="btn btn-info btn-sm editar"
+								th:href="@{/administrativo/produtos/editar/{id}(id=${produto.proId})}"
+								role="button"> <span class="bx bx-edit" title="Editar"
+									aria-hidden="true"></span>		  
 
 							</a>
 							<a class="btn btn-sm btn-danger" data-toggle="modal"
@@ -112,7 +120,7 @@
 		</div>
 	</footer> 
 	<!-- end footer -->
-<!-- Bootstrap core JavaScript
+	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 		<script src="/webjars/jquery/jquery.min.js"></script>

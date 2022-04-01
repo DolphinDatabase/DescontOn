@@ -301,4 +301,18 @@ a {
   	outline: none;
 }
 
+.btn.btn-info.btn-sm.editar{
+	background-color:#2097D8;
+	color: white;
+	border: none;
+  	outline: none;
+}
+
+.btn.btn-info.btn-sm.editar:hover{
+	background-color:#53BAF3;
+	color: white;
+	border: none;
+  	outline: none;
+}
+
 }
