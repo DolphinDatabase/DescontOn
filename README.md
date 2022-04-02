@@ -68,8 +68,13 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Remover um item cadastrado. | exista a possibilidade de exclusão, caso as informações do produto estejam erradas ou não  seja mais vendido. |
+| Assistente de cadastro de um E-commerce. | Remover um item cadastrado. | Exista a possibilidade de exclusão, caso as informações do produto estejam erradas ou não  seja mais vendido. |
 
+#### **Story 8 - Editar um Produto Cadastrado**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Assistente de cadastro de um E-commerce. | Editar um produto cadastrado. | Seja possível alterar as informações do produto, como nome e valor. |
 
 ## Funcionalidades desenvolvidas 
 
