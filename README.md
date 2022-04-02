@@ -103,7 +103,7 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 #### **SGBD**
 ![Badge](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)
 
-#### **Plataforma*
+#### **Plataforma**
 ![Badge](https://img.shields.io/badge/Docker-gray?style=flat-square&logo=docker)
 
 <!--<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>-->
