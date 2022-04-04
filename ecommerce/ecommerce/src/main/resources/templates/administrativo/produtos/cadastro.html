@@ -11,7 +11,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
 	<!-- Custom styles for this template -->
-	<link href="/css/estilo.css" rel="stylesheet" />
+	<link href="/css/geral.css" rel="stylesheet" />
 	
 </head>
 	
@@ -41,25 +41,30 @@
 	<section class="layout-content">
 		<section class="layout-content">	
 			<div class="container" id="cadastro">
-				<form action="/administrativo/produtos/salvar" th:object="${produto}" method="POST">
+				<form class="needs-validation" novalidate action="/administrativo/produtos/salvar" th:object="${produto}" method="POST">
 					<div class="form-row">
 					
 					    <!-- Nome -->
 						<div class="form-group col-md-6">
 							<label for="nome">Nome do Produto</label> <input type="text"
 								class="form-control" id="proNome" placeholder="Nome"
-								autofocus="autofocus" th:field="*{proNome}" value=""/>
-							<div class="invalid-feedback"></div>
+								autofocus="autofocus" th:field="*{proNome}" value="" required/>
+						      <div class="invalid-feedback">
+       						  Por favor, informe o nome do produto.
+     						  </div>
 						</div>
 						</div>
 						
 						<!-- Categoria -->
 						<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="salario">Categoria</label> <input type="text"
-								class="form-control" id="proCategoria" placeholder="Categoria"
-								data-mask-reverse="true" th:field="*{proCategoria}" value=""/>
-							<div class="invalid-feedback"></div>
+							<label for="salario">Categoria</label> 
+								<select  class="form-select" aria-label="Default select example" th:field="*{proCategoria}" >
+								
+   						    	<option th:value="Cosméticos" th:text="Cosméticos"></option>
+   						 		<option th:value="Perfumaria" th:text="Perfumaria"></option>
+   								<option th:value="Saude" th:text="Saúde"></option>
+								</select>
 						</div>
 					</div>
 					
@@ -68,14 +73,14 @@
 						<div class="form-group col-md-6">
 							<label for="salario">Valor de Venda</label> <input type="text"
 								class="form-control" id="proValor" placeholder="Valor de Venda"
-								data-mask-reverse="true" th:field="*{proValor}" value="" />
-							<div class="invalid-feedback"></div>
+								data-mask-reverse="true" th:field="*{proValor}" value="" required/>
+							<div class="invalid-feedback">Por favor, insira o valor do produto.</div>
 						</div>
 					</div>
 
 				    <!-- botao cadastar, com evento -->
 					<input type="hidden" id="proId" th:field="*{proId}" value="" />
-					<button type="submit"  onclick="cadastrar()" class="btn btn-primary btn-sm">Cadastrar</button>
+					<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
 				</form>
 			</div>
 		</section>

@@ -215,7 +215,7 @@ a {
     }
 
     .header {
-		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
     }
@@ -234,6 +234,10 @@ a {
         padding: 1rem 1rem 0 0
     }
 
+    .show {
+        width: calc(var(--nav-width) + 156px);
+     
+    }
 
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
@@ -256,7 +260,7 @@ a {
 	background-color:#FF7299;
  	
 }
-.btn.btn-primary.btn-md, .btn.btn-confirmar{
+.btn.btn-primary.btn-md{
 	background-color:#EA3D6B;
 	border: none;
   	outline: none;
@@ -297,20 +301,6 @@ a {
 }
 
 .bx.bxs-x-circle{
-	color: white;
-	border: none;
-  	outline: none;
-}
-
-.btn.btn-info.btn-sm.editar{
-	background-color:#2097D8;
-	color: white;
-	border: none;
-  	outline: none;
-}
-
-.btn.btn-info.btn-sm.editar:hover{
-	background-color:#53BAF3;
 	color: white;
 	border: none;
   	outline: none;

@@ -21,11 +21,247 @@
 
 }
 
+#hero {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 60vh;
+  background: url("/image/Inicio.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#hero:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  z-index: 2;
+}
+#hero h1 {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#hero h1 span {
+  border-bottom: 4px solid #EA3D6B;
+}
+#hero h2 {
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+#hero .btn-get-started {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #EA3D6B;
+  text-transform: uppercase;
+}
+#hero .btn-get-started:hover {
+  background: #FF7299;
+}
+@media (max-width: 992px) {
+  #hero {
+    height: calc(100vh - 70px);
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# What We Do
+--------------------------------------------------------------*/
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FF7299;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.what-we-do .icon-box {
+  text-align: center;
+  padding: 30px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.what-we-do .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #e5e5e5;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+.what-we-do .icon-box .icon i {
+  color:#FF7299;
+  font-size: 28px;
+}
+.what-we-do .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.what-we-do .icon-box h4 a {
+  color: #384046;
+  transition: ease-in-out 0.3s;
+}
+.what-we-do .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.what-we-do .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+.what-we-do .icon-box:hover h4 a, .what-we-do .icon-box:hover .icon i {
+  color: #EA3D6B;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  transition: ease-in-out 0.3s;
+}
+.services .icon-box i {
+  float: left;
+  color: #FF7299;
+  font-size: 40px;
+  line-height: 0;
+}
+.services .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.services .icon-box h4 a {
+  color: #384046;
+  transition: 0.3s;
+}
+.services .icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.services .icon-box:hover {
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+}
+.services .icon-box:hover h4 a {
+  color: #FF7299;
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #F5F5F5
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #EA3D6B;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+
 /*
  * Footer
  */
 .layout-footer{
-	position: fixed;
+	position: relative;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -79,7 +315,7 @@
 body {
     position: relative;
     margin: var(--header-height) 0 0 0;
-    padding: 0 1rem;
+    padding: 0 0rem;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     transition: .5s
@@ -210,11 +446,12 @@ a {
 
 @media screen and (min-width: 768px) {
     body {
-        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        margin: calc(var(--header-height) - 2rem)  0rem -10rem -4rem;
         padding-left: calc(var(--nav-width) + 2rem)
     }
 
     .header {
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
     }
