@@ -78,35 +78,34 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 ## Tecnologias
 
 #### **Organização e Comunicação**
-<a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank">![Badge](https://img.shields.io/badge/Jira-blue?style=flat-square&logo=jira) </a>
-<img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/><br/>
-![Badge](https://img.shields.io/badge/Figma-lightgray?style=flat-square&logo=figma)
+<a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank">![Jira](https://img.shields.io/badge/Jira-blue?style=flat-square&logo=jira) </a>
+<a href="https://slack.com/intl/pt-br/" target="_blank"><img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/></a>
+<a href="https://www.notion.so/pt-br" target="_blank"><img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/></a><br/>
+<a href="https://www.figma.com" target="_blank">![Figma](https://img.shields.io/badge/Figma-lightgray?style=flat-square&logo=figma)
+</a><br/>
 
 #### **Linguagens**
-![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)
+<a href="https://www.java.com/pt-BR/download/help/java8_pt-br.html" target="_blank">![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)</a>
 <img width="55" height="20" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
-![Badge](https://img.shields.io/badge/SQL-blue?style=flat-square&logo=sql)
-![Badge](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)
+![SQL](https://img.shields.io/badge/SQL-blue?style=flat-square&logo=sql)
+<a href="https://www.javascript.com" target="_blank">![JS](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)</a>
 
 #### **Framework**
-![Badge](https://img.shields.io/badge/Boxicons-brown?style=flat-square&logo=hackthebox)
-![Badge](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
-
+<a href="https://boxicons.com" target="_blank">![Boxicons](https://img.shields.io/badge/Boxicons-brown?style=flat-square&logo=hackthebox)</a>
+<a href="https://www.thymeleaf.org" target="_blank">![Thymeleaf](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)</a>
+<a href="https://getbootstrap.com" target="_blank"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/></a><br/>
+<a href="https://spring.io/projects/spring-boot" target="_blank"><img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/></a>
 
 #### **Bibliotecas**
-<img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
+<a href="https://jquery.com" target="_blank"><img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/></a>
 
 #### **SGBD**
-![Badge](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)
+<a href="https://www.oracle.com/br/downloads/">![Oracle](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)</a>
+
 
 #### **Plataforma**
-![Badge](https://img.shields.io/badge/Docker-gray?style=flat-square&logo=docker)
-
-<!--<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>-->
+<a href="https://www.docker.com">![Docker](https://img.shields.io/badge/Docker-gray?style=flat-square&logo=docker)</a>
 
 #### **Board**
 Para acessar nosso Board escaneie o *QR Code* abaixo:
