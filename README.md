@@ -109,7 +109,10 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 <!--<img width="120" height="100" src="https://forthebadge.com/images/badges/made-with-java.svg"/>-->
 
 #### **Board**
-
+Para acessar nosso Board escaneie o *QR Code* abaixo:
+<p align="left">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/4d4fa096757fc676386f115b4d18f4a2106f5464/Imagens/QR%20CODE.png" height="150" width="150"/>
+</p>
 
 ## Ilustração
  
