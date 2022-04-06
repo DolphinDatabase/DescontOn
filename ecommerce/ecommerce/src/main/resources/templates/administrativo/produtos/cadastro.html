@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Cadastrar Produto</title>
+	<link rel="icon" href="/image/icone.png" />
+
+	<!-- Bootstrap core CSS -->
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<!-- Custom styles for this template -->
+	<link href="/css/geral.css" rel="stylesheet" />
+	
+</head>
+	
+	<body id="body-pd">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="/js/geral.js"></script>
+    <header class="header" id="header">
+        <div class="header_toggle" > <i class='bx bx-menu' id="header-toggle"></i>&nbsp;&nbsp;Cadastrar Produto</div>
+    </header>
+    
+        <!-- NAV-BAR -->
+        <div class="l-navbar" id="nav-bar">   
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"> <i class='bx bx-gift nav_logo-icon'></i> <span class="nav_logo-name">DescontOn</span> </a>
+                <div class="nav_list"> <a href="/administrativo/produtos/cadastrar" class="nav_link active"> <i class='bx bx-plus-circle nav_icon'></i> <span class="nav_name">Cadastrar Produtos</span> </a> 
+                <a href="/administrativo/produtos/listar" class="nav_link"> <i class='bx bx-list-ul nav_icon'></i> <span class="nav_name">Listar Produtos</span> </a>
+                 <a href="/sacola" class="nav_link"> <i class='bx bx-shopping-bag nav_icon'></i> <span class="nav_name">Sacola</span> </a> 
+                 </div>
+            </div> <a href="/administrativo" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Sair</span> </a>
+        </nav>
+    </div>	
+    </div>
+    <!-- end nav bar -->
+	
+	<!-- FORMULARIO DE CADASTRO -->
+	<div class="layout-main">	
+	<section class="layout-content">
+		<section class="layout-content">	
+			<div class="container" id="cadastro">
+				<form class="needs-validation" novalidate action="/administrativo/produtos/salvar" th:object="${produto}" method="POST">
+					<div class="form-row">
+					
+					    <!-- Nome -->
+						<div class="form-group col-md-6">
+							<label for="nome">Nome do Produto</label> <input type="text"
+								class="form-control" id="proNome" placeholder="Nome"
+								autofocus="autofocus" th:field="*{proNome}" value="" required/>
+						      <div class="invalid-feedback">
+       						  Por favor, informe o nome do produto.
+     						  </div>
+						</div>
+						</div>
+						
+						<!-- Categoria -->
+						<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="salario">Categoria</label> 
+								<select  class="form-select" aria-label="Default select example" th:field="*{proCategoria}" >
+								
+   						    	<option th:value="Cosméticos" th:text="Cosméticos"></option>
+   						 		<option th:value="Perfumaria" th:text="Perfumaria"></option>
+   								<option th:value="Saude" th:text="Saúde"></option>
+								</select>
+						</div>
+					</div>
+					
+					<!-- Valor -->
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="salario">Valor de Venda</label> <input type="text"
+								class="form-control" id="proValor" placeholder="Valor de Venda"
+								data-mask-reverse="true" th:field="*{proValor}" value="" required/>
+							<div class="invalid-feedback">Por favor, insira o valor do produto.</div>
+						</div>
+					</div>
+
+				    <!-- botao cadastar, com evento -->
+					<input type="hidden" id="proId" th:field="*{proId}" value="" />
+					<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
+				</form>
+			</div>
+		</section>
+		<!-- end formulario -->
+		
+		<!-- FOOTER -->
+		<footer class="layout-footer">
+		<div class="footer-repo">
+			<a title="website repository" href="https://github.com/DolphinDatabase/DescontOn">Made with ❤ by DolphinDatabase</a>
+		</div>
+	</footer>
+	<!-- end footer --> 
+	
+</body>
+</html>
