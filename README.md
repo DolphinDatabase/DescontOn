@@ -24,7 +24,7 @@
 
 ## Descrição
 
-Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ banco de dados e também como são adicionados no carrinho de compras, para conferência e ajuste das quantidades e valores.
+Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ banco de dados e também como são adicionados no carrinho de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e da visualização prática e intuitiva dos produtos cadastrados através da listagem que possui um filtro para que seja possível diferenciar quais produtos estão disponíveis e quais produtos estão arquivados.
 
 ## User Story
   
