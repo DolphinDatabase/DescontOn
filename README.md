@@ -77,6 +77,16 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 | Assistente de cadastro de um E-commerce. | Editar um produto cadastrado. | Seja possível alterar as informações do produto, como nome e valor. |
 
 ## Funcionalidades desenvolvidas 
+- [x] Cadastro de Produtos
+- [x] Listar Produtos
+- [x] Remover Produtos Cadastrados
+- [x] Arquivar e Desarquivar Produtos Cadastrados (para armazenar dados dos produtos que já foram comprados)
+- [x] Filtrar a Listagem de Produtos (produtos disponíveis ou arquivados)
+- [x] Editar um Produto Cadastrado
+- [x] Adicionar Produtos na Sacola
+- [x] Alterar a Quantidade de Produtos na Sacola
+- [x] Remover Produtos da Sacola
+- [x] Finalizar Compra
 
 ## Ilustração das funcionalidades
 
