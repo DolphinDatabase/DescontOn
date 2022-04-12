@@ -42,6 +42,8 @@ $ git clone https://github.com/DolphinDatabase/DescontOn
 - [x] Cadastro de Produtos
 - [x] Listar Produtos
 - [x] Remover Produtos Cadastrados
+- [x] Arquivar e Desarquivar Produtos Cadastrados (para armazenar dados dos produtos que já foram comprados)
+- [x] Filtrar a Listagem de Produtos (produtos disponíveis ou arquivados)
 - [x] Editar um Produto Cadastrado
 - [x] Adicionar Produtos na Sacola
 - [x] Alterar a Quantidade de Produtos na Sacola
