@@ -76,6 +76,12 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. | Editar um produto cadastrado. | Seja possível alterar as informações do produto, como nome e valor. |
 
+#### **Story 9 - Filtrar Produtos Disponíveis e Arquivados**
+
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Assistente de cadastro de um E-commerce. |  filtrar os produtos disponíveis ou arquivados.|  seja possível visualizar quais produtos estão disponíveis e quais produtos estão arquivados. |
+
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
 - [x] Listar Produtos
