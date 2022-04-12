@@ -21,7 +21,6 @@ public class DataConfiguration {
 		dataSource.setPassword("stephani");
 		return dataSource;
 	}
-	
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter() {
 		HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();

@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html xmlns:layout="http://www.w3.org/1999/xhtml">
-
+<meta charset="UTF-8"/>
 <head>
+
     <title>Cadastrar Produto</title>
 	<link rel="icon" href="/image/icone.png" />
 
@@ -58,10 +59,10 @@
 						<!-- Categoria -->
 						<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="salario">Categoria</label> 
+							<label for="categoria">Categoria</label> 
 								<select  class="form-select" aria-label="Default select example" th:field="*{proCategoria}" >
 								
-   						    	<option th:value="Cosméticos" th:text="Cosméticos"></option>
+   						    	<option th:value="Cosmeticos" th:text="Cosméticos"></option>
    						 		<option th:value="Perfumaria" th:text="Perfumaria"></option>
    								<option th:value="Saude" th:text="Saúde"></option>
 								</select>
@@ -71,7 +72,7 @@
 					<!-- Valor -->
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="salario">Valor de Venda</label> <input type="text"
+							<label for="valor">Valor de Venda</label> <input type="text"
 								class="form-control" id="proValor" placeholder="Valor de Venda"
 								data-mask-reverse="true" th:field="*{proValor}" value="" required/>
 							<div class="invalid-feedback">Por favor, insira o valor do produto.</div>

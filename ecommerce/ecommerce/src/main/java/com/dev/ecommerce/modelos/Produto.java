@@ -27,5 +27,6 @@ public class Produto  {
 	private String proNome;
 	private Double proValor;
 	private String proCategoria;
+	private Integer proStatus=0;
 	
 }

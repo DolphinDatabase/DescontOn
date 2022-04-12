@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:layout="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8"/>
 
 <head>
     <title>Lista de Produtos</title>
@@ -13,11 +14,12 @@
 	<!-- Custom styles for this template -->
 	<link href="/css/geral.css" rel="stylesheet" />
 	
-	
 </head>
-	
+
 	<body id="body-pd">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/geral.js"></script>
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>&nbsp;&nbsp;Lista de Produtos</div>
@@ -39,6 +41,10 @@
 
 		<!-- TABELA -->
 		<div class="container">
+			<select name="op" id="op" class="form-select mb-2" onchange="changeTable()">
+				<option value="0">Disponível</option>
+				<option value="1">Arquivado</option>
+			  </select>
 			<div class="table-responsive">
 				<table class="table table-striped table-hover table-sm">
 					<thead>
@@ -53,10 +59,10 @@
 						    <th></th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody id="disp">
 					
 					    <!-- itens da tabela -->
-						<tr th:each="produto : ${listaProdutos}">
+						<tr th:each="produto : ${produtos}" th:if="${produto.proStatus == 0}">
 							<td th:text="${produto.proId}"></td>
 							<td th:text="${produto.proNome}"></td>
                             <td th:text="${produto.proCategoria}"></td>
@@ -65,17 +71,13 @@
 								role="button"> <span class="bx bxs-shopping-bag" title="Adicionar na Sacola"
 									aria-hidden="true"></span>
 									
-							<td colspan="2"><a class="btn btn-info btn-sm editar"
-								th:href="@{/administrativo/produtos/editar/{id}(id=${produto.proId})}"
-								role="button"> <span class="bx bx-edit" title="Editar"
-									aria-hidden="true"></span>		  
-
-							</a>
-							<a class="btn btn-sm btn-danger" data-toggle="modal"
-								data-target="#modal-warning"
-								th:attr="data-target='#modal-warning'+${produto.proId }"><span
-									class="bx bxs-x-circle" title="Remover" aria-hidden="true"></span></a>
-							
+							<td>
+								<a class="btn btn-info btn-sm editar" th:href="@{/administrativo/produtos/editar/{id}(id=${produto.proId})}" role="button"> 
+									<span class="bx bx-edit" title="Editar" aria-hidden="true"></span>		  
+								</a>
+								<a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-warning" th:attr="data-target='#modal-warning'+${produto.proId }">
+									<span class="bx bxs-x-circle" title="Remover" aria-hidden="true"></span>
+								</a>
 								<div class="modal fade"
 									th:id="modal-warning+${produto.proId}" tabindex="-1" role="dialog" aria-labelledby="modal-warningLabel" aria-hidden="true">
 									<div class="modal-dialog"  role="document">
@@ -96,21 +98,59 @@
 											<div class="modal-footer">
 												<button type="button" class="btn btn-outline" data-dismiss="modal">Fechar</button>
 												<a type="button" class="btn btn-secondary"
-													th:href="@{/administrativo/produtos/remover/{id}(id=${produto.proId})}"><i
+													th:href="@{/administrativo/produtos/arquivar/{id}(id=${produto.proId})}"><i
 													class="fa fa-check"></i>&nbsp;Sim</a>
 											</div>
 										</div>
 									</div>
 								</div>
-								</td>
+							</td>
 						</tr>
 					</tbody>
-				
+					<tbody id="arqui" style="display: none;">
+					
+					    <!-- itens da tabela -->
+						<tr th:each="produto : ${produtos}" th:if="${produto.proStatus == 1}">
+							<td th:text="${produto.proId}"></td>
+							<td th:text="${produto.proNome}"></td>
+                            <td th:text="${produto.proCategoria}"></td>
+							<td th:text="${produto.proValor}"></td>	
+							<td colspan="3">
+								<a class="btn btn-info btn-sm editar" data-toggle="modal" data-target="#modal-warning" th:attr="data-target='#modal-warning'+${produto.proId }">
+									<span class="bx bx-upload" title="desarquivar" aria-hidden="true"></span>
+								</a>
+								<div class="modal fade"
+									th:id="modal-warning+${produto.proId}" tabindex="-1" role="dialog" aria-labelledby="modal-warningLabel" aria-hidden="true">
+									<div class="modal-dialog"  role="document">
+										<div class="modal-content" >
+											<div class="modal-header">
+											<h5 class="modal-title" id="modal-warning">Desarquivar&nbsp;</h5>
+											<h5 class="modal-title" id="modal-warning" th:text="${produto.proNome}"></h5>
+											
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												
+											</div>
+											<div class="modal-body">
+												<h3 >Deseja realmente desarquivar o Produto?</h3>		
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-outline" data-dismiss="modal">Fechar</button>
+												<a type="button" class="btn btn-secondary"
+													th:href="@{/administrativo/produtos/arquivar/{id}(id=${produto.proId})}"><i
+													class="fa fa-check"></i>&nbsp;Sim</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
 			</div>
 		</div>
 	</section>
-
-
 	<!-- end tabela -->
 	
 		<!-- FOOTER -->
@@ -120,14 +160,6 @@
 		</div>
 	</footer> 
 	<!-- end footer -->
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-		<script src="/webjars/jquery/jquery.min.js"></script>
-	
-
-  		
-	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
