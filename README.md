@@ -88,6 +88,8 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 - [x] Remover Produtos da Sacola
 - [x] Finalizar Compra
 
+ Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/v1.0.0).
+
 ## Ilustração das funcionalidades
 
 ## Benefícios
