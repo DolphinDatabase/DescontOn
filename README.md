@@ -46,7 +46,7 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 | ------- | ------- | ------- |
 | Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
 
- #### **Story 4 - Alterar a Quatidade de Produtos na Sacola**
+ #### **Story 4 - Alterar a Quantidade de Produtos na Sacola**
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
