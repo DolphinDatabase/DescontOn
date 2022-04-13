@@ -40,7 +40,7 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
 
-  #### **Story 3 - Carrinho de Compras**
+  #### **Story 3 - Sacola de Compras**
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
