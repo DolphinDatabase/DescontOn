@@ -94,25 +94,7 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 - [x] Remover Produtos da Sacola
 - [x] Finalizar Compra
 
- Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/v1.0.0).
- 
- ## Informações Importantes
-**Cadastro de Produtos**
-- Necessário selecionar a categoria do produto e informar o nome e  valor de venda
-- O cadastro de um produto só é efetuado quando todos os campos são preenchidos, o sistema informa quais campos faltam ser preenchidos e também quando um cadastro é efetuado com sucesso
-- O código (ID) do produto é gerado automaticamente
-
-**Remover Produtos**
-- Não é possível remover produtos que já foram comprados, nesse caso ao tentar remove-lo, será arquivado e ficará disponível na listagem de produtos arquivados
-
-**Desarquivar Produtos**
-- Para desarquivar um produto é necessário acessar os produtos arquivados através do filtro de listagem
-
-**Finalizar Compra**
-- É necessário adicionar itens na sacola para finalizar uma compra, caso contrário o sistema exibirá um alerta ("Não foi possível finalizar a compra")
-- Ao finalizar uma compra, a ferramenta verifica se o produto está disponível e se as informações essenciais como Nome e Valor não sofreram alterações (funcionalidade editar produto). Exibindo 4 possíveis alertas ("Produto não existe", "Produto não está disponível", "O Valor do Produto foi alterado" ou "O nome do Produto alterado"), com o ID de cada item que se encaixa nos casos mencionados anteriormente
-- Em casos de erro ao finalizar a compra, onde é exibido um alerta ("Não foi possível finalizar a compra"), o sistema esvazia a sacola de compras
-
+ Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
 
 ## Ilustração das funcionalidades
 
