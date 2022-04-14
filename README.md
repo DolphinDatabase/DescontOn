@@ -98,9 +98,4 @@ Nessa sprint apresentaremos como foi feito o cadastro dos produtos no servidor/ 
 
 ## Ilustração das funcionalidades
 
-## Benefícios
-* Controle
-* Agilidade
-* Intuitivo
-
 ## Gráfico de Burndown
