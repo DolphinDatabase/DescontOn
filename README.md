@@ -28,13 +28,26 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 ## Pré-requisitos e como executar a aplicação
   
  #### **Pré-requisitos** 
-
+ 
+Instalação do [Docker](https://docs.docker.com/desktop/windows/install/) e [Java](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-E3C75F92-D3B2-421D-A9BE-933C15F7CD1B)
 
  #### **Como executar** 
   
 ```bash
-# Clone este repositório
-$ git clone https://github.com/DolphinDatabase/DescontOn
+# DOCKER
+docker pull cembranelli/descontondatabase:1.0
+
+docker run -d -it --name oracle-container -p 1521:1521 cembranelli/descontondatabse:1.0
+
+docker exec -it oracle-container /bin/bash -l -c "sqlplus / as sysdba"
+
+connect sys as sysdba;
+
+alter session set "_ORACLE_SCRIPT"=true;
+
+create user ADMIN identified by ADMIN;
+
+GRANT ALL PRIVILEGES TO ADMIN;
 ```
 
 ## Features
