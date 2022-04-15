@@ -119,9 +119,9 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 ## Ilustração
  
  Para acessar o vídeo de demonstração da aplicação em uso, clique [aqui](#).
- <p align="center">
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/77799b686b550953158f53f9e3088283afa17141/Imagens/API.gif">
-</p>
+ 
+ [![TEXTO](https://img.youtube.com/vi/n5GK4uJpNkk&t=1s/0.jpg)](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s)
+
 
  
 ## Cronograma do API
