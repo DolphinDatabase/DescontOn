@@ -187,46 +187,66 @@ Para acessar nosso *Roadmap*, clique [aqui](https://dolphin-database.atlassian.n
 
 ## Tecnologias
 
-#### **Organização e Comunicação**
+<details><summary>Organização e Comunicação</summary>
+  
 <a href="https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1" target="_blank">![Jira](https://img.shields.io/badge/Jira-blue?style=flat-square&logo=jira) </a>
 <a href="https://slack.com/intl/pt-br/" target="_blank"><img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/></a>
 <a href="https://www.notion.so/pt-br" target="_blank"><img src="https://img.shields.io/badge/-Notion-000000?style=flat-square&logo=Notion&logoColor=white"/></a><br/>
 <a href="https://www.figma.com" target="_blank">![Figma](https://img.shields.io/badge/Figma-lightgray?style=flat-square&logo=figma)
 </a><br/>
+  
+</details>
 
-#### **Linguagens**
+<details><summary>Linguagens</summary>
+
 <a href="https://www.java.com/pt-BR/download/help/java8_pt-br.html" target="_blank">![Java](https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java)</a>
 <img width="55" height="20" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img width="55" height="20" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><br/>
 ![SQL](https://img.shields.io/badge/SQL-blue?style=flat-square&logo=sql)
 <a href="https://www.javascript.com" target="_blank">![JS](https://img.shields.io/badge/JavaScript-lightgrey?style=flat-square&logo=javascript)</a>
 
-#### **Framework**
+</details>
+
+<details><summary>Framework</summary>
+
 <a href="https://boxicons.com" target="_blank">![Boxicons](https://img.shields.io/badge/Boxicons-brown?style=flat-square&logo=hackthebox)</a>
 <a href="https://www.thymeleaf.org" target="_blank">![Thymeleaf](https://img.shields.io/badge/Thymeleaf-darkgreen?style=flat-square&logo=thymeleaf)</a>
 <a href="https://getbootstrap.com" target="_blank"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white"/></a><br/>
 <a href="https://spring.io/projects/spring-boot" target="_blank"><img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/></a>
 
-#### **Bibliotecas**
+</details>
+
+<details><summary>Bibliotecas</summary>
+
 <a href="https://jquery.com" target="_blank"><img width="65" height="20" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/></a>
 
-#### **SGBD**
+</details>
+
+<details><summary>SGBD</summary>
+
 <a href="https://www.oracle.com/br/downloads/">![Oracle](https://img.shields.io/badge/Oracle-red?style=flat-square&logo=oracle)</a>
 
+</details>
 
-#### **Plataforma**
+<details><summary>Plataforma</summary>
+
 <a href="https://www.docker.com">![Docker](https://img.shields.io/badge/Docker-gray?style=flat-square&logo=docker)</a>
 
-#### **Board**
+</details>
+
+<details><summary>Board</summary>
+
 Para acessar nosso Board escaneie o *QR Code* abaixo:
 <p align="left">
   <img src="https://github.com/DolphinDatabase/DescontOn/blob/4d4fa096757fc676386f115b4d18f4a2106f5464/Imagens/QR%20CODE.png" height="150" width="150"/>
 </p>
 
+ </details>
+
 ## Ilustração das funcionalidades
 
 
-## Demonstração
+## Demonstração[^1]
  
  Para acessar o vídeo de demonstração da aplicação em uso, clique [aqui](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s).
  
@@ -249,7 +269,7 @@ Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.
 | 16/05 a 05/06 | [Sprint 3](#). |
 | 15/06 às 19h | Feira de Soluções. |
 
-## Team 
+## Team[^2]
 
 <a href="https://github.com/beamedeiros" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/gui-akinyele" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" height="65" width="65" align="left" target="_blank" ></a>
@@ -267,8 +287,7 @@ Para mais informações, clique [aqui](https://github.com/DolphinDatabase/API3/w
 Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).<br/>
 <a href="https://github.com/dolphindatabase" target="_blank" align="center">![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)</a>
 
-
-
-
+[^1]: Vídeo produzido e editado pelos integrantes do grupo.
+[^2]: Equipe responsável pelo desenvolvimento do Projeto Integrador.
 
 
