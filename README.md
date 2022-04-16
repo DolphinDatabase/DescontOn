@@ -31,12 +31,19 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
  #### **Pré-requisitos** 
  
-* Instalação do [Docker](https://docs.docker.com/desktop/windows/install/) e [Java](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-E3C75F92-D3B2-421D-A9BE-933C15F7CD1B)
-* IDE 
+* Instalação do [Docker](https://docs.docker.com/desktop/windows/install/) 
+* Instalação [Java](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-E3C75F92-D3B2-421D-A9BE-933C15F7CD1B)
+* IDE - sugestão [Eclipse](https://www.eclipse.org/downloads/) 
+* Project [Lombok](https://dicasdejava.com.br/como-configurar-o-lombok-no-eclipse/)  (adicionado pelo Maven) 
 
+
+ #### **Repositório** 
+
+```bash 
+$ git clone https://github.com/DolphinDatabase/DescontOn/tree/main
+```
 
  #### **SETUP do Banco de Dados** 
-  
 ```bash
 # via docker
 docker pull cembranelli/descontondatabase:1.0
