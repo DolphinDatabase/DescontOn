@@ -26,6 +26,7 @@
 ## Descrição
 
 Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens sao adicionados ao carrinho. 
+Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ banco de dados e também como são adicionados na sacola de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e da visualização prática e intuitiva dos produtos cadastrados através da listagem que possui um filtro para que seja possível diferenciar quais produtos estão disponíveis e quais produtos estão arquivados.
 
 ## Pré-requisitos e como executar a aplicação
   
@@ -62,8 +63,6 @@ GRANT ALL PRIVILEGES TO ADMIN;
 ```
 
 ## Funcionalidades desenvolvidas 
-(SPRINT 1) apresentaremos como foi feito o cadastro dos produtos no servidor/ banco de dados e também como são adicionados no carrinho de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e da visualização prática e intuitiva dos produtos cadastrados através da listagem que possui um filtro para que seja possível diferenciar quais produtos estão disponíveis e quais produtos estão arquivados.
-
 - [x] Cadastro de Produtos
 - [x] Listar Produtos
 - [x] Remover Produtos Cadastrados
@@ -106,59 +105,81 @@ GRANT ALL PRIVILEGES TO ADMIN;
 
 ## User Story
   
- #### **Story 1 - Cadastro de Produtos** 
-  
+<details><summary>Story 1 - Cadastro de Produtos</summary>
+
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. | Visualizar os produtos que foram cadastrados em uma lista. | Seja possível conferir as informações do produto e adicioná-los na sacola. |
+  
+</details>
 
- #### **Story 2 - Listagem de Produtos**
-
+<details><summary>Story 2 - Listagem de Produtos</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
+  
+</details>
 
-  #### **Story 3 - Sacola de Compras**
 
+<details><summary>Story 3 - Sacola de Compras</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
+  
+</details>
 
- #### **Story 4 - Alterar a Quantidade de Produtos na Sacola**
 
+<details><summary>Story 4 - Alterar a Quantidade de Produtos na Sacola</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Usuário de um E-commerce. | Alterar a quantidade de produtos na sacola. | Seja possível comprar mais itens sem precisar retornar a lista de produtos. |
+  
+</details>
 
- #### **Story 5 - Finalizar uma Compra**
-
+<details><summary>Story 5 - Finalizar uma Compra</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Usuário de um E-commerce. | Finalizar uma compra. | Seja possível efetuar seu fechamento. |
+  
+</details>
 
-#### **Story 6 - Remover um Item da Sacola**
-
+<details><summary>Story 6 - Remover um Item da Sacola</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Usuário de um E-commerce. | Remover um item da sacola. | Exista a possibilidade de exclusão, caso não deseje mais comprar determinado produto. |
+  
+</details>
 
-#### **Story 7 - Remover um Produto Cadastrado**
-
+<details><summary>Story 7 - Remover um Produto Cadastrado</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. | Remover um item cadastrado. | Exista a possibilidade de exclusão, caso as informações do produto estejam erradas ou não  seja mais vendido. |
+  
+</details>
 
-#### **Story 8 - Editar um Produto Cadastrado**
 
+<details><summary>Story 8 - Editar um Produto Cadastrado</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. | Editar um produto cadastrado. | Seja possível alterar as informações do produto, como nome e valor. |
 
-#### **Story 9 - Filtrar Produtos Disponíveis e Arquivados**
+</details>
 
+<details><summary>Story 9 - Filtrar Produtos Disponíveis e Arquivados</summary>
+  
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. |  filtrar os produtos disponíveis ou arquivados.|  seja possível visualizar quais produtos estão disponíveis e quais produtos estão arquivados. |
+  
+</details>
+
 
 ## Roadmap
 
