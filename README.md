@@ -14,6 +14,7 @@
  * [Demonstração](#demonstração)
  * [Manual do Usuário](#manual-do-usuário)
  * [Backlog do Produto](#backlog-do-produto) 
+ * [Story Cards](#story-cards)  
  * [User Story](#user-story)   
  * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
  * [Roadmap](#roadmap)
@@ -74,7 +75,7 @@ GRANT ALL PRIVILEGES TO ADMIN;
 - [x] Remover Produtos da Sacola
 - [x] Finalizar Compra
 
- Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
  
 ## Demonstração
  
@@ -105,7 +106,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Mais Vendidos
 
 
-<h1 align="center"> Story Cards  </h1>  
+## Story Cards
 
 <p align="center">
   <img src="https://github.com/DolphinDatabase/DescontOn/blob/6fa887b9e924f9a573776f546e20421438901d9e/Imagens/STORYGIF.gif"/>
@@ -189,6 +190,8 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo
 </details>
 
 ## Ilustração das funcionalidades
+
+Para acessar nossos *wireframes*, clique [aqui](#).
 
 ## Roadmap
 
