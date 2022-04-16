@@ -85,6 +85,8 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo
 
 ## Manual do Usuário
 
+Para acessar o manual do usuário, clique [aqui](#).
+
 ## Backlog do Produto
 
 - [x] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 1:**  Base da ferrramenta
