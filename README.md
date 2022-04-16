@@ -248,9 +248,10 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 
 ## Demonstração[^1]
  
- Para acessar o vídeo de demonstração da aplicação em uso, clique [aqui](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s).
- 
- [![DEMONSTRACAO](https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png)](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s)
+Para acessar o vídeo de demonstração da aplicação em uso, clique abaixo:
+
+[<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s "DescontOn vídeo Demonstração")
+
 ## Manual do Usuário
 
 
