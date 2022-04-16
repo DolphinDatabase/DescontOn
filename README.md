@@ -16,8 +16,9 @@
  * [Roadmap](#roadmap)
  * [Tecnologias](#tecnologias)
  * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
+ * [Demonstração](#demonstração)
+ * [Manual do Usuário] (#manual-do-usuário)
  * [Gráfico de Burndown](#gráfico-de-burndown)
- * [Demonstração](demonstração)
  * [Cronograma do API](#cronograma-do-api)
  * [Team](#team)
  * [Licença](#licença)
@@ -161,6 +162,8 @@ GRANT ALL PRIVILEGES TO ADMIN;
 
 ## Roadmap
 
+Para acessar nosso *Roadmap*, clique [aqui](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/roadmap).
+
 ## Tecnologias
 
 #### **Organização e Comunicação**
@@ -201,14 +204,19 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 
 ## Ilustração das funcionalidades
 
-## Gráfico de Burndown
 
 ## Demonstração
  
  Para acessar o vídeo de demonstração da aplicação em uso, clique [aqui](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s).
  
  [![DEMONSTRACAO](https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png)](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s)
+## Manual do Usuário
 
+
+
+## Gráfico de Burndown
+
+Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/reports/burndown).
 
 ## Cronograma do API
  
@@ -221,12 +229,11 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 | 15/06 às 19h | Feira de Soluções. |
 
 ## Team 
+
 <a href="https://github.com/beamedeiros" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/gui-akinyele" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/stephani-ss" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/StephaniSoares.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/Borgarelli" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/KauaBorgarelli.png" height="65" width="65" align="left" target="_blank" ></a>
-<br></br>
-<br></br>
 <a href="https://github.com/Jose0588" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/b6926b10f7e45d67139f2420d6490ba39ebc2b08/Imagens/Team/JoseMaria.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/camilaffpacheco" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/CamilaPacheco.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/PedroMotta.png" height="65" width="65" align="left" target="_blank" ></a> <br/>
