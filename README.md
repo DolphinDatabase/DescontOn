@@ -11,15 +11,15 @@
  * [Descrição](#descrição)
  * [Pré-requisitos e como executar a aplicação](#pré-requisitos-e-como-executar-a-aplicação)
  * [Funcionalidades desenvolvidas](#funcionalidades-desenvolvidas)
+ * [Demonstração](#demonstração)
+ * [Manual do Usuário](#manual-do-usuário)
  * [Backlog do Produto](#backlog-do-produto) 
  * [User Story](#user-story)   
- * [Roadmap](#roadmap)
- * [Tecnologias](#tecnologias)
  * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
- * [Demonstração](#demonstração)
- * [Manual do Usuário] (#manual-do-usuário)
+ * [Roadmap](#roadmap)
  * [Gráfico de Burndown](#gráfico-de-burndown)
  * [Cronograma do API](#cronograma-do-api)
+ * [Tecnologias](#tecnologias)
  * [Team](#team)
  * [Licença](#licença)
 
@@ -75,6 +75,14 @@ GRANT ALL PRIVILEGES TO ADMIN;
 - [x] Finalizar Compra
 
  Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
+ 
+## Demonstração
+ 
+Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo:
+
+[<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s "DescontOn vídeo Demonstração")
+
+## Manual do Usuário
 
 ## Backlog do Produto
 
@@ -180,10 +188,25 @@ GRANT ALL PRIVILEGES TO ADMIN;
   
 </details>
 
+## Ilustração das funcionalidades
 
 ## Roadmap
 
 Para acessar nosso *Roadmap*, clique [aqui](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/roadmap).
+
+## Gráfico de Burndown
+
+Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/reports/burndown).
+
+## Cronograma do API
+ 
+| Data | Evento |
+| -------| --------- |
+| 16/03 às 19h  | Project kick-off. |
+| 24/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/tree/Sprint-1). |
+| 25/04 a 15/05 | [Sprint 2](#). |
+| 16/05 a 05/06 | [Sprint 3](#). |
+| 15/06 às 19h | Feira de Soluções. |
 
 ## Tecnologias
 
@@ -242,35 +265,8 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 </p>
 
  </details>
-
-## Ilustração das funcionalidades
-
-
-## Demonstração[^1]
  
-Para acessar o vídeo de demonstração da aplicação em uso, clique abaixo:
-
-[<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s "DescontOn vídeo Demonstração")
-
-## Manual do Usuário
-
-
-
-## Gráfico de Burndown
-
-Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/reports/burndown).
-
-## Cronograma do API
- 
-| Data | Evento |
-| -------| --------- |
-| 16/03 às 19h  | Project kick-off. |
-| 24/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/tree/Sprint-1). |
-| 25/04 a 15/05 | [Sprint 2](#). |
-| 16/05 a 05/06 | [Sprint 3](#). |
-| 15/06 às 19h | Feira de Soluções. |
-
-## Team[^2]
+## Team
 
 <a href="https://github.com/beamedeiros" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/gui-akinyele" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" height="65" width="65" align="left" target="_blank" ></a>
@@ -280,7 +276,7 @@ Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.
 <a href="https://github.com/camilaffpacheco" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/CamilaPacheco.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/pdrMottaS" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/24d29d4cdb3e00acc447f5a3cc9bb67f1934867c/Imagens/Team/PedroMotta.png" height="65" width="65" align="left" target="_blank" ></a> <br/>
 <br></br>
-Para mais informações, clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team).
+Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/API3/wiki/Development-Team).
 <br></br>
 
 ## Licença  
