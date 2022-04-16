@@ -13,7 +13,6 @@
  * [Funcionalidades desenvolvidas](#funcionalidades-desenvolvidas)
  * [Backlog do Produto](#backlog-do-produto) 
  * [User Story](#user-story)   
- * [Escopo de Recursos](#escopo-de-recursos)
  * [Roadmap](#roadmap)
  * [Tecnologias](#tecnologias)
  * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
@@ -159,8 +158,6 @@ GRANT ALL PRIVILEGES TO ADMIN;
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
 | Assistente de cadastro de um E-commerce. |  filtrar os produtos disponíveis ou arquivados.|  seja possível visualizar quais produtos estão disponíveis e quais produtos estão arquivados. |
-
-## Escopo de Recursos
 
 ## Roadmap
 
