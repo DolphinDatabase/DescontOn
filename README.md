@@ -42,25 +42,25 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
 Para acessar a documentação completa do projeto, clique [aqui](#).
 
 ## Pré-requisitos e como executar a aplicação
-
-![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar o manual do usuário, clique [aqui](#).
-  
- #### **Pré-requisitos** 
+ 
+ <details><summary>Pré-requisitos</summary>
  
 * Instalação do [Docker](https://docs.docker.com/desktop/windows/install/) 
 * Instalação [Java](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-E3C75F92-D3B2-421D-A9BE-933C15F7CD1B)
 * IDE - sugestão [Eclipse](https://www.eclipse.org/downloads/) 
 * Project [Lombok](https://dicasdejava.com.br/como-configurar-o-lombok-no-eclipse/)  (adicionado pelo Maven) 
 
+</details>
 
- #### **Repositório** 
+<details><summary>Repositório</summary>
 
 ```bash 
 $ git clone https://github.com/DolphinDatabase/DescontOn/tree/main
 ```
+</details>
 
- #### **SETUP do Banco de Dados** 
+<details><summary>SETUP do Banco de Dados</summary>
+  
 ```bash
 # via docker
 docker pull cembranelli/descontondatabase:1.0
@@ -78,6 +78,8 @@ create user ADMIN identified by ADMIN;
 GRANT ALL PRIVILEGES TO ADMIN;
 ```
 
+</details>
+
 Com o SETUP do Banco de Dados pronto, importe a pasta _“ecommerce”_
 como [_“Existing Maven Project”_](https://medium.com/@alex.girao/importar-um-projeto-maven-spring-boot-ea10078b2bde) na IDE. Por fim, execute a _Classe Main_
 _“EcommerceApplication”_, acesse no navegador o endereço:
@@ -86,6 +88,8 @@ _localhost:8080/administrativo_
 **IMPORTANTE:** Usuário e senha do banco de dados já estão definidos como
 _ADMIN e ADMIN_, não é necessário fazer alterações
 
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
+Para acessar o manual do usuário, clique [aqui](#).
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
