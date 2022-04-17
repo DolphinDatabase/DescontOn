@@ -39,7 +39,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
 ## Documentação
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](#).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/c5cdb4cb728824b77bcf054276af7143d2f545cb/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
@@ -117,7 +117,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](#).
+Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/c5cdb4cb728824b77bcf054276af7143d2f545cb/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
 
 ## Backlog do Produto
 
