@@ -78,6 +78,14 @@ create user ADMIN identified by ADMIN;
 GRANT ALL PRIVILEGES TO ADMIN;
 ```
 
+Com o SETUP do Banco de Dados pronto, importe a pasta _“ecommerce”_
+como [_“Existing Maven Project”_](https://medium.com/@alex.girao/importar-um-projeto-maven-spring-boot-ea10078b2bde) na IDE. Por fim, execute a _Classe Main_
+_“EcommerceApplication”_, acesse no navegador o endereço:
+_localhost:8080/administrativo_
+
+**IMPORTANTE:** Usuário e senha do banco de dados já estão definidos como
+_ADMIN e ADMIN_, não é necessário fazer alterações
+
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
