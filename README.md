@@ -11,12 +11,12 @@
  * [Descrição](#descrição)
  * [Pré-requisitos e como executar a aplicação](#pré-requisitos-e-como-executar-a-aplicação)
  * [Funcionalidades desenvolvidas](#funcionalidades-desenvolvidas)
+ * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
  * [Demonstração](#demonstração)
  * [Manual do Usuário](#manual-do-usuário)
  * [Backlog do Produto](#backlog-do-produto) 
  * [Story Cards](#story-cards)  
  * [User Story](#user-story)   
- * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
  * [Roadmap](#roadmap)
  * [Gráfico de Burndown](#gráfico-de-burndown)
  * [Cronograma do API](#cronograma-do-api)
@@ -76,6 +76,10 @@ GRANT ALL PRIVILEGES TO ADMIN;
 - [x] Finalizar Compra
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
+
+## Ilustração das funcionalidades
+
+Para acessar nossos *wireframes*, clique [aqui](https://www.figma.com/file/DfQM30USXikeDM0jaHwQ9T/Untitled?node-id=17%3A24).
  
 ## Demonstração
  
@@ -190,10 +194,6 @@ Para acessar o manual do usuário, clique [aqui](#).
 | Assistente de cadastro de um E-commerce. |  filtrar os produtos disponíveis ou arquivados.|  seja possível visualizar quais produtos estão disponíveis e quais produtos estão arquivados. |
   
 </details>
-
-## Ilustração das funcionalidades
-
-Para acessar nossos *wireframes*, clique [aqui](#).
 
 ## Roadmap
 
