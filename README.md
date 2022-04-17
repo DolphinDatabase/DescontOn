@@ -103,7 +103,7 @@ Para acessar o manual do usuário, clique [aqui](#).
 - [x] Remover Produtos da Sacola
 - [x] Finalizar Compra
 
-![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais detalhes das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
 
 ## Ilustração das funcionalidades
 
