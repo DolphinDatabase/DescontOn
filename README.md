@@ -32,7 +32,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
 
 <details><summary>Model Canvas do Projeto</summary>
 
-<img src="#" width="70%">
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/f329e96e01693d44285ebd7471af6f972be88e68/Imagens/CANVAS.png">
 
 </details>
 
