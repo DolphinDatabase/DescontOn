@@ -307,7 +307,6 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 ## Team
 
 <a href="https://github.com/beamedeiros" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" height="65" width="65" align="left" target="_blank" ></a>
-<a href="https://github.com/gui-akinyele" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/stephani-ss" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/StephaniSoares.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/Borgarelli" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/KauaBorgarelli.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/Jose0588" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/b6926b10f7e45d67139f2420d6490ba39ebc2b08/Imagens/Team/JoseMaria.png" height="65" width="65" align="left" target="_blank" ></a>
