@@ -19,6 +19,30 @@
       });
       }, false);
     })();
+
+
+/*===== CADASTRO PROMOCAO =====*/
+(function() {
+    'use strict';
+     window.addEventListener('load', function() {
+    // Pega todos os formulários para aplicar estilos de validação Bootstrap personalizados.
+     var forms = document.getElementsByClassName('needs-validation2');
+    // Faz um loop e evita o envio
+     var validation = Array.prototype.filter.call(forms, function(form) {
+     form.addEventListener('submit', function(event) {
+     if (form.checkValidity() === false) {
+     event.preventDefault();
+     event.stopPropagation();
+    }
+     if (form.checkValidity() === true) {
+     alert("Promoção Cadastrada com Sucesso");
+     }
+     form.classList.add('was-validated') ;
+      }, false);
+      });
+      }, false);
+    })();
+	
 	
 document.addEventListener("DOMContentLoaded", function(event) {
 

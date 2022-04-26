@@ -320,4 +320,8 @@ a {
   	outline: none;
 }
 
+.btn.btn-sm.promo{
+    background-color:#FF7299;
+    color: white;
+}
 }

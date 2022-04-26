@@ -33,6 +33,8 @@
                 <div class="nav_list"> <a href="/administrativo/produtos/cadastrar" class="nav_link"> <i class='bx bx-plus-circle nav_icon'></i> <span class="nav_name">Cadastrar Produtos</span> </a> 
                 <a href="/administrativo/produtos/listar" class="nav_link active"> <i class='bx bx-list-ul nav_icon'></i> <span class="nav_name">Listar Produtos</span> </a>
                  <a href="/sacola" class="nav_link"> <i class='bx bx-shopping-bag nav_icon'></i> <span class="nav_name">Sacola</span> </a> 
+				 <a href="/promocao/cadastrar" class="nav_link"> <i class='bx bxs-badge-dollar nav_icon'></i> <span class="nav_name">Cadastrar Promo.</span> </a>
+				 <a href="/administrativo/promocao/listar" class="nav_link"> <i class='bx bx-collection nav_icon'></i> <span class="nav_name">Listar Promoções</span> </a>
                  </div>
             </div> <a href="/administrativo" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Sair</span> </a>
         </nav>
@@ -73,12 +75,17 @@
 									aria-hidden="true"></span>
 									
 							<td>
+								<a class="btn btn-sm promo" th:href="@{/adicionarPromocao/{id}(id=${produto.proId})}" role="button"> 
+									<span class="bx bxs-badge-dollar" title="Promoção" aria-hidden="true"></span>		  
+								</a>		
 								<a class="btn btn-info btn-sm editar" th:href="@{/administrativo/produtos/editar/{id}(id=${produto.proId})}" role="button"> 
 									<span class="bx bx-edit" title="Editar" aria-hidden="true"></span>		  
 								</a>
 								<a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-warning" th:attr="data-target='#modal-warning'+${produto.proId }">
 									<span class="bx bxs-x-circle" title="Remover" aria-hidden="true"></span>
 								</a>
+						
+
 								<div class="modal fade"
 									th:id="modal-warning+${produto.proId}" tabindex="-1" role="dialog" aria-labelledby="modal-warningLabel" aria-hidden="true">
 									<div class="modal-dialog"  role="document">
