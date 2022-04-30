@@ -258,7 +258,7 @@ Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.
 | Data | Evento |
 | -------| --------- |
 | 16/03 às 19h  | Project kick-off. |
-| 24/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/blob/b9ffbd159b0b61985e81af19b72bf1dd6d6a977d/Sprints/SPRINT1.md). |
+| 24/03 a 14/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/blob/9660d34e11c9379ca8f966d4fff7e53ddb2bc3fa/Sprints/Sprint1.md). |
 | 25/04 a 15/05 | [Sprint 2](#). |
 | 16/05 a 05/06 | [Sprint 3](#). |
 | 15/06 às 19h | Feira de Soluções. |
