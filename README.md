@@ -26,25 +26,32 @@
  * [Licença](#licença)
 
 ## Descrição
-
+<p align="justify">
 Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens sao adicionados ao carrinho. 
 Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ banco de dados e também como são adicionados na sacola de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e da visualização prática e intuitiva dos produtos cadastrados através da listagem que possui um filtro para que seja possível diferenciar quais produtos estão disponíveis e quais produtos estão arquivados.
+/>
 
 ### Model Canvas do Projeto
 
-<img src="https://github.com/DolphinDatabase/DescontOn/blob/f329e96e01693d44285ebd7471af6f972be88e68/Imagens/CANVAS.png">
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/762cfb5d2508ebe390db358d7468c4f85c491b02/Documenta%C3%A7%C3%A3o/Imagens/CANVAS.png">
 
 ## Documentação
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/e84bd638cce1a75e6eb95c946bf9f7ee4ac3e9d0/Imagens/Modelo_Conceitual.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/762cfb5d2508ebe390db358d7468c4f85c491b02/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Conceitual.png">
  
   </details>
   
   <details><summary>Modelo Relacional</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/e84bd638cce1a75e6eb95c946bf9f7ee4ac3e9d0/Imagens/Modelo_Relacional.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/762cfb5d2508ebe390db358d7468c4f85c491b02/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Relacional.png">
+  
+  </details>
+  
+  <details><summary>Diagrama de Classes</summary>
+  
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/762cfb5d2508ebe390db358d7468c4f85c491b02/Documenta%C3%A7%C3%A3o/Imagens/Diagrama%20de%20Classes.png">
   
   </details>
   
