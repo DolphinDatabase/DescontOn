@@ -128,7 +128,7 @@ Para acessar nossos *wireframes*, clique [aqui](https://www.figma.com/file/DfQM3
  
 ## Demonstração
  
-Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo:
+Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s):
 
 [<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s "DescontOn vídeo Demonstração")
 
@@ -324,7 +324,6 @@ Para acessar nosso Board escaneie o *QR Code* abaixo:
 ## Team
 
 <a href="https://github.com/beamedeiros" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/7c2c3004a0b81c5232b0d5b0929eae8ffcb4c6ed/Imagens/Team/BeatrizMedeiros.png" height="65" width="65" align="left" target="_blank" ></a>
-<a href="https://github.com/gui-akinyele" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/GuilhermeAkinyele.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/stephani-ss" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/StephaniSoares.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/Borgarelli" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/30b6ebe8706a4ed9424e32da5fcf4ed6574e3fe3/Imagens/Team/KauaBorgarelli.png" height="65" width="65" align="left" target="_blank" ></a>
 <a href="https://github.com/Jose0588" target="_blank"><img src="https://github.com/DolphinDatabase/DescontOn/blob/b6926b10f7e45d67139f2420d6490ba39ebc2b08/Imagens/Team/JoseMaria.png" height="65" width="65" align="left" target="_blank" ></a>
