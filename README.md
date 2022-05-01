@@ -105,7 +105,7 @@ _localhost:8080/administrativo_
 _ADMIN e ADMIN_, não é necessário fazer alterações
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar o manual do usuário, clique [aqui](Manual/Manual do Usuario_sprint1 - DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
