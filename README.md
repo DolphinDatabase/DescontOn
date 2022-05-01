@@ -318,7 +318,7 @@ Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/AP
 
 ## Licença  
 
-Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).<br/>
+Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/DescontOn/blob/main/LICENSE).<br/>
 <a href="https://github.com/dolphindatabase" target="_blank" align="center">![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)</a>
 
 [^1]: Vídeo produzido e editado pelos integrantes do grupo.
