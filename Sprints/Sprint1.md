@@ -56,7 +56,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
   </details>
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](Documentação/DocumentaçãoDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/Sprint-1/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
@@ -106,7 +106,7 @@ _localhost:8080/administrativo_
 _ADMIN e ADMIN_, não é necessário fazer alterações
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/Sprint-1/Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
@@ -134,7 +134,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/Sprint-1/Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
 ## Backlog do Produto
 
