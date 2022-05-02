@@ -37,7 +37,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
 ## Documentação
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](Documentação/DocumentaçãoDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
