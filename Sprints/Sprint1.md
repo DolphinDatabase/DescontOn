@@ -3,7 +3,7 @@
 </p>
 <p align="center"> Ferramenta flexível para criações de promoções em E-commerce. </p>
 
-![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow?style=flat-square&logo=)
+![Badge](https://img.shields.io/badge/STATUS-CONCLUÍDO-green?style=flat-square&logo=)
 
 
 ## Tabela de Conteúdos
@@ -56,7 +56,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
   </details>
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/b17cc62fbc310e60c331b61d3ee07657d79513d5/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](Documentação/DocumentaçãoDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
@@ -106,7 +106,7 @@ _localhost:8080/administrativo_
 _ADMIN e ADMIN_, não é necessário fazer alterações
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/57276b22f2573393d75bf36c32f89e020ee80481/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
@@ -134,7 +134,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/c5cdb4cb728824b77bcf054276af7143d2f545cb/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
 ## Backlog do Produto
 
