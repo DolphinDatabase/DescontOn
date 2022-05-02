@@ -36,24 +36,6 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
 
 ## Documentação
   
-  <details><summary>Modelo Conceitual</summary>
-  
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Conceitual.png">
- 
-  </details>
-  
-  <details><summary>Modelo Relacional</summary>
-  
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Relacional.png">
-  
-  </details>
-  
-  <details><summary>Diagrama de Classes</summary>
-  
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/Diagrama%20de%20Classes.png">
-  
-  </details>
-  
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
 Para acessar a documentação completa do projeto, clique [aqui](Documentação/DocumentaçãoDolphinDatabase.pdf).
 
