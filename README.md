@@ -3,7 +3,7 @@
 </p>
 <p align="center"> Ferramenta flexível para criações de promoções em E-commerce. </p>
 
-![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow?style=flat-square&logo=)
+![Badge](https://img.shields.io/badge/STATUS-CONCLUIDO-green?style=flat-square&logo=)
 
 
 ## Tabela de Conteúdos
