@@ -47,9 +47,13 @@ public class SacolaControle {
 				lista.add(item);
 			}
 		});	
-		
-		String acao1 = "[Desconto]";
+		//acao e condicao desconto simples
+		String acao1 = "[DescontoProduto]";
 		String condicao1 = "[ProdutoSelecionado]";
+		
+		//acao progressivo é a mesma que a desconto simples, o que muda é a condicao, linha 69
+		String condicao2 = "[ProdutoQuantidade >]";
+
 		List<DescontoDTO> res = new ArrayList<>();
 
 		for(SacolaDTO item:lista){
@@ -64,6 +68,25 @@ public class SacolaControle {
 					desconto.setDesconto(totalPorItem * (porcentagem/100));
 					res.add(desconto);
 				}
+			
+				
+			}
+				//Progressivo
+			if(item.getCondicao().contains(condicao2)) {
+				String condicao = item.getCondicao().replaceAll("[\\D]", "");
+				Integer quantidade = Integer.parseInt(condicao);
+
+				if(item.getQuantidade() > quantidade){
+				String acao = item.getAcao().replaceAll("[\\D]", "");
+				Double porcentagem = Double.parseDouble(acao);
+				Double totalPorItem= item.getQuantidade() * item.getValor();
+				DescontoDTO desconto = new DescontoDTO();
+				desconto.setId(item.getId());
+				desconto.setDesconto(totalPorItem * (porcentagem/100));
+				res.add(desconto);
+				}
+
+				
 			}
 		}
 
