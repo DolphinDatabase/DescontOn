@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8" />
+
+<head>
+
+	<title>Cadastrar Produto</title>
+	<link rel="icon" href="/image/icone.png" />
+
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/css/geral.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="/js/geral.js"></script>
+	<script type="text/javascript" src="/js/produto/cadastro.js"></script>
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		var id = [[${ id }]];
+		if (id) {
+			document.addEventListener("DOMContentLoaded", function () {
+				loadProduto(id);
+			})
+		}
+		/*]]>*/
+	</script>
+
+</head>
+
+<body id="body-pd">
+	<header class="header" id="header">
+		<div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>&nbsp;&nbsp;Cadastrar Produto</div>
+	</header>
+
+	<!-- NAV-BAR -->
+	<div class="l-navbar" id="nav-bar">
+		<nav class="nav">
+			<div> <a href="/" class="nav_logo"> <i class='bx bx-gift nav_logo-icon'></i> <span
+						class="nav_logo-name">DescontOn</span> </a>
+				<div class="nav_list"> <a href="/administrativo/produto" class="nav_link"> <i
+							class='bx bx-plus-circle nav_icon'></i> <span class="nav_name">Cadastrar Produtos</span>
+					</a>
+					<a href="/administrativo/produto/listagem" class="nav_link"> <i class='bx bx-list-ul nav_icon'></i>
+						<span class="nav_name">Listar Produtos</span> </a>
+					<a href="/administrativo/sacola" class="nav_link"> <i class='bx bx-shopping-bag nav_icon'></i> <span
+							class="nav_name">Sacola</span> </a>
+					<a href="/administrativo/promocao" class="nav_link"> <i class='bx bxs-badge-dollar nav_icon'></i> <span
+							class="nav_name">Cadastrar Promo.</span> </a>
+					<a href="/administrativo/promocao/listagem" class="nav_link"> <i
+							class='bx bx-collection nav_icon'></i> <span class="nav_name">Listar Promoções</span> </a>
+				</div>
+			</div> <a href="/administrativo" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+					class="nav_name">Sair</span> </a>
+		</nav>
+	</div>
+	</div>
+	<!-- end nav bar -->
+
+	<!-- FORMULARIO DE CADASTRO -->
+	<div class="layout-main">
+		<section class="layout-content">
+			<section class="layout-content">
+				<div class="container" id="cadastro">
+					<form class="needs-validation" id="main-form" novalidate onsubmit="saveProduto(event)">
+						<div class="form-row">
+
+							<!-- Nome -->
+							<div class="form-group col-md-6">
+								<label for="nome">Nome do Produto</label> <input type="text" class="form-control"
+									id="proNome" placeholder="Nome" autofocus="autofocus" value="" required />
+								<div class="invalid-feedback">
+									Por favor, informe o nome do produto.
+								</div>
+							</div>
+						</div>
+
+						<!-- Categoria -->
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="categoria">Categoria</label>
+								<select class="form-select" id="proCategoria" aria-label="Default select example">
+
+									<option value="Cosmeticos">Cosméticos</option>
+									<option value="Perfumaria">Perfumaria</option>
+									<option value="Saude">Saúde</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- Valor -->
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="valor">Valor de Venda</label> <input type="text" class="form-control"
+									id="proValor" placeholder="Valor de Venda" data-mask-reverse="true" value=""
+									required />
+								<div class="invalid-feedback">Por favor, insira o valor do produto.</div>
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
+					</form>
+				</div>
+			</section>
+			<!-- end formulario -->
+
+			<!--  MODAL -->
+			<div id="myModal" class="modal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Criar Prouto Produto</h5>
+						</div>
+						<div class="modal-body">
+							<p id="modalContent"></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="modalClose" class="btn btn-primary">Ok</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MODAL -->
+
+			<!-- FOOTER -->
+			<footer class="layout-footer">
+				<div class="footer-repo">
+					<a title="website repository" href="https://github.com/DolphinDatabase/DescontOn">Made with ❤ by
+						DolphinDatabase</a>
+				</div>
+			</footer>
+			<!-- end footer -->
+
+</body>
+
+</html>

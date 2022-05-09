@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8" />
+
+<head>
+	<title>Lista de Promoções</title>
+	<link rel="icon" href="/image/icone.png" />
+
+	<!-- Bootstrap core CSS -->
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Custom styles for this template -->
+	<link href="/css/geral.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="/js/geral.js"></script>
+	<script type="text/javascript" src="/js/promocao/listagem.js"></script>
+
+</head>
+
+<body id="body-pd">
+	<header class="header" id="header">
+		<div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>&nbsp;&nbsp;Lista de Produtos</div>
+	</header>
+
+	<!-- NAV-BAR -->
+	<div class="l-navbar" id="nav-bar">
+		<nav class="nav">
+			<div> <a href="/" class="nav_logo"> <i class='bx bx-gift nav_logo-icon'></i> <span
+						class="nav_logo-name">DescontOn</span> </a>
+				<div class="nav_list"> <a href="/administrativo/produto" class="nav_link"> <i
+							class='bx bx-plus-circle nav_icon'></i> <span class="nav_name">Cadastrar Produtos</span>
+					</a>
+					<a href="/administrativo/produto/listagem" class="nav_link"> <i class='bx bx-list-ul nav_icon'></i>
+						<span class="nav_name">Listar Produtos</span> </a>
+					<a href="/administrativo/sacola" class="nav_link"> <i class='bx bx-shopping-bag nav_icon'></i> <span
+							class="nav_name">Sacola</span> </a>
+					<a href="/administrativo/promocao" class="nav_link"> <i class='bx bxs-badge-dollar nav_icon'></i> <span
+							class="nav_name">Cadastrar Promo.</span> </a>
+					<a href="/administrativo/promocao/listagem" class="nav_link"> <i
+							class='bx bx-collection nav_icon'></i> <span class="nav_name">Listar Promoções</span> </a>
+				</div>
+			</div> <a href="/administrativo" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+					class="nav_name">Sair</span> </a>
+		</nav>
+	</div>
+	</div>
+	<!-- end nav bar -->
+
+	<!-- TABELA -->
+	<div class="container">
+		<select name="op" id="op" class="form-select mb-2" onchange="changeTable()">
+			<option value="0">Disponível</option>
+			<option value="1">Arquivado</option>
+		</select>
+		<div class="table-responsive">
+			<table class="table table-striped table-hover table-sm">
+				<thead>
+					<tr>
+						<!-- nome das colunas -->
+						<th>#</th>
+						<th>Nome da Promoção</th>
+						<th>Data</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="disp">
+				</tbody>
+				<tbody id="arqui" style="display: none;">
+				</tbody>
+		</div>
+	</div>
+	</section>
+
+
+	<!-- end tabela -->
+
+	<!--  MODAL -->
+	<div id="myModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Deletar Promoção</h5>
+				</div>
+				<div class="modal-body">
+					<p>Deseja realmente deletar a promoção?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" onclick="excluirPromocao()">Sim</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="$('#myModal').modal('hide')">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MODAL -->
+
+	<!-- FOOTER -->
+	<footer class="layout-footer">
+		<div class="footer-repo">
+			<a title="website repository" href="https://github.com/DolphinDatabase/DescontOn">Made with ❤ by
+				DolphinDatabase</a>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="/webjars/jquery/jquery.min.js"></script>
+
+
+
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../../../static/js/geral.js"></script>
+
+</body>
+
+</html>
