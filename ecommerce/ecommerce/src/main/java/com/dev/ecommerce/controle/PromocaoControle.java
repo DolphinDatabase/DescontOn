@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import com.dev.ecommerce.dto.PromocaoDTO;
 import com.dev.ecommerce.modelos.Promocao;
 import com.dev.ecommerce.repositorios.PromocaoRepositorio;
 
@@ -26,32 +27,41 @@ public class PromocaoControle {
 	PromocaoRepositorio promocaoRepositorio;
 
 	@PostMapping
-	public Promocao create(@RequestBody Promocao promocao){
-		return promocaoRepositorio.save(promocao);
+	public PromocaoDTO create(@RequestBody Promocao promocao){
+		 Promocao save = promocaoRepositorio.save(promocao);
+		 PromocaoDTO res = new PromocaoDTO(save.getId(),save.getNome(),save.getDataCadastro(),save.getCondicao(),save.getAcao(),save.getStatus());
+			return res;
 	}
 
 	@GetMapping
-    public List<Promocao> index(@RequestParam(required = false) Long id){
+    public List<PromocaoDTO> index(@RequestParam(required = false) Long id){
         if(id != null){
-            List<Promocao> res = new ArrayList<>();
+            List<PromocaoDTO> res = new ArrayList<>();
             Optional<Promocao> promocao = promocaoRepositorio.findById(id);
             if(promocao.isPresent()){
-                res.add(promocao.get());
+            	Promocao exist = promocao.get();
+                res.add(new PromocaoDTO(exist.getId(),exist.getNome(),exist.getDataCadastro(),exist.getCondicao(),exist.getAcao(),exist.getStatus()));
             }
             return res;
         }else{
-            return promocaoRepositorio.findAll();
+        	List<Promocao> find = promocaoRepositorio.findAll();
+            List<PromocaoDTO> res = new ArrayList<>();
+            find.forEach(promo->{
+            	res.add(new PromocaoDTO(promo.getId(),promo.getNome(),promo.getDataCadastro(),promo.getCondicao(),promo.getAcao(),promo.getStatus()));
+            });
+            return res;
         }
     }
 
 	@PutMapping("/{id}")
-	public Promocao update(@RequestBody Promocao promocao, @RequestParam Long id){
-		Promocao res = new Promocao();
+	public PromocaoDTO update(@RequestBody Promocao promocao, @RequestParam Long id){
 		Optional<Promocao> promo = promocaoRepositorio.findById(id);
 		if(promo.isEmpty()){
-			return res;
+			return new PromocaoDTO(null, null, null, null, null, null);
 		}else{
-			return promocaoRepositorio.save(promocao);
+			Promocao save = promocaoRepositorio.save(promocao);
+			return new PromocaoDTO(save.getId(),save.getNome(),save.getDataCadastro(),save.getCondicao(),save.getAcao(),save.getStatus());
+			
 		}
 	}
 
@@ -61,8 +71,15 @@ public class PromocaoControle {
 		if(pro.isEmpty()){
 			return "Promoção não encontrada";
 		}else{
-			promocaoRepositorio.delete(pro.get());
-			return "Promoção "+pro.get().getId()+" deletada";
+			try {
+				promocaoRepositorio.delete(pro.get());
+				return "Promoção"+pro.get().getId()+" deletada.";
+			}catch (Exception err) {
+				Promocao promocaoSave = pro.get();
+				promocaoSave.setStatus(1);
+				promocaoRepositorio.save(promocaoSave);
+				return "Promoção"+pro.get().getId()+" arquivada.";
+			}
 		}
 	}
 

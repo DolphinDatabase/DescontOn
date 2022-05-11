@@ -93,26 +93,31 @@
 							<div class="form-group col-md-6">
 								<br>
 
-								<button class="btn btn-light btn-sm" draggable="true">[ProdutoSelecionado]</button>
-								<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade >]</button>
-
-								<br>
-								<br>
 
 								<label for="promocao">Condição</label>
+
 								<textarea class="form-control" id="condicao" placeholder="When" autofocus="autofocus"
 									value="" required /></textarea>
+									<br>
+									<button class="btn btn-light btn-sm" draggable="true">[ProdutoSelecionado]</button>
+									<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade >]</button>
+									<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade <]</button>
+									<br><br>
+									<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade =]</button>
+	
+									<br>
+									<br>
 								<div class="invalid-feedback">Por favor, insira uma condição de promoção.</div>
 
-								<br>
-								<button class="btn btn-light btn-sm" draggable="true">[DescontoProduto]</button>
-								<button class="btn btn-light btn-sm" draggable="true">[Ganhe]</button>
-								<br>
-								<br>
-
 								<label for="promocao">Ação</label>
+								
 								<textarea class="form-control" id="acao" placeholder="Then" autofocus="autofocus"
 									value="" required /></textarea>
+									<br>
+									<button class="btn btn-light btn-sm" draggable="true">[DescontoProduto]</button>
+									<button class="btn btn-light btn-sm" draggable="true">[Ganhe]</button>
+									<br>
+									<br>
 								<div class="invalid-feedback">Por favor, insira uma ação para a promoção.</div>
 							</div>
 						</div>
@@ -140,11 +145,11 @@
 										<!-- botoes -->
 
 									</div>
-									<div class="col-sm-15  col-md-15 ">
-										<a class="btn btn-block btn-light " onclick="abrirLista()">Selecionar Produtos</a>
+									<div class="col-md-12 ">
+										<a class="btn btn-secondary" onclick="abrirLista()">Selecionar Produtos</a>
 									</div>
 									<br></br>
-									<div class="col-md-2">
+									<div class="col-md-8">
 										<button type="submit"
 											class="btn btn-primary btn-sm">Cadastrar</button>
 									</div>
@@ -173,7 +178,7 @@
 					<p id="modalContent"></p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="window.location.href='/administrativo/promocao/listagem'" class="btn btn-primary">Ok</button>
+					<button type="button" onclick="window.location.href='/administrativo/promocao/listagem'" class="btn btn-secondary">Ok</button>
 				</div>
 			</div>
 		</div>
@@ -202,7 +207,7 @@
 					</table>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick='$("#myLista").modal("hide")' class="btn btn-primary">Ok</button>
+					<button type="button" onclick='$("#myLista").modal("hide")' class="btn btn-secondary">Ok</button>
 				</div>
 			</div>
 		</div>

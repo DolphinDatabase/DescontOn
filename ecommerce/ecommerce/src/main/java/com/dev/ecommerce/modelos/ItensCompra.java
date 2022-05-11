@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +19,8 @@ import lombok.Setter;
 public class ItensCompra {
 	
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ITE_SEQ")
+    @SequenceGenerator(sequenceName = "itenscompra_seq", allocationSize = 1, name = "ITE_SEQ")
 	@Column(name = "id")
 	private Long id;
 
@@ -30,13 +32,13 @@ public class ItensCompra {
 	@JoinColumn(name = "compra_id")
 	private Compra compra;
 
-	@Column(name = "quantidade")
+	@Column(name = "com_quantidade")
 	private Integer quantidade;
 
-	@Column(name = "valor_unitario")
+	@Column(name = "com_valor_unitario")
 	private Double valorUnitario=0.;
 
-	@Column(name = "valor_total")
+	@Column(name = "com_valor_total")
 	private Double valorTotal=0.;
 
 }

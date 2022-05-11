@@ -6,15 +6,11 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 
-public class SacolaDTO {
-
+public class ProdutoDTO {
+	
 	private Long id;
-    private String nome;
+	private String nome;
 	private Double valor;
 	private String categoria;
 	private Integer status;
-    private Integer quantidade;
-	private String condicao;
-	private String acao;
-	
 }

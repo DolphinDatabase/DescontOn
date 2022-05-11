@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import com.dev.ecommerce.dto.ProdutoDTO;
 import com.dev.ecommerce.modelos.ItensPromocao;
 import com.dev.ecommerce.modelos.Produto;
 import com.dev.ecommerce.modelos.Promocao;
@@ -49,11 +50,12 @@ public class itensPromocaoControle {
     }
     
     @GetMapping("/promocao/{id}")
-    public List<Produto> findProduto(@PathVariable Long id){
+    public List<ProdutoDTO> findProduto(@PathVariable Long id){
         List<ItensPromocao> lista =  itensPromocaoRepositorio.findByPromocao(id);
-        List<Produto> res = new ArrayList<>();
+        List<ProdutoDTO> res = new ArrayList<>();
         lista.forEach(item->{
-            res.add(item.getProduto());
+        	Produto insert = item.getProduto();
+            res.add(new ProdutoDTO(insert.getId(),insert.getNome(),insert.getValor(),insert.getCategoria(),insert.getStatus()));
         });
         return res;
     }

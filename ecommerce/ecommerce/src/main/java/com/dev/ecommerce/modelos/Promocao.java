@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -21,22 +22,26 @@ import lombok.Setter;
 public class Promocao {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PROMO_SEQ")
+    @SequenceGenerator(sequenceName = "promocao_seq", allocationSize = 1, name = "PROMO_SEQ")
 	@Column(name="id")
 	private Long id;
 	
-	@Column(name="nome")
+	@Column(name="promo_nome")
     private String nome;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "data_cadastro")
+	@Column(name = "promo_data_cadastro")
 	private Date dataCadastro = new Date();
 
-	@Column(name="condicao")
+	@Column(name="promo_condicao")
     private String condicao;
 
-	@Column(name="acao")
+	@Column(name="promo_acao")
 	private String acao;
+
+	@Column(name="promo_status")
+	private Integer status=0;
 
 
 }

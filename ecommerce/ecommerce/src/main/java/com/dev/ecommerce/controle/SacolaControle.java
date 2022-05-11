@@ -16,6 +16,7 @@ import com.dev.ecommerce.modelos.ItensPromocao;
 import com.dev.ecommerce.repositorios.CompraRepositorio;
 import com.dev.ecommerce.repositorios.ItensPromocaoRepositorio;
 import com.dev.ecommerce.repositorios.PromocaoRepositorio;
+import com.dev.ecommerce.utils.Util;
 
 
 @RestController
@@ -48,66 +49,147 @@ public class SacolaControle {
 			}
 		});	
 		//acao e condicao desconto simples
-		String acao1 = "[DescontoProduto]";
-		String condicao1 = "[ProdutoSelecionado]";
+		String descontoProduto = "[DescontoProduto]";
+		String produtoSelecionado = "[ProdutoSelecionado]";
 		
 		//acao progressivo é a mesma que a desconto simples, o que muda é a condicao, linha 69
-		String condicao2 = "[ProdutoQuantidade >]";
+		String quantidadeMaior = "[ProdutoQuantidade >]";
 
 		//brinde condicao é a mesma que progressiva mas muda a acao
-		String acao2 = "[Ganhe]";
+		String ganhe = "[Ganhe]";
+
+		//valor da compra - falta menor valor
+		String valorTotal = "[ValorTotal >]";
+		String descontoTotal = "[DescontoTotal]";
+
+		//operadores novos - faltam do valorTotal
+		String quantidadeMenor = "[ProdutoQuantidade <]";
+		String quantidadeIgual = "[ProdutoQuantidade =]";
+
+
 
 		List<DescontoDTO> res = new ArrayList<>();
+		Util util = new Util();
+		Compra compra = new Compra();
 
 		for(SacolaDTO item:lista){
-			if(item.getCondicao().contains(condicao1)) {
+			//CONDIÇÃO1 PRODUTO SELECIONADO
+			if(item.getCondicao().contains(produtoSelecionado)) {
 				//Desconto Simples
-				if(item.getAcao().contains(acao1)) {
-					String acao = item.getAcao().replaceAll("[\\D]", "");
-					Double porcentagem = Double.parseDouble(acao);
+				if(item.getAcao().contains(descontoProduto)) {
+					String acao = item.getAcao();					
 					Double totalPorItem= item.getQuantidade() * item.getValor();
-					DescontoDTO desconto = new DescontoDTO();
+					DescontoDTO desconto = new DescontoDTO(null,null);
 					desconto.setId(item.getId());
-					desconto.setDesconto(totalPorItem * (porcentagem/100));
+					desconto.setDesconto(totalPorItem * (util.converterDouble(acao)/100));
 					res.add(desconto);
 				}
-			}
-				//Progressivo e Brinde
-			if(item.getCondicao().contains(condicao2)) {
-				String condicao = item.getCondicao().replaceAll("[\\D]", "");
-				Integer quantidade = Integer.parseInt(condicao);
+				//ganhe com produtoSelecionado
+				if(item.getAcao().contains(ganhe)){
+					String acao = item.getAcao();
+					DescontoDTO desconto = new DescontoDTO(null,null);
+					desconto.setId(item.getId());
+					desconto.setDesconto(item.getValor() * util.converterInteger(acao));
+					res.add(desconto);
+					
+				}
 
+				//DescontoTotal
+
+				//DescontoMenorValor
+			}
+
+
+				//Progressivo e Brinde
+				//CONDIÇÃO2 PRODUTOQUANTIDADE >
+			if(item.getCondicao().contains(quantidadeMaior)) {
+				String condicao = item.getCondicao();
 				//Progressivo
-				if(item.getAcao().contains(acao1)) {
-				if(item.getQuantidade() > quantidade){
-				String acao = item.getAcao().replaceAll("[\\D]", "");
-				Double porcentagem = Double.parseDouble(acao);
-				Double totalPorItem= item.getQuantidade() * item.getValor();
-				DescontoDTO desconto = new DescontoDTO();
-				desconto.setId(item.getId());
-				desconto.setDesconto(totalPorItem * (porcentagem/100));
-				res.add(desconto);
-				}			
+				if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() > util.converterInteger(condicao))) {
+					String acao = item.getAcao();					
+					Double totalPorItem= item.getQuantidade() * item.getValor();
+					DescontoDTO desconto = new DescontoDTO(null,null);
+					desconto.setId(item.getId());
+					desconto.setDesconto(totalPorItem * (util.converterDouble(acao)/100));
+					res.add(desconto);
+						
 			}
 				//Brinde
-				if(item.getAcao().contains(acao2)){
-				String acao = item.getAcao().replaceAll("[\\D]", "");
-				Integer ganha = Integer.parseInt(acao);
-
-				if(item.getQuantidade() > quantidade){
-				DescontoDTO desconto = new DescontoDTO();
+				if(item.getAcao().contains(ganhe) && (item.getQuantidade() > util.converterInteger(condicao))){
+				String acao = item.getAcao();
+				DescontoDTO desconto = new DescontoDTO(null, null);
 				desconto.setId(item.getId());
-				desconto.setDesconto(item.getValor() * ganha);
+				desconto.setDesconto(item.getValor() * util.converterInteger(acao));
 				res.add(desconto);
-				}
+				
 			}
 				
 			}
+				//OPERADOR PRODUTOQUANTIDADE <
+				if(item.getCondicao().contains(quantidadeMenor)) {
+					String condicao = item.getCondicao();
+					//Progressivo
+					if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() < util.converterInteger(condicao))) {
+						String acao = item.getAcao();					
+						Double totalPorItem= item.getQuantidade() * item.getValor();
+						DescontoDTO desconto = new DescontoDTO(null, null);
+						desconto.setId(item.getId());
+						desconto.setDesconto(totalPorItem * (util.converterDouble(acao)/100));
+						res.add(desconto);
+							
+				}
+					//Brinde
+					if(item.getAcao().contains(ganhe) && (item.getQuantidade() < util.converterInteger(condicao))){
+					String acao = item.getAcao();
+					DescontoDTO desconto = new DescontoDTO(null,null);
+					desconto.setId(item.getId());
+					desconto.setDesconto(item.getValor() * util.converterInteger(acao));
+					res.add(desconto);
+					
+				}
+					
+				}			
 
+				//OPERADOR PRODUTOQUANTIDADE =
+				if(item.getCondicao().contains(quantidadeIgual)) {
+					String condicao = item.getCondicao();
+					//Progressivo
+					if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() == util.converterInteger(condicao))) {
+						String acao = item.getAcao();					
+						Double totalPorItem= item.getQuantidade() * item.getValor();
+						DescontoDTO desconto = new DescontoDTO(null, null);
+						desconto.setId(item.getId());
+						desconto.setDesconto(totalPorItem * (util.converterDouble(acao)/100));
+						res.add(desconto);
+							
+				}
+					//Brinde
+					if(item.getAcao().contains(ganhe) && (item.getQuantidade() == util.converterInteger(condicao))){
+					String acao = item.getAcao();
+					DescontoDTO desconto = new DescontoDTO(null, null);
+					desconto.setId(item.getId());
+					desconto.setDesconto(item.getValor() * util.converterInteger(acao));
+					res.add(desconto);
+					
+				}
+					
+				}			
+
+			//VALOR DA COMPRA teste
+			//CONDIÇÃO3 VALORTOTAL >
+			if(item.getCondicao().contains(valorTotal)){
+				String condicao = item.getCondicao();					
+		
+				if(item.getAcao().contains(descontoTotal) && (compra.getValorTotal() > util.converterDouble(condicao))){
+					String acao = item.getAcao();
+					Double valorCompra =  compra.getValorTotal();
+					DescontoDTO desconto = new DescontoDTO(null, null);
+					desconto.setId(item.getId());
+					desconto.setDesconto(valorCompra * ( util.converterInteger(acao)/100));
+					res.add(desconto);
+				}
+			}
 		}
-
 		return res;
-
 	}
-
 }
