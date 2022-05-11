@@ -92,16 +92,11 @@ _ADMIN e ADMIN_, não é necessário fazer alterações
 Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/57276b22f2573393d75bf36c32f89e020ee80481/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
 
 ## Funcionalidades desenvolvidas 
-- [x] Cadastro de Produtos
-- [x] Listar Produtos
-- [x] Remover Produtos Cadastrados
-- [x] Arquivar e Desarquivar Produtos Cadastrados (para armazenar dados dos produtos que já foram comprados)
-- [x] Filtrar a Listagem de Produtos (produtos disponíveis ou arquivados)
-- [x] Editar um Produto Cadastrado
-- [x] Adicionar Produtos na Sacola
-- [x] Alterar a Quantidade de Produtos na Sacola
-- [x] Remover Produtos da Sacola
-- [x] Finalizar Compra
+- [x] Cadastro de Promoções
+- [x] Editar Promoções
+- [x] Remover Promoções
+- [x] Ativar e Interromper Promoções 
+- [x] Filtrar a Listagem de Promoções (promoções ativas e interrompidas)
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
 
