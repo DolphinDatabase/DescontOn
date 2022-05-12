@@ -69,12 +69,14 @@
 						<th>Data</th>
 						<th></th>
 						<th></th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody id="disp">
 				</tbody>
 				<tbody id="arqui" style="display: none;">
 				</tbody>
+			</table>
 		</div>
 	</div>
 	</section>
@@ -96,6 +98,23 @@
 					<button type="button" class="btn btn-primary" onclick="excluirPromocao()">Sim</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="$('#myModal').modal('hide')">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MODAL -->
+
+	<!--  DETAIL MODAL -->
+	<div id="detailModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Produtos participantes</h5>
+				</div>
+				<div class="modal-body" id="detailContent">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" onclick="$('#detailModal').modal('hide')">OK</button>
 				</div>
 			</div>
 		</div>

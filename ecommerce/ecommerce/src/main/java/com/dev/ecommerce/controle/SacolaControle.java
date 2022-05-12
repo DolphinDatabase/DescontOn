@@ -58,10 +58,6 @@ public class SacolaControle {
 		//brinde condicao é a mesma que progressiva mas muda a acao
 		String ganhe = "[Ganhe]";
 
-		//valor da compra - falta menor valor
-		String valorTotal = "[ValorTotal >]";
-		String descontoTotal = "[DescontoTotal]";
-
 		//operadores novos - faltam do valorTotal
 		String quantidadeMenor = "[ProdutoQuantidade <]";
 		String quantidadeIgual = "[ProdutoQuantidade =]";
@@ -70,7 +66,7 @@ public class SacolaControle {
 
 		List<DescontoDTO> res = new ArrayList<>();
 		Util util = new Util();
-		Compra compra = new Compra();
+		
 
 		for(SacolaDTO item:lista){
 			//CONDIÇÃO1 PRODUTO SELECIONADO
@@ -94,9 +90,6 @@ public class SacolaControle {
 					
 				}
 
-				//DescontoTotal
-
-				//DescontoMenorValor
 			}
 
 
@@ -174,21 +167,6 @@ public class SacolaControle {
 				}
 					
 				}			
-
-			//VALOR DA COMPRA teste
-			//CONDIÇÃO3 VALORTOTAL >
-			if(item.getCondicao().contains(valorTotal)){
-				String condicao = item.getCondicao();					
-		
-				if(item.getAcao().contains(descontoTotal) && (compra.getValorTotal() > util.converterDouble(condicao))){
-					String acao = item.getAcao();
-					Double valorCompra =  compra.getValorTotal();
-					DescontoDTO desconto = new DescontoDTO(null, null);
-					desconto.setId(item.getId());
-					desconto.setDesconto(valorCompra * ( util.converterInteger(acao)/100));
-					res.add(desconto);
-				}
-			}
 		}
 		return res;
 	}
