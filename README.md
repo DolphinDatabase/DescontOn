@@ -148,80 +148,56 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
 
 ## User Story
   
-<details><summary>Story 1 - Cadastro de Produtos</summary>
+<details><summary>Story 10 - Cadastrar Promoções</summary>
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Visualizar os produtos que foram cadastrados em uma lista. | Seja possível conferir as informações do produto e adicioná-los na sacola. |
+| Assistente de cadastro de um E-commerce. | cadastrar promoções, |  essas sejam aplicadas e usadas como uma tática para atingir um objetivo estratégico da empresa.|
   
 </details>
 
-<details><summary>Story 2 - Listagem de Produtos</summary>
+<details><summary>Story 11 - Listar Promoções</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
-  
-</details>
-
-
-<details><summary>Story 3 - Sacola de Compras</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
+| Assistente de cadastro de um E-commerce. | visualizar todas as promoções e seus respectivos itens, | seja possível conferir todas as promoções e seus itens.|
   
 </details>
 
 
-<details><summary>Story 4 - Alterar a Quantidade de Produtos na Sacola</summary>
+<details><summary>Story 12 - Editar Promoções</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Usuário de um E-commerce. | Alterar a quantidade de produtos na sacola. | Seja possível comprar mais itens sem precisar retornar a lista de produtos. |
-  
-</details>
-
-<details><summary>Story 5 - Finalizar uma Compra</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Usuário de um E-commerce. | Finalizar uma compra. | Seja possível efetuar seu fechamento. |
-  
-</details>
-
-<details><summary>Story 6 - Remover um Item da Sacola</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Usuário de um E-commerce. | Remover um item da sacola. | Exista a possibilidade de exclusão, caso não deseje mais comprar determinado produto. |
-  
-</details>
-
-<details><summary>Story 7 - Remover um Produto Cadastrado</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Remover um item cadastrado. | Exista a possibilidade de exclusão, caso as informações do produto estejam erradas ou não  seja mais vendido. |
+| Administrador de um E-commerce,| editar promoções já cadastradas, | todas as promoções e seus itens se mantenham atualizados.|
   
 </details>
 
 
-<details><summary>Story 8 - Editar um Produto Cadastrado</summary>
+<details><summary>Story 13 - Remover Promoções</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Editar um produto cadastrado. | Seja possível alterar as informações do produto, como nome e valor. |
-
+| Administrador de um E-commerce,| remover promoções, | haja a possibilidade de exclusão caso a promoção não ocorra novamente|
+  
 </details>
 
-<details><summary>Story 9 - Filtrar Produtos Disponíveis e Arquivados</summary>
+<details><summary>Story 14 - Descontos na Sacola</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. |  filtrar os produtos disponíveis ou arquivados.|  seja possível visualizar quais produtos estão disponíveis e quais produtos estão arquivados. |
+|Administrador de um E-commerce, | que os usuários visualizem os descontos de promoções na sacola, | seja possível conferir os descontos e valor final. |
   
 </details>
+
+<details><summary>Story 15 - Verificar Promoções</summary>
+  
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Administrador de um E-commerce, | verificar se a promoção está correta quando o usuário finalizar a compra, | seja possível validar se a promoção ainda está ativa ou existe antes de finalizar uma compra. |
+  
+</details>
+
 
 ## Roadmap
 
