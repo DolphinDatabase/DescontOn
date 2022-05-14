@@ -27,7 +27,7 @@
 
 ## Descrição
 
-Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ banco de dados e também como são adicionados na sacola de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e da visualização prática e intuitiva dos produtos cadastrados através da listagem que possui um filtro para que seja possível diferenciar quais produtos estão disponíveis e quais produtos estão arquivados.
+Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro de promoções (com sua mecânica) de uma forma prática e flexível e o desconto aplicado na sacola de compras. As promoções para e-commerce são fundamentais para qualquer negócio online, elas podem trazer benefícios como aumento do alcance da marca, captação de novos clientes e o aumento das vendas. Para aplicá-las no negócio, a equipe desenvolveu a possibilidade do usuário criar diferentes mecânicas/regras. Além de fornecer autonomia sobre elas ao editar, remover promoções ou até mesmo interromper/ativar uma promoção e filtrar quais promoções estão ativas no momento e quais estão interrompidas.
 
 <details><summary>Model Canvas do Projeto</summary>
 
