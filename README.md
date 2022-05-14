@@ -15,9 +15,7 @@
  * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
  * [Demonstração](#demonstração)
  * [Manual do Usuário](#manual-do-usuário)
- * [Backlog do Produto](#backlog-do-produto) 
- * [Story Cards](#story-cards)  
- * [User Story](#user-story)   
+ * [Backlog do Produto](#backlog-do-produto)  
  * [Roadmap](#roadmap)
  * [Gráfico de Burndown](#gráfico-de-burndown)
  * [Cronograma do API](#cronograma-do-api)
@@ -26,19 +24,18 @@
  * [Licença](#licença)
 
 ## Descrição
+<p align="justify">
+Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. 
+Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ banco de dados e também como são adicionados na sacola de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e da visualização prática e intuitiva dos produtos cadastrados através da listagem que possui um filtro para que seja possível diferenciar quais produtos estão disponíveis e quais produtos estão arquivados.
 
-Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro de promoções (com sua mecânica) de uma forma prática e flexível e o desconto aplicado na sacola de compras. As promoções para e-commerce são fundamentais para qualquer negócio online, elas podem trazer benefícios como aumento do alcance da marca, captação de novos clientes e o aumento das vendas. Para aplicá-las no negócio, a equipe desenvolveu a possibilidade do usuário criar diferentes mecânicas/regras. Além de fornecer autonomia sobre elas ao editar, remover promoções ou até mesmo interromper/ativar uma promoção e filtrar quais promoções estão ativas no momento e quais estão interrompidas.
+### Model Canvas do Projeto
 
-<details><summary>Model Canvas do Projeto</summary>
-
-<img src="https://github.com/DolphinDatabase/DescontOn/blob/f329e96e01693d44285ebd7471af6f972be88e68/Imagens/CANVAS.png">
-
-</details>
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/CANVAS.png">
 
 ## Documentação
-
+  
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/d40072414efb8eb0eea0c665225776330e846419/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
@@ -88,14 +85,19 @@ _localhost:8080/administrativo_
 _ADMIN e ADMIN_, não é necessário fazer alterações
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/57276b22f2573393d75bf36c32f89e020ee80481/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
 ## Funcionalidades desenvolvidas 
-- [x] Cadastro de Promoções
-- [x] Editar Promoções
-- [x] Remover Promoções
-- [x] Ativar e Interromper Promoções 
-- [x] Filtrar a Listagem de Promoções (promoções ativas e interrompidas)
+- [x] Cadastro de Produtos
+- [x] Listar Produtos
+- [x] Remover Produtos Cadastrados
+- [x] Arquivar e Desarquivar Produtos Cadastrados (para armazenar dados dos produtos que já foram comprados)
+- [x] Filtrar a Listagem de Produtos (produtos disponíveis ou arquivados)
+- [x] Editar um Produto Cadastrado
+- [x] Adicionar Produtos na Sacola
+- [x] Alterar a Quantidade de Produtos na Sacola
+- [x] Remover Produtos da Sacola
+- [x] Finalizar Compra
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
 
@@ -105,13 +107,13 @@ Para acessar nossos *wireframes*, clique [aqui](https://www.figma.com/file/DfQM3
  
 ## Demonstração
  
-Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique abaixo:
+Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s):
 
 [<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&t=1s "DescontOn vídeo Demonstração")
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/a4f3e7bc27f1226e887e7f326872661036e95dfc/Manual/Manual%20do%20Usuario_sprint1%20-%20DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
 ## Backlog do Produto
 
@@ -126,85 +128,18 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
 - [x] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Editar um Produto Cadastrado
 - [x] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Produtos Disponíveis e Arquivados
 - [ ] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 2:** Promoções
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Cadastrar Promoções
+- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Tipo de Desconto: Simples
+- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Tipo de Desconto: Progressivo
+- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Tipo de Desconto: Brinde
+- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Tipo de Desconto: Menor Valor
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Listar Promoções
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Editar Promoções
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Remover Promoções
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Descontos na Sacola
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Promoções Ativas e Interrompidas
 - [ ] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 3:**  Recomendar Produtos
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Categoria
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Mais Vendidos
-
-
-## Story Cards
-
-<p align="center">
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/6fa887b9e924f9a573776f546e20421438901d9e/Imagens/STORYGIF.gif"/>
-</p>
-
-## User Story
   
-<details><summary>Story 10 - Cadastrar Promoções</summary>
-
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | cadastrar promoções, |  essas sejam aplicadas e usadas como uma tática para atingir um objetivo estratégico da empresa.|
-  
-</details>
-
-<details><summary>Story 11 - Listar Promoções</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | visualizar todas as promoções e seus respectivos itens, | seja possível conferir todas as promoções e seus itens.|
-  
-</details>
-
-
-<details><summary>Story 12 - Editar Promoções</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Administrador de um E-commerce,| editar promoções já cadastradas, | todas as promoções e seus itens se mantenham atualizados.|
-  
-</details>
-
-
-<details><summary>Story 13 - Remover Promoções</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Administrador de um E-commerce,| remover promoções, | haja a possibilidade de exclusão caso a promoção não ocorra novamente|
-  
-</details>
-
-<details><summary>Story 14 - Descontos na Sacola</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-|Administrador de um E-commerce, | que os usuários visualizem os descontos de promoções na sacola, | seja possível conferir os descontos e valor final. |
-  
-</details>
-
-<details><summary>Story 15 - Verificar Promoções</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Administrador de um E-commerce, | verificar se a promoção está correta quando o usuário finalizar a compra, | seja possível validar se a promoção ainda está ativa ou existe antes de finalizar uma compra. |
-  
-</details>
-
-<details><summary>Story 16 - Filtrar Promoções Ativas e Interrompidas</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Administrador de um E-commerce, | filtrar as promoções ativas e interrompidas, | seja possível visualizar quais promoções estão ativas e quais promoções foram interrompidas. |
-  
-</details>
-
-
 ## Roadmap
 
 Para acessar nosso *Roadmap*, clique [aqui](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/roadmap).
@@ -218,7 +153,7 @@ Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.
 | Data | Evento |
 | -------| --------- |
 | 16/03 às 19h  | Project kick-off. |
-| 24/03 a 17/04 | [Sprint 1](https://github.com/DolphinDatabase/DescontOn/blob/b9ffbd159b0b61985e81af19b72bf1dd6d6a977d/Sprints/SPRINT1.md). |
+| 24/03 a 14/04 | [Sprint 1](Sprints/SPRINT1.md). |
 | 25/04 a 15/05 | [Sprint 2](#). |
 | 16/05 a 05/06 | [Sprint 3](#). |
 | 15/06 às 19h | Feira de Soluções. |
@@ -294,10 +229,8 @@ Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/AP
 
 ## Licença  
 
-Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/SGBD_Health/blob/main/LICENSE).<br/>
+Este projeto esta sob licença [MIT](https://github.com/DolphinDatabase/DescontOn/blob/main/LICENSE).<br/>
 <a href="https://github.com/dolphindatabase" target="_blank" align="center">![Badge](https://img.shields.io/badge/MADE&nbsp;by&nbsp;DolphinDatabase-grey?style=for-the-badge&logo=dev.to)</a>
 
 [^1]: Vídeo produzido e editado pelos integrantes do grupo.
 [^2]: Equipe responsável pelo desenvolvimento do Projeto Integrador.
-
-
