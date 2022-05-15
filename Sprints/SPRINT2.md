@@ -29,7 +29,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções 
 
 ### Model Canvas do Projeto
 
-<img src="Imagens/CANVAS.png">
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/084cb681ae7be7f86e56b5b2ba44cee5c4efac3c/Imagens/CANVAS.png">
 
 ## Documentação
   
