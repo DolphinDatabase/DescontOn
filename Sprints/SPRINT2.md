@@ -90,7 +90,7 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
 ## Story Cards
 
 <p align="center">
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/e3eb88350c860c6e7428f9ba11690b3068168d73/Imagens/StoryCards/StoryCards2.gif"/>
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/2da4cd0304bb854cd485d966b0d7b5894ed1ce0c/Imagens/StoryCards/StoryCards2.gif"/>
 </p>
 
 ## User Story
