@@ -24,9 +24,7 @@
 
 ## Descrição
 <p align="justify">
-Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. 
-Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções no servidor/ banco de dados e também como são adicionados na sacola de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções.
-
+Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro de promoções (com sua mecânica) de uma forma prática e flexível e o desconto aplicado na sacola de compras. As promoções para e-commerce são fundamentais para qualquer negócio online, elas podem trazer benefícios como aumento do alcance da marca, captação de novos clientes e o aumento das vendas. Para aplicá-las no negócio, a equipe desenvolveu a possibilidade  do usuário criar diferentes mecânicas/regras. Além de fornecer autonomia sobre elas ao editar, remover promoções ou até mesmo interromper/ativar uma promoção e filtrar quais promoções estão ativas no momento e quais estão interrompidas.
 ### Model Canvas do Projeto
 
 <img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/CANVAS.png">
@@ -55,16 +53,13 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções 
 Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Funcionalidades desenvolvidas 
-- [x] Cadastro de Produtos
-- [x] Listar Produtos
-- [x] Remover Produtos Cadastrados
-- [x] Arquivar e Desarquivar Produtos Cadastrados (para armazenar dados dos produtos que já foram comprados)
-- [x] Filtrar a Listagem de Produtos (produtos disponíveis ou arquivados)
-- [x] Editar um Produto Cadastrado
-- [x] Adicionar Produtos na Sacola
-- [x] Alterar a Quantidade de Produtos na Sacola
-- [x] Remover Produtos da Sacola
-- [x] Finalizar Compra
+- [x] Cadastro de Promoções
+- [x] Listar Promoções
+- [x] Remover Promoções
+- [x] Ativar ou Interromper Promoções
+- [x] Filtrar a Listagem de Promoções (promoções ativas ou interrompidas)
+- [x] Editar uma Promoção
+- [x] Aplicar Descontos na Sacola de Compras
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
 
@@ -90,7 +85,6 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Editar Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Remover Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Descontos na Sacola
-- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Promoções Ativas e Interrompidas
 
 ## Story Cards
@@ -143,15 +137,7 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
   
 </details>
 
-<details><summary>Story 15 - Verificar Promoções</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Administrador de um E-commerce. | Verificar se a promoção está correta quando o usuário finalizar a compra. | Seja possível validar se a promoção ainda está ativa ou existe antes de finalizar uma compra. |
-  
-</details>
-
-<details><summary>Story 16 - Filtrar Promoções Ativas e Interrompidas</summary>
+<details><summary>Story 15 - Filtrar Promoções Ativas e Interrompidas</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
