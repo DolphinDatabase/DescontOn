@@ -82,7 +82,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 
 Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
 
-## Backlog da Sprint 1
+## Backlog da Sprint 2
 
 - [x] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 1:**  Base da ferrramenta
 - [x] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Cadastro de Produtos
