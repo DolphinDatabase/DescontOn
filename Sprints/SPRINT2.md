@@ -14,7 +14,7 @@
  * [Ilustração das funcionalidades](#ilustração-das-funcionalidades)
  * [Demonstração](#demonstração)
  * [Manual do Usuário](#manual-do-usuário)
- * [Backlog da Sprint 1](#backlog-da-sprint-1) 
+ * [Backlog da Sprint 2](#backlog-da-sprint-2) 
  * [Story Cards](#story-cards)  
  * [User Story](#user-story)   
  * [Roadmap](#roadmap)
