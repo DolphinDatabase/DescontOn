@@ -106,7 +106,7 @@ Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-
 - [x] Editar uma Promoção
 - [x] Aplicar Descontos na Sacola de Compras
 
-![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint2).
 
 ## Ilustração das funcionalidades
 
