@@ -89,9 +89,9 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Listar Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Editar Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Remover Promoções
-- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Promoções Ativas e Interrompidas
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Descontos na Sacola
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
+- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Promoções Ativas e Interrompidas
 
 ## Story Cards
 
@@ -101,78 +101,61 @@ Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatab
 
 ## User Story
   
-<details><summary>Story 1 - Cadastro de Produtos</summary>
+<details><summary>Story 10 - Cadastrar Promoções</summary>
 
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Visualizar os produtos que foram cadastrados em uma lista. | Seja possível conferir as informações do produto e adicioná-los na sacola. |
+| Administrador de um E-commerce. | Cadastrar promoções. | Essas sejam aplicadas e usadas como uma tática para atingir um objetivo estratégico da empresa. |
   
 </details>
 
-<details><summary>Story 2 - Listagem de Produtos</summary>
+<details><summary>Story 11 - Listar Promoções</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
-  
-</details>
-
-
-<details><summary>Story 3 - Sacola de Compras</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Usuário de um E-commerce. | Adicionar produtos no meu carrinho de compras. | Seja possível listar os itens escolhidos para conferir e ajustar a quantidade, subtotal e os descontos que refletirão no valor final. |
+| Administrador de um E-commerce. | Visualizar todas as promoções e seus respectivos itens. | Seja possível conferir todas as promoções e seus itens. |
   
 </details>
 
 
-<details><summary>Story 4 - Alterar a Quantidade de Produtos na Sacola</summary>
+<details><summary>Story 12 - Editar Promoções</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Usuário de um E-commerce. | Alterar a quantidade de produtos na sacola. | Seja possível comprar mais itens sem precisar retornar a lista de produtos. |
-  
-</details>
-
-<details><summary>Story 5 - Finalizar uma Compra</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Usuário de um E-commerce. | Finalizar uma compra. | Seja possível efetuar seu fechamento. |
-  
-</details>
-
-<details><summary>Story 6 - Remover um Item da Sacola</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Usuário de um E-commerce. | Remover um item da sacola. | Exista a possibilidade de exclusão, caso não deseje mais comprar determinado produto. |
-  
-</details>
-
-<details><summary>Story 7 - Remover um Produto Cadastrado</summary>
-  
-| Como | Eu quero | Para que |
-| ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Remover um item cadastrado. | Exista a possibilidade de exclusão, caso as informações do produto estejam erradas ou não  seja mais vendido. |
+| Administrador de um E-commerce. | Editar promoções já cadastradas. | Todas as promoções e seus itens se mantenham atualizados. |
   
 </details>
 
 
-<details><summary>Story 8 - Editar um Produto Cadastrado</summary>
+<details><summary>Story 13 - Remover Promoções</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. | Editar um produto cadastrado. | Seja possível alterar as informações do produto, como nome e valor. |
-
+| Administrador de um E-commerce. | Remover promoções. | Haja a possibilidade de exclusão caso a promoção não ocorra novamente. |
+  
 </details>
 
-<details><summary>Story 9 - Filtrar Produtos Disponíveis e Arquivados</summary>
+<details><summary>Story 14 - Descontos na Sacola</summary>
   
 | Como | Eu quero | Para que |
 | ------- | ------- | ------- |
-| Assistente de cadastro de um E-commerce. |  filtrar os produtos disponíveis ou arquivados.|  seja possível visualizar quais produtos estão disponíveis e quais produtos estão arquivados. |
+| Administrador de um E-commerce. | Que os usuários visualizem os descontos de promoções na sacola. | Seja possível conferir os descontos e valor final. |
+  
+</details>
+
+<details><summary>Story 15 - Verificar Promoções</summary>
+  
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Administrador de um E-commerce. | Verificar se a promoção está correta quando o usuário finalizar a compra. | Seja possível validar se a promoção ainda está ativa ou existe antes de finalizar uma compra. |
+  
+</details>
+
+<details><summary>Story 16 - Filtrar Promoções Ativas e Interrompidas</summary>
+  
+| Como | Eu quero | Para que |
+| ------- | ------- | ------- |
+| Administrador de um E-commerce. | Filtrar as promoções ativas e interrompidas. | Seja possível visualizar quais promoções estão ativas e quais promoções foram interrompidas. |
   
 </details>
 
