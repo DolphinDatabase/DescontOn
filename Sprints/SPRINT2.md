@@ -29,19 +29,19 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções 
 
 ### Model Canvas do Projeto
 
-<img src="https://github.com/DolphinDatabase/DescontOn/blob/084cb681ae7be7f86e56b5b2ba44cee5c4efac3c/Imagens/CANVAS.png">
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/CANVAS.png">
 
 ## Documentação
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="Imagens/CANVAS.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Conceitual.png">
  
   </details>
   
   <details><summary>Modelo Relacional</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Relacional.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Relacional.png">
   
   </details>
   
