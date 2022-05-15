@@ -18,10 +18,22 @@ async function popularTabela(){
         }else{
             var elemento="<tr><td>"+produto.id+"</td><td>"+produto.nome+"</td><td>"+produto.categoria+"</td><td>"+produto.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>"
             elemento += "<td colspan='3'><a class='btn btn-info btn-sm editar' data-toggle='modal' data-target='#modal-warning'>";
-            elemento += "<span class='bx bx-upload' title='desarquivar' onclick='desarquivar("+JSON.stringify(produto)+")' aria-hidden='true'></span></a></td></tr>";
+            elemento += "<span class='bx bx-upload' title='Desarquivar' onclick='desarquivar("+JSON.stringify(produto)+")' aria-hidden='true'></span></a></td></tr>";
             $("#arqui").append(elemento);
         }
     });
+}
+
+//function to change table
+function changeTable() {
+    var op = document.getElementById("op").value;
+    if (op == "0") {
+        document.getElementById("disp").style.display = "contents";
+        document.getElementById("arqui").style.display = "none";
+    } else {
+        document.getElementById("arqui").style.display = "contents";
+        document.getElementById("disp").style.display = "none";
+    }
 }
 
 function abreModal(id){

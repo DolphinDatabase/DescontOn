@@ -284,6 +284,35 @@ a {
 	font-size:10px
 }
 
+.btn.btn-info.btn-sm.info{
+	background-color:#8F8E8D;
+	color: white;
+	border: none;
+  	outline: none;
+}
+
+.btn.btn-info.btn-sm.info:hover{
+	background-color:#BDBCBB;
+	color: white;
+	border: none;
+  	outline: none;
+}
+
+.btn.btn-pause.btn-sm.pause{
+	background-color:#F7BB39;
+	color: white;
+	border: none;
+  	outline: none;
+}
+
+.btn.btn-pause.btn-sm.pause:hover{
+	background-color:#F5CB71;
+	color: white;
+	border: none;
+  	outline: none;
+}
+
+
 .btn.btn-lg.btn-block.btn-success.text-uppercase{
 	background-color:#EA3D6B;
 	border-radius: 2rem;
@@ -323,5 +352,18 @@ a {
 .btn.btn-sm.promo{
     background-color:#FF7299;
     color: white;
+}
+
+.btn-get-started{
+	position:fixed;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.section{
+	display:inline-block;
+	width:100%;
+	height:100vh;
 }
 }

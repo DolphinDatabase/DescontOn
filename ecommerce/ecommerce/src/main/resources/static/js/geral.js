@@ -36,15 +36,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     //  to run since DOM is loaded and ready
 });
-
-//function to change table
-function changeTable() {
-    var op = document.getElementById("op").value;
-    if (op == "0") {
-        document.getElementById("disp").style.display = "contents";
-        document.getElementById("arqui").style.display = "none";
-    } else {
-        document.getElementById("arqui").style.display = "contents";
-        document.getElementById("disp").style.display = "none";
-    }
-}
