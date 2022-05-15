@@ -98,6 +98,13 @@ Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-
 - [x] Alterar a Quantidade de Produtos na Sacola
 - [x] Remover Produtos da Sacola
 - [x] Finalizar Compra
+- [x] Cadastro de Promoções
+- [x] Listar Promoções
+- [x] Remover Promoções
+- [x] Ativar ou Interromper Promoções
+- [x] Filtrar a Listagem de Promoções (promoções ativas ou interrompidas)
+- [x] Editar uma Promoção
+- [x] Aplicar Descontos na Sacola de Compras
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
 
@@ -133,9 +140,9 @@ Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint1-
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Editar Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Remover Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Descontos na Sacola
-- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Promoções Ativas e Interrompidas
 - [ ] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 3:**  Melhorias para o Usuário
+- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Cadastrar Produtos em (N) Promoções
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Criar Novas Condições/Ações de Promoções
 - [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Exibir o Desconto e Promoção de Cada Produto na Sacola de Compras
