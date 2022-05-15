@@ -33,13 +33,13 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Conceitual.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/a51b56db734a408c6f3987cf704ed0444dbe8310/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Conceitual.jpeg">
  
   </details>
   
   <details><summary>Modelo Relacional</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Relacional.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/a51b56db734a408c6f3987cf704ed0444dbe8310/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Relacional.jpeg">
   
   </details>
   
@@ -61,7 +61,7 @@ Para acessar a documentação completa do projeto, clique [aqui](https://github.
 - [x] Editar uma Promoção
 - [x] Aplicar Descontos na Sacola de Compras
 
-![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint1).
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint2).
 
 ## Ilustração das funcionalidades
 
