@@ -35,7 +35,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções 
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Conceitual.png">
+  <img src="Imagens/CANVAS.png">
  
   </details>
   
