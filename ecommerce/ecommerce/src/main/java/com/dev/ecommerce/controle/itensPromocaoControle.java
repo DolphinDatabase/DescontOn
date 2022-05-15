@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.dev.ecommerce.dto.ProdutoDTO;
+import com.dev.ecommerce.dto.PromocaoDTO;
 import com.dev.ecommerce.modelos.ItensPromocao;
 import com.dev.ecommerce.modelos.Produto;
 import com.dev.ecommerce.modelos.Promocao;

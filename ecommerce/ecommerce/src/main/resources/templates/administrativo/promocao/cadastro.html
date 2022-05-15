@@ -6,38 +6,39 @@
 	<title>Promoção</title>
 	<link rel="icon" href="/image/icone.png" />
 
-		<!-- Bootstrap core CSS -->
-		<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
-		<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
-		<!-- Custom styles for this template -->
-		<link href="/css/geral.css" rel="stylesheet" />
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="/webjars/jquery/jquery.min.js"></script>
-		<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.js"
-			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-		<script type="text/javascript" src="/js/geral.js"></script>
-		<script type="text/javascript" src="/js/promocao/cadastro.js"></script>
-		<script th:inline="javascript">
-			/*<![CDATA[*/
-			var id = [[${ id }]];
-			if (id!=null) {
-				document.addEventListener("DOMContentLoaded", function () {
-					loadPromocao(id);
-					populaParticipante();
-				})
-			}else{
-				document.addEventListener("DOMContentLoaded", function () {
-					$("#produtoTable").css("display","none");
-					populaTabela();
-				})
-			}
-			
-			/*]]>*/
-		</script>
+	<!-- Bootstrap core CSS -->
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Custom styles for this template -->
+	<link href="/css/geral.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+		integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/geral.js"></script>
+	<script type="text/javascript" src="/js/promocao/cadastro.js"></script>
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		var id = [[${ id }]];
+		if (id != null) {
+			document.addEventListener("DOMContentLoaded", function () {
+				loadPromocao(id);
+				populaParticipante();
+			})
+		} else {
+			document.addEventListener("DOMContentLoaded", function () {
+				$("#produtoTable").css("display", "none");
+				populaTabela();
+			})
+		}
+		/*]]>*/
+	</script>
 
 </head>
 
@@ -57,8 +58,8 @@
 						<span class="nav_name">Listar Produtos</span> </a>
 					<a href="/administrativo/sacola" class="nav_link"> <i class='bx bx-shopping-bag nav_icon'></i> <span
 							class="nav_name">Sacola</span> </a>
-					<a href="/administrativo/promocao" class="nav_link"> <i class='bx bxs-badge-dollar nav_icon'></i> <span
-							class="nav_name">Cadastrar Promo.</span> </a>
+					<a href="/administrativo/promocao" class="nav_link"> <i class='bx bxs-badge-dollar nav_icon'></i>
+						<span class="nav_name">Cadastrar Promo.</span> </a>
 					<a href="/administrativo/promocao/listagem" class="nav_link"> <i
 							class='bx bx-collection nav_icon'></i> <span class="nav_name">Listar Promoções</span> </a>
 				</div>
@@ -74,57 +75,88 @@
 		<section class="layout-content">
 			<section class="layout-content">
 				<div class="container" id="cadastro">
-					<form form class="needs-validation" novalidate onsubmit="cadastrar(event)"
-						method="POST">
+					<form form class="needs-validation" novalidate onsubmit="cadastrar(event)">
 						<div class="form-row">
-
 							<!-- Nome -->
 							<div class="form-group col-md-6">
 								<label for="nome">Nome da Promoção</label> <input type="text" class="form-control"
-									id="nome" placeholder="Nome" autofocus="autofocus"
-									value="" required />
+									id="nome" placeholder="Nome" autofocus="autofocus" value="" required />
 								<div class="invalid-feedback">Por favor, insira o nome da promoção.</div>
 							</div>
 						</div>
-
-
-						<!-- Mecanica -->
+						<div>&nbsp;</div>
+						<!-- Condicao -->
 						<div class="form-row">
 							<div class="form-group col-md-6">
-								<br>
-
-
-								<label for="promocao">Condição</label>
-
-								<textarea class="form-control" id="condicao" placeholder="When" autofocus="autofocus"
-									value="" required /></textarea>
-									<br>
-									<button class="btn btn-light btn-sm" draggable="true">[ProdutoSelecionado]</button>
-									<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade >]</button>
-									<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade <]</button>
-									<br><br>
-									<button class="btn btn-light btn-sm" draggable="true">[ProdutoQuantidade =]</button>
-	
-									<br>
-									<br>
+								<label>Condição</label>
+								<div class="d-flex">
+									<div id="showcondicao"
+										style="display: none;background: #EA3D6B;align-items: center;color: white;padding: 5px;">
+										<p id="opcondicao" style="margin: 0;width: max-content"></p>
+										<span style="margin-left: 5px;" onclick="remove('condicao')"><i
+												class="bx bx-x nav_icon"></i> </span>
+									</div>
+									<input type="number" class="form-control" id="dropcondicao" placeholder="When"
+										required ondrop="drop(event)" />
+								</div>
+								<div id="condicaoError" class="invalid-feedback" style="display: none;">Por favor, arraste uma regra de condição.</div>
 								<div class="invalid-feedback">Por favor, insira uma condição de promoção.</div>
-
-								<label for="promocao">Ação</label>
-								
-								<textarea class="form-control" id="acao" placeholder="Then" autofocus="autofocus"
-									value="" required /></textarea>
-									<br>
-									<button class="btn btn-light btn-sm" draggable="true">[DescontoProduto]</button>
-									<button class="btn btn-light btn-sm" draggable="true">[Ganhe]</button>
-									<br>
-									<br>
-								<div class="invalid-feedback">Por favor, insira uma ação para a promoção.</div>
+								<div id="btncondicao" class="container">
+									<div class="row">
+										<div class="col">
+											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
+												ondragstart="drag(event)">[ProdutoSelecionado]</button>
+										</div>
+										<div class="col">
+											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
+												ondragstart="drag(event)">[ProdutoQuantidade >]</button>
+										</div>
+										<div class="col">
+											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
+												ondragstart="drag(event)">[ProdutoQuantidade <] </button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-4">
+											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
+												ondragstart="drag(event)">[ProdutoQuantidade =]</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-
-
-						<!-- Listar Produtos Adicionados -->
-						<div class="container" layout:fragment="corpo">
+						<div>&nbsp;</div>
+						<!-- Acao -->
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label>Ação</label>
+								<div class="d-flex">
+									<div id="showacao"
+										style="display: none;background: #EA3D6B;align-items: center;color: white;padding: 5px;">
+										<p id="opacao" style="margin: 0;width: max-content"></p>
+										<span style="margin-left: 5px;" onclick="remove('acao')"><i
+												class="bx bx-x nav_icon"></i></span>
+									</div>
+									<input type="number" class="form-control" id="dropacao" placeholder="Then" required
+										ondrop="drop(event)" />
+								</div>
+								<div id="acaoError" class="invalid-feedback" style="display: none;">Por favor, arraste uma regra de ação.</div>
+								<div class="invalid-feedback">Por favor, insira uma ação de promoção.</div>
+								<div id="btnacao" class="container">
+									<div class="row">
+										<div class="col-sm-6">
+											<button class="btn btn-light btn-sm" target="acao" draggable="true"
+												ondragstart="drag(event)">[DescontoProduto]</button>
+										</div>
+										<div class="col-sm-6">
+											<button class="btn btn-light btn-sm" target="acao" draggable="true"
+												ondragstart="drag(event)">[Ganhe]</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
 							<div class="row">
 								<div class="col-2">
 									<div id="produtoTable" class="table-responsive">
@@ -140,32 +172,24 @@
 												<!-- linha nome -->
 											</tbody>
 										</table>
-
-
-										<!-- botoes -->
-
 									</div>
 									<div class="col-md-12 ">
 										<a class="btn btn-secondary" onclick="abrirLista()">Selecionar Produtos</a>
+										<div id="produtoError" class="invalid-feedback" style="display:none">Por favor,
+											selecione algum produto.</div>
 									</div>
 									<br></br>
 									<div class="col-md-8">
-										<button type="submit"
-											class="btn btn-primary btn-sm">Cadastrar</button>
+										<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
 									</div>
-									<!-- botao cadastar, com evento -->
-
-
+								</div>
+							</div>
+						</div>
 					</form>
 				</div>
 			</section>
-
-
-			<!-- end formulario -->
-
-			</form>
+		</section>
 	</div>
-	</section>
 
 	<!--  MODAL -->
 	<div id="myModal" class="modal" tabindex="-1" role="dialog">
@@ -178,7 +202,8 @@
 					<p id="modalContent"></p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="window.location.href='/administrativo/promocao/listagem'" class="btn btn-secondary">Ok</button>
+					<button type="button" onclick="window.location.href='/administrativo/promocao/listagem'"
+						class="btn btn-secondary">Ok</button>
 				</div>
 			</div>
 		</div>
@@ -202,7 +227,7 @@
 							</tr>
 						</thead>
 						<tbody id="listaProduto">
-							
+
 						</tbody>
 					</table>
 				</div>
@@ -224,4 +249,5 @@
 
 </body>
 <script type="text/javascript" src="/js/promocao/drag.js"></script>
+
 </html>
