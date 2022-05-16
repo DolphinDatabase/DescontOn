@@ -27,30 +27,30 @@
 Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro de promoções (com sua mecânica) de uma forma prática e flexível e o desconto aplicado na sacola de compras. As promoções para e-commerce são fundamentais para qualquer negócio online, elas podem trazer benefícios como aumento do alcance da marca, captação de novos clientes e o aumento das vendas. Para aplicá-las no negócio, a equipe desenvolveu a possibilidade  do usuário criar diferentes mecânicas/regras. Além de fornecer autonomia sobre elas ao editar, remover promoções ou até mesmo interromper/ativar uma promoção e filtrar quais promoções estão ativas no momento e quais estão interrompidas.
 ### Model Canvas do Projeto
 
-<img src="https://github.com/DolphinDatabase/DescontOn/blob/ecd5bf0ecd680dd6ceefe5e60080128de675a47c/Documenta%C3%A7%C3%A3o/Imagens/CANVAS.png">
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/83104e77a871d48406ff5de54e20547c5fac68ab/Documenta%C3%A7%C3%A3o/Imagens/CANVAS.png">
 
 ## Documentação
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/a51b56db734a408c6f3987cf704ed0444dbe8310/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Conceitual.jpeg">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/83104e77a871d48406ff5de54e20547c5fac68ab/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Conceitual.jpeg">
  
   </details>
   
   <details><summary>Modelo Relacional</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/a51b56db734a408c6f3987cf704ed0444dbe8310/Documenta%C3%A7%C3%A3o/Imagens/Modelo%20Relacional.jpeg">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/83104e77a871d48406ff5de54e20547c5fac68ab/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Relacional.jpeg">
   
   </details>
   
   <details><summary>Diagrama de Classes</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/c64e1393b55e9da8c60d8f037ca64dc76df78b76/Documenta%C3%A7%C3%A3o/Imagens/Diagrama%20de%20Classes.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/83104e77a871d48406ff5de54e20547c5fac68ab/Documenta%C3%A7%C3%A3o/Imagens/Diagrama%20de%20Classes.png">
   
   </details>
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/aabe2c0fc1fbf961a7961a6bfb54c1eb88b2e035/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Promoções
@@ -75,7 +75,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Manual/ManualdoUsuario_sprint1-DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/aabe2c0fc1fbf961a7961a6bfb54c1eb88b2e035/Manual/ManualdoUsuario_sprint2-DescontOn.pdf).
 
 ## Backlog da Sprint 2
 
