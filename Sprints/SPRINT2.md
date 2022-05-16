@@ -33,7 +33,7 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/83104e77a871d48406ff5de54e20547c5fac68ab/Documenta%C3%A7%C3%A3o/Imagens/Modelo_Conceitual.jpeg">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/09aa3ad4779b6ce159bd7020dc02576ee5f9324e/Documenta%C3%A7%C3%A3o/Imagens/ModeloConceitual.jpeg">
  
   </details>
   
