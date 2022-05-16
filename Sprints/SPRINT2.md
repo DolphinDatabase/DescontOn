@@ -45,7 +45,7 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
   <details><summary>Diagrama de Classes</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/83104e77a871d48406ff5de54e20547c5fac68ab/Documenta%C3%A7%C3%A3o/Imagens/Diagrama%20de%20Classes.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/b6be97060cf62d14e5fe7a90937d77b6b648b1a6/Documenta%C3%A7%C3%A3o/Imagens/DiagramaClasses.png">
   
   </details>
   
