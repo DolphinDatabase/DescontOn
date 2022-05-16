@@ -45,6 +45,7 @@ public class SacolaControle {
 			if(!find.isEmpty()){
 				item.setAcao(find.get(0).getPromocao().getAcao());
 				item.setCondicao(find.get(0).getPromocao().getCondicao());
+				item.setStatus(find.get(0).getPromocao().getStatus());
 				lista.add(item);
 			}
 		});	
@@ -70,6 +71,7 @@ public class SacolaControle {
 
 		for(SacolaDTO item:lista){
 			//CONDIÇÃO1 PRODUTO SELECIONADO
+			if(item.getStatus() == 0 ){
 			if(item.getCondicao().contains(produtoSelecionado)) {
 				//Desconto Simples
 				if(item.getAcao().contains(descontoProduto)) {
@@ -166,7 +168,7 @@ public class SacolaControle {
 					
 				}
 					
-				}			
+				}	}		
 		}
 		return res;
 	}
