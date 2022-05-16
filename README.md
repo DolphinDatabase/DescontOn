@@ -120,7 +120,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint2-DescontOn.pdf).
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint2-DescontOn.pdf).
 
 ## Backlog do Produto
 
