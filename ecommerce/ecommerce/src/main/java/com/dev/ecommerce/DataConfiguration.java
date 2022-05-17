@@ -17,8 +17,8 @@ public class DataConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
         dataSource.setUrl("jdbc:oracle:thin:@//localhost:1521/xe");
-        dataSource.setUsername("ADMIN");
-        dataSource.setPassword("ADMIN");
+        dataSource.setUsername("SYSTEM");
+        dataSource.setPassword("admin");
         return dataSource;
     }
     @Bean
