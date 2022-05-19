@@ -13,8 +13,10 @@ import com.dev.ecommerce.dto.DescontoDTO;
 import com.dev.ecommerce.dto.SacolaDTO;
 import com.dev.ecommerce.modelos.Compra;
 import com.dev.ecommerce.modelos.ItensPromocao;
+import com.dev.ecommerce.modelos.Produto;
 import com.dev.ecommerce.repositorios.CompraRepositorio;
 import com.dev.ecommerce.repositorios.ItensPromocaoRepositorio;
+import com.dev.ecommerce.repositorios.ProdutoRepositorio;
 import com.dev.ecommerce.repositorios.PromocaoRepositorio;
 import com.dev.ecommerce.utils.Acao;
 import com.dev.ecommerce.utils.Util;
@@ -33,6 +35,9 @@ public class SacolaControle {
 	@Autowired
 	ItensPromocaoRepositorio itensPromocaoRepositorio;
 
+	@Autowired
+	ProdutoRepositorio produtoRepositorio;
+
 	@PostMapping
 	public Compra salvar(@RequestBody Compra compra){
 		return compraRepositorio.save(compra);
@@ -43,13 +48,16 @@ public class SacolaControle {
 		List<SacolaDTO> lista = new ArrayList<>();
 		itensCompra.forEach(item->{
 			List<ItensPromocao> find = itensPromocaoRepositorio.findAllByProduto(item.getId());
+			List<Produto> encontrar = produtoRepositorio.findAllByProduto(item.getId());
 			if(!find.isEmpty()){
 				item.setAcao(find.get(0).getPromocao().getAcao());
 				item.setCondicao(find.get(0).getPromocao().getCondicao());
 				item.setStatus(find.get(0).getPromocao().getStatus());
+				item.setCategoria(encontrar.get(0).getCategoria());
 				lista.add(item);
 			}
 		});	
+
 		//acao e condicao desconto simples
 		String descontoProduto = "[DescontoProduto]";
 		String produtoSelecionado = "[ProdutoSelecionado]";
@@ -60,6 +68,9 @@ public class SacolaControle {
 		//operadores novos - faltam do valorTotal
 		String quantidadeMenor = "[ProdutoQuantidade <]";
 		String quantidadeIgual = "[ProdutoQuantidade =]";
+
+		//new
+		String categoria = "[ProdutoCategoria]";
 
 		List<DescontoDTO> res = new ArrayList<>();
 		Util util = new Util();
@@ -79,6 +90,46 @@ public class SacolaControle {
 					res.add(acoes.ganhe(item));
 				}
 
+			}
+
+			//CATEGORIA
+			if(item.getCondicao().contains(categoria)) {
+
+				if(item.getCategoria().contains("Cosmeticos") && (item.getCondicao().contains("1"))){
+				//Desconto Simples
+				if(item.getAcao().contains(descontoProduto)) {	
+					res.add(acoes.descontoProduto(item));
+				}
+				//ganhe com produtoSelecionado
+				if(item.getAcao().contains(ganhe)){
+					res.add(acoes.ganhe(item));
+				}
+					
+				}
+
+				if(item.getCategoria().contains("Perfumaria") && (item.getCondicao().contains("2"))){
+					//Desconto Simples
+					if(item.getAcao().contains(descontoProduto)) {	
+						res.add(acoes.descontoProduto(item));
+					}
+					//ganhe com produtoSelecionado
+					if(item.getAcao().contains(ganhe)){
+						res.add(acoes.ganhe(item));
+					}
+						
+					}
+
+					if(item.getCategoria().contains("Saude") && (item.getCondicao().contains("3"))){
+						//Desconto Simples
+						if(item.getAcao().contains(descontoProduto)) {	
+							res.add(acoes.descontoProduto(item));
+						}
+						//ganhe com produtoSelecionado
+						if(item.getAcao().contains(ganhe)){
+							res.add(acoes.ganhe(item));
+						}
+							
+						}
 			}
 				//Progressivo e Brinde
 				//CONDIÇÃO2 PRODUTOQUANTIDADE >
