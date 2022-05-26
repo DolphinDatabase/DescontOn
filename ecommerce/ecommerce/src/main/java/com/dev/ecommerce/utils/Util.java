@@ -5,6 +5,7 @@ public class Util {
     
     public Double converterDouble(String valor){
         String recebe = valor.replaceAll("[\\D]", "");
+        
         return Double.parseDouble(recebe);
     }
 

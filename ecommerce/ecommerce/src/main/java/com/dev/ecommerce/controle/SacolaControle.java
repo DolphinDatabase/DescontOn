@@ -50,14 +50,15 @@ public class SacolaControle {
 			List<ItensPromocao> find = itensPromocaoRepositorio.findAllByProduto(item.getId());
 			List<Produto> encontrar = produtoRepositorio.findAllByProduto(item.getId());
 			if(!find.isEmpty()){
-				item.setAcao(find.get(0).getPromocao().getAcao());
-				item.setCondicao(find.get(0).getPromocao().getCondicao());
+				item.setAcao(find.get(0).getPromocao().getAcao().replace("\n",""));
+				item.setCondicao(find.get(0).getPromocao().getCondicao().replace("\n", ""));
 				item.setStatus(find.get(0).getPromocao().getStatus());
 				item.setCategoria(encontrar.get(0).getCategoria());
 				item.setValor(encontrar.get(0).getValor());
 				lista.add(item);
 			}
 		});	
+
 
 		//acoes
 		String ganhe = "[Ganhe]";
@@ -129,9 +130,9 @@ public class SacolaControle {
 			}	
 			
 			//CATEGORIA
-			if(item.getCondicao().contains(categoria)) {
+			if(item.getCondicao().contains(categoria) && !item.getCondicao().contains("&&")) {
 
-				if(item.getCategoria().contains("Cosmeticos") && (item.getCondicao().contains("1"))){
+				if(item.getCategoria().contains("Cosmeticos") && (item.getCondicao().contains("Cosmeticos"))){
 				if(item.getAcao().contains(descontoProduto)) {	
 					res.add(acoes.descontoProduto(item));
 				}
@@ -141,7 +142,7 @@ public class SacolaControle {
 					
 				}
 
-				if(item.getCategoria().contains("Perfumaria") && (item.getCondicao().contains("2"))){
+				if(item.getCategoria().contains("Perfumaria") && (item.getCondicao().contains("Perfumaria"))){
 					if(item.getAcao().contains(descontoProduto)) {	
 						res.add(acoes.descontoProduto(item));
 					}
@@ -151,7 +152,7 @@ public class SacolaControle {
 						
 					}
 
-					if(item.getCategoria().contains("Saude") && (item.getCondicao().contains("3"))){
+					if(item.getCategoria().contains("Saude") && (item.getCondicao().contains("Saude"))){
 						if(item.getAcao().contains(descontoProduto)) {	
 							res.add(acoes.descontoProduto(item));
 						}
@@ -162,7 +163,7 @@ public class SacolaControle {
 						}
 			}
 			//PRODUTOQUANTIDADE >
-			if(item.getCondicao().contains(quantidadeMaior)) {
+			if(item.getCondicao().contains(quantidadeMaior) && !item.getCondicao().contains("&&")) {
 				String condicao = item.getCondicao();
 				if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() > util.converterInteger(condicao))) {
 					res.add(acoes.descontoProduto(item));		
@@ -194,8 +195,43 @@ public class SacolaControle {
 						res.add(acoes.ganhe(item));
 				}
 					
-				}	}		
-		}
+				}
+				
+				//Teste produto categoria e produto quantidade >
+				if(item.getCondicao().contains(categoria) && item.getCondicao().contains("&&") && (item.getCondicao().contains(quantidadeMaior))){
+					String condicao = item.getCondicao();
+					if(item.getCategoria().contains("Cosmeticos") && (item.getCondicao().contains("Cosmeticos"))){
+							if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() > util.converterInteger(condicao))) {
+								res.add(acoes.descontoProduto(item));
+								}
+								if(item.getAcao().contains(ganhe)){
+									res.add(acoes.ganhe(item));
+								}
+						}
+						if(item.getCategoria().contains("Perfumaria") && (item.getCondicao().contains("Perfumaria"))){
+							if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() > util.converterInteger(condicao))) {
+								res.add(acoes.descontoProduto(item));
+								}
+								if(item.getAcao().contains(ganhe)){
+									res.add(acoes.ganhe(item));
+								}
+						}
+
+						if(item.getCategoria().contains("Saude") && (item.getCondicao().contains("Saude"))){
+							if(item.getAcao().contains(descontoProduto) && (item.getQuantidade() > util.converterInteger(condicao))) {
+								res.add(acoes.descontoProduto(item));
+								}
+								if(item.getAcao().contains(ganhe)){
+									res.add(acoes.ganhe(item));
+								}
+						}
+					}
+										
+
+				}
+			
+			}		
+		
 		return res;
 	}
 }

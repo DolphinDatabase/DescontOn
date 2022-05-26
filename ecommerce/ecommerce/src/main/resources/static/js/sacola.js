@@ -9,6 +9,7 @@ const verificaDesconto = async (sacola)=>{
     res.data.forEach(item=>{
         desconto += item.desconto;
     })
+    console.log(desconto)
     return desconto;
 }
 
