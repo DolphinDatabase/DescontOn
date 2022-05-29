@@ -117,7 +117,6 @@ function removeCondicao(id) {
     c = c.filter(function (el) {
         return el != "";
     });
-    console.log(c)
     if(c.length==0 || c[0]==''){
         condicao[0].selecionado=false
         $("#selectCondicao").css("display","block")

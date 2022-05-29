@@ -5,12 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const verificaDesconto = async (sacola)=>{
     const res = await axios.post("/sacola/desconto",sacola)
-    var desconto = 0;
-    res.data.forEach(item=>{
-        desconto += item.desconto;
-    })
-    console.log(desconto)
-    return desconto;
+    return res.data;
 }
 
 async function popularTabela(){
@@ -20,21 +15,25 @@ async function popularTabela(){
         var table = ""
         subtotal = 0;
         total = 0;
+        d = await verificaDesconto(sacola)
         sacola.forEach(produto => {
             subtotal += (produto.valor*produto.quantidade)
+            var desc = $(d).filter((i,n)=>{return n.id==produto.id})[0]
             table += "<tr><td>"+produto.nome+"</td><td class='text-right'></td>";
             table += "<td><a class='btn btn-sm btn-light' role='button' align='center' onclick='mudarQtd("+produto.id+",1)'><i class='oi oi-plus'></i></a> &nbsp";
 			table += "<span class='text-center'>"+produto.quantidade+"</span>";
 			table += "&nbsp; <a class='btn btn-sm btn-light' role='button' onclick='mudarQtd("+produto.id+",-1)'><i class='oi oi-minus'></i></a></td>";
 			table += "<td scope='col' ></td><td scope='col'>"+produto.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>";
 			table += "<td class='text-right'>"+(produto.valor*produto.quantidade).toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>";
-			table += "<td class='text-right'></td>";
 			table += "<td class='text-right'><a class='btn btn-sm btn-danger' role='button' onclick='removerSacola("+produto.id+")'><i class='oi oi-trash'></i></a></td></tr>";
         });
-        desconto = await verificaDesconto(sacola)
+        desconto = 0
+        d.forEach(item=>{
+            desconto += item.desconto
+        })
         total = subtotal - desconto
         table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Sub-Total</td><td class='text-right'><span>"+subtotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</span></td></tr>";
-        table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Desconto</td><td class='text-right'>"+desconto.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td></tr>";
+        table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Desconto</td><td class='text-right'>"+desconto.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"<span onclick='openinfo()'><i class='bx bxs-info-circle text-primary'></i></span></td></tr>";
         table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>Total</strong></td><td class='text-right'><strong><span>"+total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</span></strong></td></tr>"
         $("#tableBody").append(table);
     }else{
@@ -44,6 +43,15 @@ async function popularTabela(){
         table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>Total</strong></td><td class='text-right'><strong><span>"+total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</span></strong></td></tr>"
         $("#tableBody").append(table);
     }
+}
+
+async function openinfo(){
+    var sacola = JSON.parse(localStorage.getItem('sacola'))
+    console.log(sacola)
+    await axios.post("/sacola/verificarDesconto",sacola)
+    .then(res=>{
+        console.log(res.data)
+    })
 }
 
 function verificarBotao(){
