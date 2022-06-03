@@ -107,6 +107,35 @@
 	</div>
 	<!-- END MODAL -->
 
+	<!--  MODAL DESCONTO-->
+	<div id="descontoModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Descontos disponíveis</h5>
+				</div>
+				<div class="modal-body">
+					<table class="table ">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Promoção</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="listaPromocaao">
+
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="modalClose" class="btn btn-primary" onclick="$('#descontoModal').modal('hide')">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MODAL -->
+
 	<footer class="layout-footer">
 		<div class="footer-repo">
 			<a title="website repository" href="https://github.com/DolphinDatabase/DescontOn">Made with ❤ by

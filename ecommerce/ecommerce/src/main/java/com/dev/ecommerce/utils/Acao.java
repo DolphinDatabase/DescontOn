@@ -12,8 +12,7 @@ public class Acao {
 	
 	Util util = new Util();
 	
-	public DescontoDTO descontoProduto(SacolaDTO item) {
-		String acao = item.getAcao();					
+	public DescontoDTO descontoProduto(SacolaDTO item,String acao) {
 		Double totalPorItem= item.getQuantidade() * item.getValor();
 		DescontoDTO desconto = new DescontoDTO(null,null);
 		desconto.setId(item.getId());
@@ -21,8 +20,7 @@ public class Acao {
 		return desconto;
 	}
 	
-	public DescontoDTO ganhe(SacolaDTO item) {
-		String acao = item.getAcao();
+	public DescontoDTO ganhe(SacolaDTO item,String acao) {
 		DescontoDTO desconto = new DescontoDTO(null, null);
 		desconto.setId(item.getId());
 		desconto.setDesconto(item.getValor() * util.converterInteger(acao));

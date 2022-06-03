@@ -14,7 +14,5 @@ public class SacolaDTO {
 	private String categoria;
 	private Integer status;
     private Integer quantidade;
-	private String condicao;
-	private String acao;
 	
 }

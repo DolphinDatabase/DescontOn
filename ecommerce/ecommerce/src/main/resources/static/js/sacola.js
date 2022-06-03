@@ -1,11 +1,59 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    popularTabela();
+    verificaDesconto();
     verificarBotao();
 });
 
-const verificaDesconto = async (sacola)=>{
-    const res = await axios.post("/sacola/desconto",sacola)
-    return res.data;
+var desconto = []
+
+function populaTabelaDesconto(){
+    if(desconto.length>0){
+        desconto = desconto.sort(function(a, b){ 
+            if (a.total > b.total) {
+                return -1;
+            }  
+        });
+        desconto[0].checked=true
+        $("#listaPromocaao").empty()
+        for(let i = 0; i < desconto.length; i++){
+            var div = "<tr><td>"+desconto[i].id+"</td><td>"+desconto[i].promocao+"</td><td>"
+            div += (desconto[i].checked)?"<input class='form-check-input' name='opDesconto' type='radio' id='opDesconto' checked onchange='mudarPromocao("+desconto[i].id+")'></td></tr>":"<input class='form-check-input' name='opDesconto' type='radio' id='opDesconto' onchange='mudarPromocao("+desconto[i].id+")'></td></tr>"
+            $("#listaPromocaao").append(div)
+        }
+    }
+}
+
+function mudarPromocao(id){
+    desconto.forEach(d=>{d.checked=false})
+    $(desconto).filter((i,n)=>{return n.id==id})[0].checked=true
+    popularTabela()
+}
+
+
+async function verificaDesconto(){
+    var sacola = JSON.parse(localStorage.getItem('sacola'));
+    var total = 0
+    sacola.forEach(item=>{
+        total += item.valor*item.quantidade
+    })
+    const res = await axios.post("/sacola/verificarDesconto",sacola)
+    desconto = []
+    for (const [key, value] of Object.entries(res.data)) {
+        await axios.post("/sacola/aplicarDesconto",{
+            sacola:value,
+            total:total,
+            condicao:key.split(", ")[2],
+            acao:key.split(", ")[3]
+        })
+        .then(res=>{
+            var total = 0
+            res.data.forEach(i=>{
+                total += i.desconto
+            })
+            desconto.push({id:key.split(", ")[0],promocao:key.split(", ")[1],desc:res.data,total:total,checked:false})
+        })
+    }
+    populaTabelaDesconto()
+    popularTabela()
 }
 
 async function popularTabela(){
@@ -13,27 +61,34 @@ async function popularTabela(){
         $("#tableBody").empty();
         var sacola = JSON.parse(localStorage.getItem('sacola'));
         var table = ""
-        subtotal = 0;
-        total = 0;
-        d = await verificaDesconto(sacola)
+        var subtotal = 0;
+        var lst = $(desconto).filter((i,n)=>{return n.checked})[0]
+
         sacola.forEach(produto => {
-            subtotal += (produto.valor*produto.quantidade)
-            var desc = $(d).filter((i,n)=>{return n.id==produto.id})[0]
+            subtotal += produto.valor*produto.quantidade
+            var desc = $(lst.desc).filter((i,n)=>{return n.id==produto.id})[0]
             table += "<tr><td>"+produto.nome+"</td><td class='text-right'></td>";
             table += "<td><a class='btn btn-sm btn-light' role='button' align='center' onclick='mudarQtd("+produto.id+",1)'><i class='oi oi-plus'></i></a> &nbsp";
 			table += "<span class='text-center'>"+produto.quantidade+"</span>";
 			table += "&nbsp; <a class='btn btn-sm btn-light' role='button' onclick='mudarQtd("+produto.id+",-1)'><i class='oi oi-minus'></i></a></td>";
 			table += "<td scope='col' ></td><td scope='col'>"+produto.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>";
 			table += "<td class='text-right'>"+(produto.valor*produto.quantidade).toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>";
-			table += "<td class='text-right'><a class='btn btn-sm btn-danger' role='button' onclick='removerSacola("+produto.id+")'><i class='oi oi-trash'></i></a></td></tr>";
+			if(desc!=undefined){
+                table += "<td class='text-right'>"+(desc.desconto).toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>";
+            }else{
+                table += "<td class='text-right'>"+(0.0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</td>";
+            }
+            table += "<td class='text-right'><a class='btn btn-sm btn-danger' role='button' onclick='removerSacola("+produto.id+")'><i class='oi oi-trash'></i></a></td></tr>";
         });
-        desconto = 0
-        d.forEach(item=>{
-            desconto += item.desconto
-        })
-        total = subtotal - desconto
+        var descontoTotal = 0
+        if(desconto.length>0){
+            lst.desc.forEach(x=>{
+                descontoTotal+=x.desconto
+            })
+        }
+        var total = subtotal - descontoTotal
         table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Sub-Total</td><td class='text-right'><span>"+subtotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</span></td></tr>";
-        table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Desconto</td><td class='text-right'>"+desconto.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"<span onclick='openinfo()'><i class='bx bxs-info-circle text-primary'></i></span></td></tr>";
+        table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Desconto</td><td class='text-right'>"+descontoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"<span onclick='$(`#descontoModal`).modal(`toggle`)'><i class='bx bxs-info-circle text-primary'></i></span></td></tr>";
         table += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><strong>Total</strong></td><td class='text-right'><strong><span>"+total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL',minimumFractionDigits: 2})+"</span></strong></td></tr>"
         $("#tableBody").append(table);
     }else{
@@ -74,7 +129,7 @@ function mudarQtd(id,act){
                 removerSacola(sacola[i].id)
             }else{
                 localStorage.setItem('sacola',JSON.stringify(sacola))
-                popularTabela()
+                verificaDesconto()
             }
         }
     }
@@ -85,7 +140,7 @@ function removerSacola(id){
     var removeIndex = sacola.map(produto => produto.id).indexOf(id);
     sacola.splice(removeIndex, 1);
     localStorage.setItem('sacola',JSON.stringify(sacola))
-    popularTabela()
+    verificaDesconto()
     verificarBotao()
 }
 
