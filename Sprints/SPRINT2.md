@@ -27,7 +27,7 @@
 Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro de promoções (com sua mecânica) de uma forma prática e flexível e o desconto aplicado na sacola de compras. As promoções para e-commerce são fundamentais para qualquer negócio online, elas podem trazer benefícios como aumento do alcance da marca, captação de novos clientes e o aumento das vendas. Para aplicá-las no negócio, a equipe desenvolveu a possibilidade  do usuário criar diferentes mecânicas/regras. Além de fornecer autonomia sobre elas ao editar, remover promoções ou até mesmo interromper/ativar uma promoção e filtrar quais promoções estão ativas no momento e quais estão interrompidas.
 ### Model Canvas do Projeto
 
-<img src="https://github.com/DolphinDatabase/DescontOn/blob/78b20638dc949f4acf720dc81995df35e6f81376/Documenta%C3%A7%C3%A3o/SPRINT2/Imagens/CANVAS.png">
+<img src="https://github.com/DolphinDatabase/DescontOn/blob/eb67bcc4a40f7c97ec4fafd8a0468a76c3ac42da/Documenta%C3%A7%C3%A3o/SPRINT2/Imagens/CANVAS.png">
 
 ## Documentação
   
@@ -45,7 +45,7 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
   <details><summary>Diagrama de Classes</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/78b20638dc949f4acf720dc81995df35e6f81376/Documenta%C3%A7%C3%A3o/SPRINT2/Imagens/Diagrama%20de%20Classes.png">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/eb67bcc4a40f7c97ec4fafd8a0468a76c3ac42da/Documenta%C3%A7%C3%A3o/SPRINT2/Imagens/Diagrama%20de%20Classes.png">
   
   </details>
   
