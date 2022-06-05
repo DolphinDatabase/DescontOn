@@ -53,13 +53,10 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/aabe2c0fc1fbf961a7961a6bfb54c1eb88b2e035/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Funcionalidades desenvolvidas 
-- [x] Cadastro de Promoções
-- [x] Listar Promoções
-- [x] Remover Promoções
-- [x] Ativar ou Interromper Promoções
-- [x] Filtrar a Listagem de Promoções (promoções ativas ou interrompidas)
-- [x] Editar uma Promoção
-- [x] Aplicar Descontos na Sacola de Compras
+- [x] Criar Mecânicas com Modelos Lógicos
+- [x] Cadastrar Produtos em (N) Promoções
+- [x] Listar desconto por produto na Sacola de Compras
+- [x] Visualizar promoções por produto na Sacola de Compras
 
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint3).
 
