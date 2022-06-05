@@ -53,7 +53,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos no servidor/ b
   </details>
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/main/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/f2761f3a935a74591ae9f62dddee51fb2a7748aa/Documenta%C3%A7%C3%A3o/SPRINT1/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
 
 ## Funcionalidades desenvolvidas 
 - [x] Cadastro de Produtos
