@@ -20,6 +20,9 @@ public interface ItensPromocaoRepositorio extends JpaRepository<ItensPromocao, L
 
     @Query(value = "SELECT * FROM itens_promocao WHERE produto_id=:id",nativeQuery = true)
     List<ItensPromocao> findAllByProduto(@Param("id") Long id);
+    
+    @Query(value = "SELECT * FROM itens_promocao WHERE produto_id=:id",nativeQuery = true)
+    ItensPromocao findAllByProdutoNoList(@Param("id") Long id);
 
     @Modifying
     @Transactional

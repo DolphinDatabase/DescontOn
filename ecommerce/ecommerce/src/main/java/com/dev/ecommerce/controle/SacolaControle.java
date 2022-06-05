@@ -21,6 +21,7 @@ import com.dev.ecommerce.dto.DescontoDTO;
 import com.dev.ecommerce.dto.SacolaDTO;
 import com.dev.ecommerce.modelos.Compra;
 import com.dev.ecommerce.modelos.ItensPromocao;
+import com.dev.ecommerce.modelos.Produto;
 import com.dev.ecommerce.repositorios.CompraRepositorio;
 import com.dev.ecommerce.repositorios.ItensPromocaoRepositorio;
 import com.dev.ecommerce.repositorios.ProdutoRepositorio;
@@ -31,6 +32,9 @@ import com.dev.ecommerce.utils.Util;
 @RestController
 @RequestMapping("/sacola")
 public class SacolaControle {
+	
+	List<Long> idsProdutosParaVerificacaoCompra = new ArrayList<Long>();
+	ItensPromocao produtoPromocao = new ItensPromocao();
 
 	@Autowired
 	CompraRepositorio compraRepositorio;
@@ -47,6 +51,63 @@ public class SacolaControle {
 	@PostMapping
 	public Compra salvar(@RequestBody Compra compra) {
 		return compraRepositorio.save(compra);
+	}
+	
+	@PostMapping("/verificarPromo")
+	public List<String> verificarPromo(@RequestBody List<Long> idsProdutos){
+		List<String> erros = new ArrayList<String>();
+		
+		//Primeiras informacoes - quando o usuario add o item na sacola
+		ItensPromocao primeirasInformacoesPromocao = produtoPromocao;
+		
+		if(primeirasInformacoesPromocao.getId() != null) {
+			String primeiroNome = primeirasInformacoesPromocao.getPromocao().getNome();
+			String primeiraAcao = primeirasInformacoesPromocao.getPromocao().getAcao();
+			String primeiraCondicao = primeirasInformacoesPromocao.getPromocao().getCondicao();
+			Integer primeiroStatus = primeirasInformacoesPromocao.getPromocao().getStatus();
+			
+			//Segundas informacoes - quando o usuario finaliza a compra
+			List<ItensPromocao> todosProdutosPromocao = new ArrayList<ItensPromocao>();
+			idsProdutos.forEach(item -> {
+				ItensPromocao produtoPromocao = itensPromocaoRepositorio.findAllByProdutoNoList(item);
+				//verificar o if
+				if(produtoPromocao == null) {
+					erros.add("O produto não está participando da promoção mais!");
+				}else{
+					todosProdutosPromocao.add(produtoPromocao);
+				}
+			});
+			
+			String segundoNome = todosProdutosPromocao.get(0).getPromocao().getNome();
+			String segundaAcao = todosProdutosPromocao.get(0).getPromocao().getAcao();
+			String segundaCondicao = todosProdutosPromocao.get(0).getPromocao().getCondicao();
+			Integer segundoStatus = todosProdutosPromocao.get(0).getPromocao().getStatus();
+			
+			//COMPARANDO AS DUAS INFORMAÇÕES
+			
+			if(!primeiroNome.equals(segundoNome)) {
+				erros.add("O nome da promoção foi alterado!");
+			}
+			if(!primeiraCondicao.equals(segundaCondicao) || !primeiraAcao.equals(segundaAcao)) {
+				erros.add("A mecânica da promoção foi alterada!");
+			}
+			if(segundoStatus == 1) {
+				erros.add("A promoção foi interrompida!");
+			}
+			
+			return erros;
+		}else {
+			return null;
+		}
+	}
+	
+	@PostMapping("/parametrosPromo")
+	public List<Long> parametrosPromo(@RequestBody Produto produto){
+		idsProdutosParaVerificacaoCompra.add(produto.getId());
+		idsProdutosParaVerificacaoCompra.forEach(item -> {
+			produtoPromocao = itensPromocaoRepositorio.findAllByProdutoNoList(item);
+		});
+		return idsProdutosParaVerificacaoCompra;
 	}
 
 	@PostMapping("/verificarDesconto")
@@ -78,6 +139,10 @@ public class SacolaControle {
 		List<DescontoDTO> res = new ArrayList<>();
 		ScriptEngineManager factory = new ScriptEngineManager();
 		ScriptEngine engine = factory.getEngineByName("JavaScript");
+		Integer quantidade = 0;
+		for(SacolaDTO item:lista){
+			quantidade += item.getQuantidade();
+		}
 		Acao acoes = new Acao();
 
 		// acoes
@@ -87,6 +152,7 @@ public class SacolaControle {
 		//condicao
 		String produtoSelecionado = "ProdutoSelecionado";
 		String categoria = "ProdutoCategoria";
+		String menorValor = "ItemMenorValor";
 
 		//definir variaveis
 		try{
@@ -111,20 +177,31 @@ public class SacolaControle {
 					index++;
 				}
 			}
+			if(condicao.contains("CompraTotal")){
+				engine.eval("CompraTotal="+total);
+			}
+			if(condicao.contains("QuantidadeTotal")){
+				engine.eval("QuantidadeTotal="+quantidade);
+			}
 
 			//verificar condicao
 			if(condicao.contains(produtoSelecionado)){
-				for(SacolaDTO item:lista){
-					if(acao.contains(ganhe)){
-						res.add(acoes.ganhe(item, acao));
-					}
-					if(acao.contains(descontoProduto)){
-						res.add(acoes.descontoProduto(item, acao));
+				if(acao.contains(menorValor)){
+					res = (acoes.menorValor(lista,total,acao));
+				}else{
+					for(SacolaDTO item:lista){
+						if(acao.contains(ganhe)){
+							res.add(acoes.ganhe(item, acao));
+						}
+						if(acao.contains(descontoProduto)){
+							res.add(acoes.descontoProduto(item,total,acao));
+						}
 					}
 				}
 				return res;
 			}else{
 				int index = 0;
+				Boolean valido = false;
 				for(SacolaDTO item:lista){
 					String verify="";
 					for(String c:condicao.split("\n")){
@@ -135,20 +212,35 @@ public class SacolaControle {
 							c = c.replace("]", index+"=='");
 							c += "'";
 						}else{
-							c = c.replace("]", "");
-							c = (c.split(" ")[0]+index)+c.split(" ")[1];
+							if(c.contains("CompraTotal") || c.contains("QuantidadeTotal")){
+								c = c.replace("]", "");
+								c = c.replace("=", "==");
+							}else{
+								c = c.replace("]", "");
+								c = c.replace("=", "==");
+								c = (c.split(" ")[0]+index)+c.split(" ")[1];
+							}
 						}
 						verify += c;
 					}
-					if((Boolean)engine.eval(verify)){
-						if(acao.contains(ganhe)){
-							res.add(acoes.ganhe(item, acao));
+					if(acao.contains(menorValor)){
+						valido = (Boolean)engine.eval(verify);
+					}else{
+						if((Boolean)engine.eval(verify)){
+							if(acao.contains(ganhe)){
+								res.add(acoes.ganhe(item, acao));
+							}
+							if(acao.contains(descontoProduto)){
+								res.add(acoes.descontoProduto(item,total,acao));
+							}
 						}
-						if(acao.contains(descontoProduto)){
-							res.add(acoes.descontoProduto(item, acao));
-						}
+
 					}
 					index++;
+				}
+				if(acao.contains(menorValor) && valido){
+
+					res = acoes.menorValor(lista,total,acao);
 				}
 				return res;
 			}

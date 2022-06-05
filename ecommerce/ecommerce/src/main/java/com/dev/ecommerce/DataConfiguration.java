@@ -12,7 +12,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 @Configuration
 public class DataConfiguration {
 
-    @Bean
+	@Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("oracle.jdbc.OracleDriver");

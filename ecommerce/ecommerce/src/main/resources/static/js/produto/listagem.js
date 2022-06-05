@@ -65,6 +65,7 @@ async function excluirProduto(){
 }
 
 function adicionarSacola(produto){
+	axios.post("/sacola/parametrosPromo",produto).then(r => {console.log(r)});
     if(localStorage.getItem('sacola')){
         sacola = JSON.parse(localStorage.getItem('sacola'));
         if(sacola.length>0){

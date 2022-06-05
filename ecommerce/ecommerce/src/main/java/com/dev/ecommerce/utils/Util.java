@@ -1,5 +1,8 @@
 package com.dev.ecommerce.utils;
 
+import java.util.List;
+
+import com.dev.ecommerce.dto.SacolaDTO;
 
 public class Util {
 
@@ -41,5 +44,13 @@ public class Util {
         }        
 
         return converterInteger(quantidade);
+    }
+
+    public double somarQuantidade(List<SacolaDTO> lista){
+        Double qtd = 0.0;
+        for(SacolaDTO item:lista){
+            qtd += item.getQuantidade();
+        }
+        return qtd;
     }
 }

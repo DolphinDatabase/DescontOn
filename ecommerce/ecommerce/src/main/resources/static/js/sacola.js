@@ -52,6 +52,7 @@ async function verificaDesconto(){
             desconto.push({id:key.split(", ")[0],promocao:key.split(", ")[1],desc:res.data,total:total,checked:false})
         })
     }
+    console.log(desconto)
     populaTabelaDesconto()
     popularTabela()
 }
@@ -63,10 +64,13 @@ async function popularTabela(){
         var table = ""
         var subtotal = 0;
         var lst = $(desconto).filter((i,n)=>{return n.checked})[0]
-
         sacola.forEach(produto => {
             subtotal += produto.valor*produto.quantidade
-            var desc = $(lst.desc).filter((i,n)=>{return n.id==produto.id})[0]
+            if(lst){
+                var desc = $(lst.desc).filter((i,n)=>{return n.id==produto.id})[0]
+            }else{
+                var desc = {desconto:0}
+            }
             table += "<tr><td>"+produto.nome+"</td><td class='text-right'></td>";
             table += "<td><a class='btn btn-sm btn-light' role='button' align='center' onclick='mudarQtd("+produto.id+",1)'><i class='oi oi-plus'></i></a> &nbsp";
 			table += "<span class='text-center'>"+produto.quantidade+"</span>";
@@ -148,9 +152,18 @@ async function verificarCompra(){
     var sacola = JSON.parse(localStorage.getItem('sacola'))
     var data = []
     var erros = []
+    var errosPromo = []
     sacola.forEach(produto=>{
         data.push(produto.id)
     })
+    await axios.post("/sacola/verificarPromo",data).then(r => {
+    	var dados = r.data;
+    	if(dados.length > 0){
+    		dados.forEach(e => {
+    			errosPromo.push(e);
+    		})
+    	}
+    });
     await axios.post("/produto/verificar",data)
     .then(res=>{
         sacola.forEach(pro=>{
@@ -187,9 +200,10 @@ async function verificarCompra(){
                 erros.push({produto:pro.nome+" - "+pro.id,erros:err})
             }
         })
-        if(erros.length>0){
+        if(erros.length>0 || errosPromo.length>0){
             $("#myModal").modal("toggle")
             var lista = ""
+            var listaPromo = ""
             erros.forEach(erro=>{
                 lista += "<p>"+erro.produto+"</p><ul>"
                 erro.erros.forEach(err=>{
@@ -197,6 +211,12 @@ async function verificarCompra(){
                 })
                 lista += "</ul>"
             })
+            listaPromo += "<ul>"
+            errosPromo.forEach(erroPromo => {
+            	listaPromo += "<li>"+erroPromo+"</li>"
+            })
+            listaPromo += "</ul>"
+            $("#modalContent").append(listaPromo)
             $("#modalContent").append(lista)
         }else{
             finalizar(sacola)

@@ -45,6 +45,30 @@ var condicao = [
     {
         valor:'[ProdutoValor =]',
         selecionado: false
+    },
+    {
+        valor:'[CompraTotal >]',
+        selecionado: false
+    },
+    {
+        valor:'[CompraTotal <]',
+        selecionado: false
+    },
+    {
+        valor:'[CompraTotal =]',
+        selecionado: false
+    },
+    {
+        valor:'[QuantidadeTotal >]',
+        selecionado: false
+    },
+    {
+        valor:'[QuantidadeTotal <]',
+        selecionado: false
+    },
+    {
+        valor:'[QuantidadeTotal =]',
+        selecionado: false
     }
 ]
 
@@ -211,9 +235,14 @@ function deserializeAcao(ac){
     div += '<p style="margin: 0;width: max-content">'+ac[0]+'</p>'
     div += '<span style="margin-left: 5px;" onclick="removeAcao(`'+id+'`)"><i class="bx bx-x nav_icon"></i> </span>'
     div += '</div>'
-    if(ac[0] == "[DescontoProduto]" || ac[0] == "[Ganhe]" || ac[0] == "[ItemMenorValor]"){
-        div += '<input type="number" class="form-control acao-input" placeholder="Then" value="'+ac[1]+'" required/></div>'
+    if(ac[0] == "[DescontoProduto]" || ac[0] == "[ItemMenorValor]"){
+        div += '<input type="number" class="form-control acao-input" placeholder="Then" value="'+ac[1].split("[")[0]+'" required/>'
+        div += '<select class="form-select" style="width:210px" id="selectValor">'
+        div += (ac[1].split("[")[1]=="ValorUnitario]")?'<option value="ValorUnitario" selected>Valor Unitário</option>':'<option value="ValorUnitario">Valor Unitário</option>'
+        div += (ac[1].split("[")[1]=="ValorUnitario]")?'<option value="ValorTotal" selected>Valor Total</option>':'<option value="ValorTotal">Valor Total</option>'
+        div += "</select></div>"
     }else{
+        div += '<input type="number" class="form-control acao-input" placeholder="Then" value="'+ac[1].split("[")+'" required/>'
         div += '</div>'
     }
     acao[id].selecionado=true

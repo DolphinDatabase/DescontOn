@@ -84,7 +84,11 @@ function serializeCondicao(){
 
 function serializeAcao(){
     var child = $("#acao").children()[0]
-    return $(child).find("p").text()+$(child).find("input")[0].value
+    var acao = $(child).find("p").text()+$(child).find("input")[0].value
+    if($(child).find("#selectValor").length>0){
+        acao += "["+$(child).find("select")[0].value+"]"
+    }
+    return acao
 }
 
 //acao
@@ -96,9 +100,11 @@ function verificarAcao(event){
     div += '<p style="margin: 0;width: max-content">'+item.valor+'</p>'
     div += '<span style="margin-left: 5px;" onclick="removeAcao(`'+event.target.value+'`)"><i class="bx bx-x nav_icon"></i> </span>'
     div += '</div>'
-    if(item.valor == "[DescontoProduto]" || item.valor == "[Ganhe]" || item.valor == "[ItemMenorValor]"){
-        div += '<input type="number" class="form-control acao-input" placeholder="Then" required/></div>'
+    if(item.valor == "[DescontoProduto]" || item.valor == "[ItemMenorValor]"){
+        div += '<input type="number" class="form-control acao-input" placeholder="Then" required/>'
+        div += '<select class="form-select" style="width:210px" id="selectValor"><option value="ValorUnitario">Valor Unitário</option><option value="ValorTotal">Valor Total</option></select></div>'
     }else{
+        div += '<input type="number" class="form-control acao-input" placeholder="Then" required/>'
         div += '</div>'
     }
     acao[event.target.value].selecionado=true
