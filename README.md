@@ -30,7 +30,7 @@ Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções 
 
 ### Model Canvas do Projeto
 
-<img src="Documentação/Imagens/PMCANVAS.png">
+<img src="Documentação/SPRINT3/Imagens/CANVAS.png">
 
 ## Documentação
   
