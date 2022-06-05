@@ -33,13 +33,13 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   
   <details><summary>Modelo Conceitual</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/6155d236e71b767e2794dc768620030eee7eb272/Documenta%C3%A7%C3%A3o/SPRINT3/Imagens/Modelo_Conceitual.jpeg">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/ebf0051ea024984c038dce84c2d153560b996701/Documenta%C3%A7%C3%A3o/SPRINT3/Imagens/Modelo_Conceitual.jpeg">
  
   </details>
   
   <details><summary>Modelo Relacional</summary>
   
-  <img src="https://github.com/DolphinDatabase/DescontOn/blob/6155d236e71b767e2794dc768620030eee7eb272/Documenta%C3%A7%C3%A3o/SPRINT3/Imagens/Modelo_Relacional.jpeg">
+  <img src="https://github.com/DolphinDatabase/DescontOn/blob/ebf0051ea024984c038dce84c2d153560b996701/Documenta%C3%A7%C3%A3o/SPRINT3/Imagens/Modelo_Relacional.jpeg">
   
   </details>
   
