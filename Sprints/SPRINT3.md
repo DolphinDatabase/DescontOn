@@ -50,7 +50,7 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
   </details>
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/aabe2c0fc1fbf961a7961a6bfb54c1eb88b2e035/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3oDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/84cd9b29524c71d0118d43acb3417eab4b3a5159/Documenta%C3%A7%C3%A3o/SPRINT3/PastaDolphinDatabase.pdf).
 
 ## Funcionalidades desenvolvidas 
 - [x] Criar Mecânicas com Modelos Lógicos
