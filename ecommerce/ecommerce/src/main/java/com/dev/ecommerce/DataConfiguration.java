@@ -12,13 +12,13 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 @Configuration
 public class DataConfiguration {
 
-    @Bean
+	@Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
-        dataSource.setUrl("jdbc:oracle:thin:@//localhost:1521/xe");
-        dataSource.setUsername("ADMIN");
-        dataSource.setPassword("ADMIN");
+        dataSource.setUrl("jdbc:oracle:thin:@//localhost:1521/ORCLCDB.localdomain");
+        dataSource.setUsername("admin");
+        dataSource.setPassword("admin");
         return dataSource;
     }
     @Bean

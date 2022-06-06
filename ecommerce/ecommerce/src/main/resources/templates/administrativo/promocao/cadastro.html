@@ -34,6 +34,7 @@
 		} else {
 			document.addEventListener("DOMContentLoaded", function () {
 				$("#produtoTable").css("display", "none");
+				populaSelect();
 				populaTabela();
 			})
 		}
@@ -89,40 +90,13 @@
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label>Condição</label>
-								<div class="d-flex">
-									<div id="showcondicao"
-										style="display: none;background: #EA3D6B;align-items: center;color: white;padding: 5px;">
-										<p id="opcondicao" style="margin: 0;width: max-content"></p>
-										<span style="margin-left: 5px;" onclick="remove('condicao')"><i
-												class="bx bx-x nav_icon"></i> </span>
-									</div>
-									<input type="number" class="form-control" id="dropcondicao" placeholder="When"
-										required ondrop="drop(event)" />
-								</div>
+								<section class="p-0 mb-2" id="condicao">
+								</section>
+								<select class="form-select mb-2" id="selectCondicao" onchange="verificarCondicao(event.target.value)">
+									<option selected disabled id="discond">Selecione uma opção de condição</option>
+								</select>
+								<button class="btn btn-light btn-sm mt-1" style="display:none" id="addCondicao" onclick="adicionarCondicao(event)">+ Adicionar condições</button>
 								<div id="condicaoError" class="invalid-feedback" style="display: none;">Por favor, arraste uma regra de condição.</div>
-								<div class="invalid-feedback">Por favor, insira uma condição de promoção.</div>
-								<div id="btncondicao" class="container">
-									<div class="row">
-										<div class="col">
-											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
-												ondragstart="drag(event)">[ProdutoSelecionado]</button>
-										</div>
-										<div class="col">
-											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
-												ondragstart="drag(event)">[ProdutoQuantidade >]</button>
-										</div>
-										<div class="col">
-											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
-												ondragstart="drag(event)">[ProdutoQuantidade <] </button>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-4">
-											<button class="btn btn-light btn-sm" target="condicao" draggable="true"
-												ondragstart="drag(event)">[ProdutoQuantidade =]</button>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 						<div>&nbsp;</div>
@@ -130,32 +104,16 @@
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label>Ação</label>
-								<div class="d-flex">
-									<div id="showacao"
-										style="display: none;background: #EA3D6B;align-items: center;color: white;padding: 5px;">
-										<p id="opacao" style="margin: 0;width: max-content"></p>
-										<span style="margin-left: 5px;" onclick="remove('acao')"><i
-												class="bx bx-x nav_icon"></i></span>
-									</div>
-									<input type="number" class="form-control" id="dropacao" placeholder="Then" required
-										ondrop="drop(event)" />
-								</div>
-								<div id="acaoError" class="invalid-feedback" style="display: none;">Por favor, arraste uma regra de ação.</div>
-								<div class="invalid-feedback">Por favor, insira uma ação de promoção.</div>
-								<div id="btnacao" class="container">
-									<div class="row">
-										<div class="col-sm-6">
-											<button class="btn btn-light btn-sm" target="acao" draggable="true"
-												ondragstart="drag(event)">[DescontoProduto]</button>
-										</div>
-										<div class="col-sm-6">
-											<button class="btn btn-light btn-sm" target="acao" draggable="true"
-												ondragstart="drag(event)">[Ganhe]</button>
-										</div>
-									</div>
-								</div>
+								<section class="p-0 mb-2" id="acao">
+								</section>
+								<select class="form-select mb-2" id="selectAcao" onchange="verificarAcao(event)">
+									<option selected disabled id="disact">Selecione uma opção de ação</option>
+								</select>
+								<button class="btn btn-light btn-sm mt-1" style="display:none" id="addAcao" onclick="adicionarAcao(event)">+ Adicionar ações</button>
+								<div id="acaoError" class="invalid-feedback" style="display: none;">Por favor, arraste uma regra de condição.</div>
 							</div>
 						</div>
+						<div>&nbsp;</div>
 						<div class="container">
 							<div class="row">
 								<div class="col-2">
@@ -248,6 +206,6 @@
 	</footer>
 
 </body>
-<script type="text/javascript" src="/js/promocao/drag.js"></script>
+<script type="text/javascript" src="/js/promocao/select.js"></script> 
 
 </html>

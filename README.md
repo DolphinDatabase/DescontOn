@@ -3,7 +3,7 @@
 </p>
 <p align="center"> Ferramenta flexível para criações de promoções em E-commerce. </p>
 
-![Badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-yellow?style=flat-square&logo=)
+![Badge](https://img.shields.io/badge/STATUS-CONCLUÍDO-green?style=flat-square&logo=)
 
 
 ## Tabela de Conteúdos
@@ -25,17 +25,16 @@
 
 ## Descrição
 <p align="justify">
-Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. 
-Atualmente implementamos e apresentaremos o cadastro dos produtos e promoções no servidor/ banco de dados e também como são adicionados na sacola de compras, para conferência e ajuste das quantidades e valores. Além da autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções.
+Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro dos produtos em várias promoções no servidor/ banco de dados, utilizando operadores lógicos para criar diferentes mecânicas de promoções, os descontos é aplicado na sacola de compra e possui uma visualização dedicada para conferência e escolha de possíveis promoções. Além disso, há a autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções. 
 
 ### Model Canvas do Projeto
 
-<img src="Documentação/Imagens/PMCANVAS.png">
+<img src="Documentação/SPRINT3/Imagens/CANVAS.png">
 
 ## Documentação
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](Documentação/DocumentaçãoDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](Documentação/SPRINT3/PastaDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
@@ -105,8 +104,13 @@ Para acessar o manual do usuário, clique [aqui](Manual/ManualdoUsuario_sprint3-
 - [x] Filtrar a Listagem de Promoções (promoções ativas ou interrompidas)
 - [x] Editar uma Promoção
 - [x] Aplicar Descontos na Sacola de Compras
+- [x] Criar Mecânicas com Modelos Lógicos
+- [x] Cadastrar Produtos em (N) Promoções
+- [x] Listar desconto por produto na Sacola de Compras
+- [x] Visualizar promoções por produto na Sacola de Compras
 
-![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse a [release](https://github.com/DolphinDatabase/DescontOn/releases/tag/sprint2).
+
+![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) Para mais informações das funcionalidades entregues, acesse as [releases](https://github.com/DolphinDatabase/DescontOn/releases).
 
 ## Ilustração das funcionalidades
 
@@ -114,9 +118,9 @@ Para acessar nossos *wireframes*, clique [aqui](https://www.figma.com/file/DfQM3
  
 ## Demonstração
  
-Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui](https://youtu.be/lNfCtBOqPcc):
+Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui](https://youtu.be/NhDe9-Z_dvk):
 
-[<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://youtu.be/lNfCtBOqPcc "DescontOn vídeo Demonstração")
+[<img src="https://github.com/DolphinDatabase/DescontOn/blob/47f0f23ee3d7710b472fc1ff26d06da50237681e/Imagens/imagem_2022-04-15_155641874.png" width="40%">](https://youtu.be/NhDe9-Z_dvk "DescontOn vídeo Demonstração")
 
 ## Manual do Usuário
 
@@ -141,11 +145,13 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Remover Promoções
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Descontos na Sacola
 - [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Filtrar Promoções Ativas e Interrompidas
-- [ ] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 3:**  Melhorias para o Usuário
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Cadastrar Produtos em (N) Promoções
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Criar Novas Condições/Ações de Promoções
-- [ ] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Exibir o Desconto e Promoção de Cada Produto na Sacola de Compras
+- [X] ![EPIC](https://github.com/DolphinDatabase/DescontOn/blob/4502e6020cfe3e2e89c17adb2fa5473c842d215d/Imagens/EPIC%20(1).svg) **SPRINT 3:**  Melhorias para o Usuário
+- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Criar Mecânicas com Modelos Lógicos
+- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Verificar Promoções
+- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Criar Novas Condições/Ações de Promoções
+- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Exibir o Desconto e Promoção de Cada Produto na Sacola de Compras
+- [X] ![STORY](https://github.com/DolphinDatabase/DescontOn/blob/7ccc37184d9e7dda6469c7420ca16ba0b2337816/Imagens/STORY%20(1).svg) Cadastrar Produtos em (N) Promoções
+
   
 ## Roadmap
 
@@ -162,7 +168,7 @@ Para acessar nosso *Burndown*, clique [aqui](https://dolphin-database.atlassian.
 | 16/03 às 19h  | Project kick-off. |
 | 24/03 a 14/04 | [Sprint 1](Sprints/SPRINT1.md). |
 | 25/04 a 15/05 | [Sprint 2](Sprints/SPRINT2.md). |
-| 16/05 a 05/06 | [Sprint 3](#). |
+| 16/05 a 05/06 | [Sprint 3](Sprints/SPRINT3.md). |
 | 15/06 às 19h | Feira de Soluções. |
 
 ## Tecnologias

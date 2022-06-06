@@ -54,7 +54,7 @@ public class PromocaoControle {
     }
 
 	@PutMapping("/{id}")
-	public PromocaoDTO update(@RequestBody Promocao promocao, @RequestParam Long id){
+	public PromocaoDTO update(@RequestBody Promocao promocao, @PathVariable Long id){
 		Optional<Promocao> promo = promocaoRepositorio.findById(id);
 		if(promo.isEmpty()){
 			return new PromocaoDTO(null, null, null, null, null, null);
