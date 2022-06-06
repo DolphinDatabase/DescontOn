@@ -34,7 +34,7 @@ Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoçõ
 ## Documentação
   
 ![ALERTA](https://github.com/DolphinDatabase/DescontOn/blob/7a4ebd6388cc21faa5963f4bd59ef15fd880fbc0/Imagens/alerta.svg) 
-Para acessar a documentação completa do projeto, clique [aqui](Documentação/DocumentaçãoDolphinDatabase.pdf).
+Para acessar a documentação completa do projeto, clique [aqui](Documentação/SPRINT3/PastaDolphinDatabase.pdf).
 
 ## Pré-requisitos e como executar a aplicação
  
