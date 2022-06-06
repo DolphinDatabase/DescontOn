@@ -72,7 +72,7 @@ Para acessar o vídeo[^1] de demonstração da aplicação em uso, clique [aqui]
 
 ## Manual do Usuário
 
-Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/b9606042b06fc0d3447c48af08bad4eccae39aaa/Manual/ManualdoUsuario_sprint3-DescontOn.pdf).
+Para acessar o manual do usuário, clique [aqui](https://github.com/DolphinDatabase/DescontOn/blob/4e0479cd84b8bed17581c50c678f19577b946fa0/Manual/ManualdoUsuario_sprint3-DescontOn.pdf).
 
 ## Backlog da Sprint 3
 
