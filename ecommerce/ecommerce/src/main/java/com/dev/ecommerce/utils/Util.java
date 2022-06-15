@@ -14,9 +14,9 @@ public class Util {
     String produtoValorIgual = "[ProdutoValor =]";
     
     public Double converterDouble(String valor){
-        String recebe = valor.replaceAll("[\\D]", "");
-        
-        return Double.parseDouble(recebe);
+        String res = valor.replace(",", ".");
+        res = res.replaceAll("[^\\d.]","");
+        return Double.parseDouble(res);
     }
 
     public Integer converterInteger(String valor){

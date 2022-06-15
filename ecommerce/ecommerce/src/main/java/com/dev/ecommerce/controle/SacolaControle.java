@@ -12,16 +12,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 import com.dev.ecommerce.dto.AplicarDescontoDTO;
 import com.dev.ecommerce.dto.DescontoDTO;
+import com.dev.ecommerce.dto.PromocaoDTO;
 import com.dev.ecommerce.dto.SacolaDTO;
 import com.dev.ecommerce.modelos.Compra;
 import com.dev.ecommerce.modelos.ItensPromocao;
 import com.dev.ecommerce.modelos.Produto;
+import com.dev.ecommerce.modelos.Promocao;
 import com.dev.ecommerce.repositorios.CompraRepositorio;
 import com.dev.ecommerce.repositorios.ItensPromocaoRepositorio;
 import com.dev.ecommerce.repositorios.ProdutoRepositorio;
@@ -54,51 +57,16 @@ public class SacolaControle {
 	}
 	
 	@PostMapping("/verificarPromo")
-	public List<String> verificarPromo(@RequestBody List<Long> idsProdutos){
-		List<String> erros = new ArrayList<String>();
-		
-		//Primeiras informacoes - quando o usuario add o item na sacola
-		ItensPromocao primeirasInformacoesPromocao = produtoPromocao;
-		
-		if(primeirasInformacoesPromocao.getId() != null) {
-			String primeiroNome = primeirasInformacoesPromocao.getPromocao().getNome();
-			String primeiraAcao = primeirasInformacoesPromocao.getPromocao().getAcao();
-			String primeiraCondicao = primeirasInformacoesPromocao.getPromocao().getCondicao();
-			Integer primeiroStatus = primeirasInformacoesPromocao.getPromocao().getStatus();
-			
-			//Segundas informacoes - quando o usuario finaliza a compra
-			List<ItensPromocao> todosProdutosPromocao = new ArrayList<ItensPromocao>();
-			idsProdutos.forEach(item -> {
-				ItensPromocao produtoPromocao = itensPromocaoRepositorio.findAllByProdutoNoList(item);
-				//verificar o if
-				if(produtoPromocao == null) {
-					erros.add("O produto não está participando da promoção mais!");
-				}else{
-					todosProdutosPromocao.add(produtoPromocao);
-				}
-			});
-			
-			String segundoNome = todosProdutosPromocao.get(0).getPromocao().getNome();
-			String segundaAcao = todosProdutosPromocao.get(0).getPromocao().getAcao();
-			String segundaCondicao = todosProdutosPromocao.get(0).getPromocao().getCondicao();
-			Integer segundoStatus = todosProdutosPromocao.get(0).getPromocao().getStatus();
-			
-			//COMPARANDO AS DUAS INFORMAÇÕES
-			
-			if(!primeiroNome.equals(segundoNome)) {
-				erros.add("O nome da promoção foi alterado!");
+	public List<PromocaoDTO> verificarPromo(@RequestBody List<Long> ids){
+		List<PromocaoDTO> res = new ArrayList<>();
+		ids.forEach(id->{
+			Optional<Promocao> promocao = promocaoRepositorio.findById(id);
+			if(promocao.isPresent()){
+				Promocao exist = promocao.get();
+				res.add(new PromocaoDTO(exist.getId(), exist.getNome(),exist.getDataCadastro(),exist.getCondicao(),exist.getAcao(),exist.getStatus()));
 			}
-			if(!primeiraCondicao.equals(segundaCondicao) || !primeiraAcao.equals(segundaAcao)) {
-				erros.add("A mecânica da promoção foi alterada!");
-			}
-			if(segundoStatus == 1) {
-				erros.add("A promoção foi interrompida!");
-			}
-			
-			return erros;
-		}else {
-			return null;
-		}
+		});
+		return res;
 	}
 	
 	@PostMapping("/parametrosPromo")

@@ -22,7 +22,7 @@ function verificarCondicao(promoId){
             div += '<option value="Perfumaria">Perfumaria</option>'
             div += '<option value="Saude">Saúde</option></select>'
         }else{
-            div += '<input type="number" class="form-control condicao-input" placeholder="When" onkeyup="habilitarBotao(event)" required/></div>'
+            div += '<input type="text" class="form-control condicao-input" placeholder="When" oninput="this.value = this.value.replace(/[^0-9.]/, ``);" onkeyup="habilitarBotao(event)" required/></div>'
             $("#addCondicao").attr("disabled",true)
         }
         condicao[promoId].selecionado=true
@@ -101,7 +101,7 @@ function verificarAcao(event){
     div += '<span style="margin-left: 5px;" onclick="removeAcao(`'+event.target.value+'`)"><i class="bx bx-x nav_icon"></i> </span>'
     div += '</div>'
     if(item.valor == "[DescontoProduto]" || item.valor == "[ItemMenorValor]"){
-        div += '<input type="number" class="form-control acao-input" placeholder="Then" required/>'
+        div += '<input type="text" class="form-control acao-input" placeholder="Then" oninput="this.value = this.value.replace(/[^0-9.]/, ``);" required/>'
         div += '<select class="form-select" style="width:210px" id="selectValor"><option value="ValorUnitario">Valor Unitário</option><option value="ValorTotal">Valor Total</option></select></div>'
     }else{
         div += '<input type="number" class="form-control acao-input" placeholder="Then" required/>'

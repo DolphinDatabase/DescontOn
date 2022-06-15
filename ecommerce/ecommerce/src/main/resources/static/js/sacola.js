@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 var desconto = []
+var promocoes = []
 
 function populaTabelaDesconto(){
     if(desconto.length>0){
@@ -31,28 +32,31 @@ function mudarPromocao(id){
 
 async function verificaDesconto(){
     var sacola = JSON.parse(localStorage.getItem('sacola'));
-    var total = 0
-    sacola.forEach(item=>{
-        total += item.valor*item.quantidade
-    })
-    const res = await axios.post("/sacola/verificarDesconto",sacola)
-    desconto = []
-    for (const [key, value] of Object.entries(res.data)) {
-        await axios.post("/sacola/aplicarDesconto",{
-            sacola:value,
-            total:total,
-            condicao:key.split(", ")[2],
-            acao:key.split(", ")[3]
+    if(sacola != null){
+        var total = 0
+        sacola.forEach(item=>{
+            total += item.valor*item.quantidade
         })
-        .then(res=>{
-            var total = 0
-            res.data.forEach(i=>{
-                total += i.desconto
+        const res = await axios.post("/sacola/verificarDesconto",sacola)
+        desconto = []
+        promocoes = []
+        for (const [key, value] of Object.entries(res.data)) {
+            promocoes.push({id:key.split(", ")[0],nome:key.split(", ")[1],condicao:key.split(", ")[2],acao:key.split(", ")[3]})
+            await axios.post("/sacola/aplicarDesconto",{
+                sacola:value,
+                total:total,
+                condicao:key.split(", ")[2],
+                acao:key.split(", ")[3]
             })
-            desconto.push({id:key.split(", ")[0],promocao:key.split(", ")[1],desc:res.data,total:total,checked:false})
-        })
+            .then(res=>{
+                var total = 0
+                res.data.forEach(i=>{
+                    total += i.desconto
+                })
+                desconto.push({id:key.split(", ")[0],promocao:key.split(", ")[1],desc:res.data,total:total,checked:false})
+            })
+        }
     }
-    console.log(desconto)
     populaTabelaDesconto()
     popularTabela()
 }
@@ -152,24 +156,40 @@ async function verificarCompra(){
     var sacola = JSON.parse(localStorage.getItem('sacola'))
     var data = []
     var erros = []
+    var dataPromo = []
     var errosPromo = []
     sacola.forEach(produto=>{
         data.push(produto.id)
     })
-    await axios.post("/sacola/verificarPromo",data).then(r => {
-    	var dados = r.data;
-    	if(dados.length > 0){
-    		dados.forEach(e => {
-    			errosPromo.push(e);
-    		})
-    	}
+    desconto.forEach(d=>{
+        dataPromo.push(d.id);
+    })
+    await axios.post("/sacola/verificarPromo",dataPromo)
+    .then(r => {
+        promocoes.forEach(promo=>{
+            var err = []
+            var exist = $(r.data).filter((i,n)=>{return n.id == promo.id})[0]
+            if(exist != undefined){
+                if(exist.nome!=promo.nome){
+                    err.push("O nome da promoção foi alterada")
+                }else{
+                    if(exist.condicao != promo.condicao || exist.acao != promo.acao){
+                        err.push("A mecânica da promoção foi alterada")
+                    }
+                }
+            }else{
+                err.push("A Promoção não existe mais")
+            }
+            if(err.length>0){
+                errosPromo.push({promocao: promo.nome+" - "+promo.id,erros:err})
+            }
+        })
     });
     await axios.post("/produto/verificar",data)
     .then(res=>{
         sacola.forEach(pro=>{
             var err = []
             let find = false
-            console.log(pro)
             for(ver of res.data){
                 if(ver.id==pro.id){
                     console.log(ver)
@@ -204,6 +224,9 @@ async function verificarCompra(){
             $("#myModal").modal("toggle")
             var lista = ""
             var listaPromo = ""
+            if(erros.length>0){
+                lista += "<h5>Alteração no produto:</h5>"
+            }
             erros.forEach(erro=>{
                 lista += "<p>"+erro.produto+"</p><ul>"
                 erro.erros.forEach(err=>{
@@ -211,11 +234,16 @@ async function verificarCompra(){
                 })
                 lista += "</ul>"
             })
-            listaPromo += "<ul>"
-            errosPromo.forEach(erroPromo => {
-            	listaPromo += "<li>"+erroPromo+"</li>"
+            if(errosPromo.length>0){
+                lista += "<h5>Alteração na promoção:</h5>"
+            }
+            errosPromo.forEach(erro=>{
+                lista += "<p>"+erro.promocao+"</p><ul>"
+                erro.erros.forEach(err=>{
+                    lista += "<li>"+err+"</li>"
+                })
+                lista += "</ul>"
             })
-            listaPromo += "</ul>"
             $("#modalContent").append(listaPromo)
             $("#modalContent").append(lista)
         }else{
